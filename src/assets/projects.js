@@ -1,6 +1,7 @@
 import bookshelf from "./images/bookshelf-cover.jpeg"
 import property from "./images/property-cover.jpeg"
 import sketch from "./images/sketch-cover.jpeg"
+import blackjack from "./images/blackjack-cover.ai"
 
 export const projects = [
 	{
@@ -22,6 +23,13 @@ export const projects = [
 		cover: sketch,
 		caption: "The original. Now with colors.",
 		details: "Etch-a-Sketch like never before. You pick the size. You pick the colors. The possibilities are endless",
+		link: "#"
+	},
+	{
+		title: "Beat Blackjack",
+		cover: blackjack,
+		caption: "They say the house has the edge. Let's find out",
+		details: "Choose your starting bankroll. Choose how many decks. Choose the rules.",
 		link: "#"
 	},
 ]
