@@ -1,7 +1,7 @@
 import bookshelf from "./images/bookshelf-cover.jpeg"
 import property from "./images/property-cover.jpeg"
 import sketch from "./images/sketch-cover.jpeg"
-import blackjack from "./images/blackjack-cover.ai"
+import blackjack from "./images/blackjack-cover.jpeg"
 
 export const projects = [
 	{
