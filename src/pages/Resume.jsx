@@ -1,5 +1,15 @@
+import resume from "../assets/images/resume.png"
+
+
+
 const Resume = () => {
 	return (
+		<>
+		<img src={resume} alt="resume" className="w-full"/>
+
+		</>
+	);
+		/*
 		<div className="">
 
 			<div className="my-info bg-slate-100 p-7">
@@ -65,8 +75,9 @@ const Resume = () => {
 				</div>
 			</div>
 
-		</div>
-	);
+		</div>*/
+
+
 };
 
 export default Resume;
