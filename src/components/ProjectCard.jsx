@@ -5,6 +5,9 @@ const ProjectCard = ({ title, cover, caption, details, link }) => {
 
 	const [showDetails, setShowDetails] = useState(false)
 
+	console.log(details);
+	console.log(link);
+
 	return (
 		<div className="m-6 bg-white rounded-lg overflow-hidden relative shadow-lg md:w-1/3 sm:w-1/2">
 			{
@@ -28,7 +31,7 @@ const ProjectCard = ({ title, cover, caption, details, link }) => {
 						<div className="mx-4 my-2 h-52">
 							{details}
 						</div>
-						<div className="text-center text-lg text-blue-600">
+						<div className="text-center text-lg text-blue-600 hover:cursor-pointer">
 							<a href={link}>Go to App!</a>
 						</div>
 					</div>
@@ -39,7 +42,7 @@ const ProjectCard = ({ title, cover, caption, details, link }) => {
 					>
 						<img
 							className="rounded-lg h-44 shadow-md"
-							src={cover} alt="bookshelf"
+							src={cover} alt="cover"
 						/>
 						<div
 							className="text-2xl text-center py-14">
