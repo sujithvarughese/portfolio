@@ -12,10 +12,6 @@ const links = [
 		url: '/projects',
 	},
 	{
-		name: 'Media',
-		url: '#',
-	},
-	{
 		name: 'Contact',
 		url: '/contact',
 	}

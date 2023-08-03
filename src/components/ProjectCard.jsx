@@ -5,8 +5,6 @@ const ProjectCard = ({ title, cover, caption, details, link }) => {
 
 	const [showDetails, setShowDetails] = useState(false)
 
-	console.log(details);
-	console.log(link);
 
 	return (
 		<div className="m-6 bg-white rounded-lg overflow-hidden relative shadow-lg md:w-1/3 sm:w-1/2">

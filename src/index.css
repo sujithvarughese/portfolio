@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.title {
+    font-size: 64px;
+    text-align: center;
+    margin-top: 3rem; /* 48px */
+    margin-bottom: 3rem; /* 48px */
+}
+
+.contacts-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.contact-row {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    max-width: 42px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.info {
+    width: 300px;
+    margin-top: auto;
+    margin-bottom: auto;
+}

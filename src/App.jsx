@@ -4,7 +4,7 @@ import { Layout, Landing, Resume, Projects, Contact } from "./pages";
 const App = () => {
 
 	return (
-		<div className="body-container">
+		<div>
 
 			<BrowserRouter>
 				<Routes>
