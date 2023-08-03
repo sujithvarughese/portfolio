@@ -9,27 +9,27 @@ export const projects = [
 		cover: bookshelf,
 		caption: "Discover new reading. Organize your collection.",
 		details: "Bookshelf is a personal reading organizer that uses the OpenLibrary API to connect users to millions of books. Find books based on subject matter, take notes, and organize your favorite books into your own bookshelf",
-		link: 'https://admirable-kleicha-c4532e.netlify.app'
+		link: 'https://bookshelf-suj.netlify.app'
 	},
 	{
 		title: "Property Management Assistant",
 		cover: property,
 		caption: "Manage all your properties with one simple App.",
 		details: "Whether you're managing a single unit or if you're a real estate mogul, the responsibilities of day-to-day operations can be overwhelming. Property Management Assistant simplifies your job by organizing your tasks and keeping track of all your units, all in one place.",
-		link: 'https://stately-pavlova-e65f71.netlify.app'
+		link: 'https://prop-management-assistant.netlify.app'
 	},
 	{
 		title: "Sketch",
 		cover: sketch,
 		caption: "The original Sketch App. Now in Color.",
 		details: "Etch-a-Sketch like never before. You pick the size. You pick the colors. The possibilities are endless",
-		link: 'https://extraordinary-vacherin-936d73.netlify.app'
+		link: 'https://sketch-suj.netlify.app'
 	},
 	{
 		title: "Beat Blackjack",
 		cover: blackjack,
 		caption: "They say the house has the edge. Let's find out",
 		details: "Choose your starting bankroll. Choose how many decks. Choose the rules.",
-		link: 'https://subtle-tiramisu-496e28.netlify.app'
+		link: 'https://blackjack-suj.netlify.app'
 	},
 ]
