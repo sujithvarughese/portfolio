@@ -4,7 +4,7 @@ import phoneIcon from "../assets/images/phone-icon.svg"
 const Contact = () => {
 	return (
 		<div className="contacts-page">
-			<div className="title">Contacts page</div>
+			<div className="title">Contact Information</div>
 
 			<div className="content">
 				<div className="contact-row">

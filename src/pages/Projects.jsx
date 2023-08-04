@@ -4,7 +4,7 @@ import ProjectCard from "../components/ProjectCard.jsx";
 const Projects = () => {
 	return (
 		<div className="page">
-			<div className="title">Projects Page</div>
+			<div className="title">Projects</div>
 			<div className="flex flex-wrap justify-around bg-gray-100 rounded-lg ">
 				{
 					projects.map((project, index) => {
