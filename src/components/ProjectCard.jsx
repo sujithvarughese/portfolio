@@ -1,7 +1,7 @@
 import { useState } from "react";
 import iconX from "../assets/images/x_icon.svg"
 
-const ProjectCard = ({ title, cover, caption, details, link }) => {
+const ProjectCard = ({ title, cover, caption, details, link, github }) => {
 
 	const [showDetails, setShowDetails] = useState(false)
 
@@ -31,6 +31,10 @@ const ProjectCard = ({ title, cover, caption, details, link }) => {
 						<div className="text-center text-lg text-blue-600 hover:cursor-pointer">
 							<a href={link} target="_blank" rel="noreferrer">Go to App!</a>
 						</div>
+						<div className="text-center text-lg text-blue-600 hover:cursor-pointer">
+							<a href={github} target="_blank" rel="noreferrer">GitHub Link</a>
+						</div>
+
 					</div>
 					:
 					<div
