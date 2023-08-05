@@ -11,7 +11,6 @@ const ProjectCard = ({ title, cover, caption, details, link }) => {
 			{
 				showDetails ?
 					<div className="my-4">
-
 						<img
 							src={iconX}
 							className="absolute right-3 w-6 right-0 hover:bg-gray-200 hover:cursor-pointer"
@@ -30,7 +29,7 @@ const ProjectCard = ({ title, cover, caption, details, link }) => {
 							{details}
 						</div>
 						<div className="text-center text-lg text-blue-600 hover:cursor-pointer">
-							<a href={link}>Go to App!</a>
+							<a href={link} target="_blank" rel="noreferrer">Go to App!</a>
 						</div>
 					</div>
 					:
