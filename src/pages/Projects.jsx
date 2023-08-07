@@ -6,7 +6,8 @@ const Projects = () => {
 		<div className="page">
 			<div className="title">Projects</div>
 			<div className="text-center mx-52 my-8">
-				Projects are working, but are being updated regularly with fixes and new features. Feel free to take a tour of the apps and check them out so far!
+				Welcome to my projects page! These are a few projects I have been working on. They are being updated regularly with fixes and new features. Feel free to take a tour!
+				(Note: Some browsers are not retrieving data from server if cookies or cross-site tracking are disabled   )
 			</div>
 			<div className="text-center mx-52 my-8">
 				Update: Some browsers are causing CORS issues. Working on update...
