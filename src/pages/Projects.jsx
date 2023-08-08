@@ -10,7 +10,7 @@ const Projects = () => {
 
 			</div>
 			<div className="text-center mx-52 my-8">
-				Note: Some browsers are not retrieving data from server if cookies or cross-site tracking are disabled. Also, I am using free servers on netlify so might be a little slow to load at first.
+				Note: Projects are optimized for desktop. Some browsers are not retrieving data from server if cookies or cross-site tracking are disabled. Also, I am using free servers on netlify so might be a little slow to load at first.
 			</div>
 			<div className="flex flex-wrap justify-around bg-gray-100 rounded-lg ">
 				{
