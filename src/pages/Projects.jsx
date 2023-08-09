@@ -5,7 +5,7 @@ const Projects = () => {
 	return (
 		<div className="page">
 			<div className="title">Projects</div>
-			<div className="text-center mx-52 my-8">
+			<div className="text-center mx-52 md:mx-4 my-8">
 				Welcome to my projects page! These are a few projects I have been working on. I am still developing them, so they are being updated regularly with fixes and new features. I set up links to access the apps without creating an account, so feel free to take a tour! There are also GitHub links with source code that can be viewed!
 
 			</div>
