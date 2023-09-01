@@ -5,7 +5,7 @@ import links from '../links.js'
 const Layout = () => {
 
 	return (
-		<div className="max-w-5xl mx-auto">
+		<div className="max-w-full mx-auto overflow-hidden">
 			<Navbar links={links}/>
 			<Outlet />
 			<Footer />

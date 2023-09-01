@@ -1,11 +1,11 @@
 import githubIcon from "../assets/images/github-mark.png"
 import emailIcon from "../assets/images/email-icon.jpeg"
 import phoneIcon from "../assets/images/phone-icon.svg"
+
 const Contact = () => {
 	return (
 		<div className="contacts-page">
 			<div className="title">Contact Information</div>
-
 			<div className="content">
 				<div className="contact-row">
 					<img src={emailIcon} alt="email-icon" className="icon"/>

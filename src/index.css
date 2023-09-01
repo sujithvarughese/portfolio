@@ -51,3 +51,18 @@ nav {
     margin-top: auto;
     margin-bottom: auto;
 }
+
+
+.preview {
+    background: black;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+}
+
+.card {
+    scroll-snap-align: center;
+}
