@@ -5,7 +5,7 @@ const Navbar = () => {
 
 	return (
 
-			<nav className="flex justify-around py-5 font-serif bg-stone-200">
+			<nav className="flex justify-around py-5 font-serif text-white">
 					{links.map(link => {
 						return (
 							<div key={link.name}>

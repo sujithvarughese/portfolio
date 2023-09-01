@@ -2,11 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+nav {
+    background-color: #0e1d36;
+}
+
 .title {
     font-size: 64px;
     text-align: center;
-    margin-top: 3rem; /* 48px */
+     /* 48px */
     margin-bottom: 3rem; /* 48px */
+}
+
+.page {
+    background-color: #0e1d36;
+}
+
+.projects {
+    background-image: url("./assets/images/bg-code.jpeg");
+    background-size: contain;
 }
 
 .contacts-page {
