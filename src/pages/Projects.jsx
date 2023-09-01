@@ -13,7 +13,7 @@ const Projects = () => {
 
 			</div>
 			<div className="text-center md:mx-52 my-8 text-white">
-				Note: Some browsers are not retrieving data from server if cookies or cross-site tracking are disabled.
+				Note: Some browsers are not retrieving data from back end if cookies or cross-site tracking are disabled.
 			</div>
 			<div className="projects flex flex-wrap justify-around bg-gray-100 rounded-lg ">
 
