@@ -60,9 +60,10 @@ nav {
 }
 
 .container {
+    overflow: scroll;
     scroll-snap-type: y mandatory;
 }
 
 .card {
-    scroll-snap-align: center;
+    scroll-snap-align: start;
 }
