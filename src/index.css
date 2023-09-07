@@ -2,9 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    background-image: url("./assets/images/bg-code.jpeg");
+
+
+}
 nav {
     background-color: #0e1d36;
 }
+
 
 .title {
     font-size: 64px;
@@ -18,8 +24,7 @@ nav {
 }
 
 .projects {
-    background-image: url("./assets/images/bg-code.jpeg");
-    background-size: contain;
+    background-color: #0e1d36;
 }
 
 .contacts-page {
