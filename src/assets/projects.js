@@ -23,8 +23,8 @@ export const projects = [
 	{
 		title: "Beat Blackjack",
 		cover: blackjack,
-		caption: "They say the house has the edge. Let's find out",
-		details: "Choose your starting bankroll. Choose how many decks. Choose the rules.",
+		caption: "Want to test your luck while learning at the same time?",
+		details: "Play blackjack with live assistance to tell you the exact book move recommended by the pros in any situation! Customize your bankroll and number of decks to give you that real casino feel!",
 		link: 'https://blackjack-suj.netlify.app',
 		github: 'https://github.com/sujithvarughese/blackjack-js/tree/master/react'
 	},
