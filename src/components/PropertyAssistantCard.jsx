@@ -2,12 +2,12 @@ import property from "../assets/images/property-cover.jpeg"
 import { useNavigate } from "react-router-dom";
 
 const card = {
-	title: "Property Management Assistant",
+	title: "Realty Solutions",
 	cover: property,
-	caption: "Manage all your properties with one simple App.",
+	caption: "Real solutions to manage all your properties with one simple App.",
 	details: "Whether you're managing a single unit or if you're a real estate mogul, the responsibilities of day-to-day operations can be overwhelming. Property Management Assistant simplifies your job by organizing your tasks and keeping track of all your units, all in one place.",
-	link: 'https://prop-management-assistant.netlify.app',
-	github: 'https://github.com/sujithvarughese/property-management-app'
+	link: 'https://realty-solutions.netlify.app',
+	github: 'https://github.com/sujithvarughese/realty-solutions'
 }
 
 const PropertyAssistantCard = () => {

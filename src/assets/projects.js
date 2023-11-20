@@ -5,12 +5,12 @@ import blackjack from "./images/blackjack-cover.jpeg"
 export const projects = [
 
 	{
-		title: "bookshelf.",
+		title: "On the Books.",
 		cover: bookshelf,
 		caption: "Discover new reading. Organize your collection.",
 		details: "Bookshelf is a personal reading organizer that uses the OpenLibrary API to connect users to millions of books. Find books based on subject matter, take notes, and organize your favorite books into your own bookshelf!",
-		link: 'https://bookshelf-suj.netlify.app',
-		github: 'https://github.com/sujithvarughese/bookshelf-app'
+		link: 'https://on-the-books.netlify.app',
+		github: 'https://github.com/sujithvarughese/on-the-books'
 	},
 	{
 		title: "Sketch",
