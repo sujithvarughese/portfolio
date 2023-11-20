@@ -1,8 +1,9 @@
 import { projects } from "../assets/projects.js";
-import ProjectCard from "../components/ProjectCard.jsx";
+import ProjectCard from "../UI/ProjectCard.jsx";
 import { PropertyAssistant } from "./index.js";
 import PropertyAssistantCard from "../components/PropertyAssistantCard.jsx";
-
+import ScreenshotDisplays from "../UI/ScreenshotDisplays.jsx";
+import image from "../assets/images/propertyasssitant/messages.png"
 
 const Projects = () => {
 	return (
@@ -15,8 +16,8 @@ const Projects = () => {
 				Note: I am using Netlify for front end, so browsers may not retrieve data from back end if cookies or cross-site tracking are disabled.
 			</div>
 			<div className="projects flex flex-wrap justify-around bg-gray-100 rounded-lg ">
-
-				<PropertyAssistantCard />
+			<ScreenshotDisplays image={image}/>
+				{/*<PropertyAssistantCard />*/}
 
 				{
 					projects.map((project, index) => {

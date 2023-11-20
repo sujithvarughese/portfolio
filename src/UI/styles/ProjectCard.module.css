@@ -1,0 +1,41 @@
+.container {
+    color: antiquewhite;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease-in-out all;
+    border-radius: 0.75rem;
+    z-index: 10;
+    background-color: white;
+
+}
+.container:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.content {
+    color: darkorange;
+}
+.computer {
+
+    isolation: isolate;
+    background-color: darkorange;
+}
+.card {
+    position: relative;
+    background-color: darkorange;
+}
+.image {
+    position: absolute;
+    top: 0;
+    padding: 4rem;
+    margin: auto;
+    text-align: center;
+
+
+}
+@media (min-width: 600px) {
+
+}
+
+

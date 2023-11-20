@@ -1,0 +1,19 @@
+.container {
+    background: aliceblue;
+    position: relative;
+    width: 278px;
+    height: 240px;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+.desktop {
+    position: absolute;
+
+}
+.mobile {
+    position: absolute;
+    right: -22px;
+    top: 80px;
+
+}
