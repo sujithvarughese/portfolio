@@ -3,8 +3,8 @@ import ScreenshotDisplay from "./ScreenshotDisplays.jsx"
 import iconX from "../assets/images/x_icon.svg"
 import {useState} from "react";
 import RealtySolutionsPreview from "./RealtySolutionsPreview.jsx";
-import Modal from "../UI/Modal.jsx";
-const ProjectCard = ({ title, coverImage, desktopImage, mobileImage, caption, details, link, github }) => {
+import ProjectPreview from "./ProjectPreview.jsx";
+const ProjectCard = ({ title, coverImage, desktopImage, mobileImage, caption, details, link, github, previews }) => {
 
 	const [showExtended, setShowExtended] = useState(false)
 
@@ -16,7 +16,6 @@ const ProjectCard = ({ title, coverImage, desktopImage, mobileImage, caption, de
 			<div className={classes.content}>
 
 				<div className={classes.card}>
-
 					<div className={classes.coverImage}>
 						<img src={coverImage} alt={title}/>
 						{
@@ -50,10 +49,9 @@ const ProjectCard = ({ title, coverImage, desktopImage, mobileImage, caption, de
 					<div className={classes.screenshotDisplay}>
 						<ScreenshotDisplay desktop={desktopImage} mobile={mobileImage}/>
 					</div>
-
-
-
 				</div>
+
+				{ previews?.length > 0 && <ProjectPreview previews={previews} />}
 
 			</div>
 		</div>

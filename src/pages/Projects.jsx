@@ -4,7 +4,7 @@ import ProjectCard from "../components/ProjectCard.jsx";
 
 const Projects = () => {
 	return (
-		<div className={classes.page}>
+		<div className={classes.container}>
 			<div className={classes.title}>Projects</div>
 
 			<div>

@@ -20,7 +20,13 @@
 }
 body {
     background: var(--BACKGROUND-GRADIENT);
+
+
+
 }
 nav {
     background-color: var(--BACKGROUND-GRADIENT);
+}
+@media (min-width: 600px) {
+
 }
