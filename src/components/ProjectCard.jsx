@@ -1,59 +1,61 @@
-import { useState } from "react";
+import classes from "./styles/ProjectCard.module.css";
+import ScreenshotDisplay from "./ScreenshotDisplays.jsx"
 import iconX from "../assets/images/x_icon.svg"
+import {useState} from "react";
+import RealtySolutionsPreview from "./RealtySolutionsPreview.jsx";
+import Modal from "../UI/Modal.jsx";
+const ProjectCard = ({ title, coverImage, desktopImage, mobileImage, caption, details, link, github }) => {
 
-const ProjectCard = ({ title, cover, caption, details, link, github }) => {
-
-	const [showDetails, setShowDetails] = useState(false)
-
+	const [showExtended, setShowExtended] = useState(false)
 
 	return (
-		<div className="m-6 bg-white rounded-lg overflow-hidden relative shadow-lg md:w-1/3 sm:w-1/2">
+		<div className={classes.container}>
 			{
-				showDetails ?
-					<div className="my-4">
-						<img
-							src={iconX}
-							className="absolute right-3 w-6 right-0 hover:bg-gray-200 hover:cursor-pointer"
-							alt="X"
-							onClick={() => setShowDetails(false)}
-						/>
-						<img
-							className="h-28 mx-auto rounded-lg shadow-md"
-							src={cover}
-							alt={title}
-						/>
-						<div className="text-lg text-center my-4">
-							{title}
-						</div>
-						<div className="mx-4 my-2 h-52">
-							{details}
-						</div>
-						<div className="text-center text-lg text-blue-600 hover:cursor-pointer">
-							<a href={link} target="_blank" rel="noreferrer">Go to App!</a>
-						</div>
-						<div className="text-center text-lg text-blue-600 hover:cursor-pointer">
-							<a href={github} target="_blank" rel="noreferrer">GitHub Link</a>
-						</div>
+				showExtended && <RealtySolutionsPreview />
+			}
+			<div className={classes.content}>
 
+				<div className={classes.card}>
+
+					<div className={classes.coverImage}>
+						<img src={coverImage} alt={title}/>
+						{
+							title === "Realty Solutions" &&
+							<div onClick={()=>setShowExtended(!showExtended)}>
+								More Info
+							</div>
+						}
 					</div>
-					:
-					<div
-						className="h-full mx-auto hover:bg-gray-200 hover:cursor-pointer flex px-4 flex-col py-12"
-						onClick={() => setShowDetails(true)}
-					>
-						<img
-							className="rounded-lg h-44 shadow-md"
-							src={cover} alt="cover"
-						/>
-						<div
-							className="text-2xl text-center py-14">
+
+					<div className={classes.info}>
+						<div className={classes.title}>
 							{title}
 						</div>
-						<div className="text-sm text-center px-10">
+						<div className={classes.caption}>
 							{caption}
 						</div>
+						<div className={classes.details}>
+							{details}
+						</div>
+						<div className={classes.links}>
+							<div className={classes.preview}>
+								<a href={link}>Preview App</a>
+							</div>
+							<div className={classes.github}>
+								<a href={github}>GitHub Link</a>
+							</div>
+						</div>
 					</div>
-			}
+
+					<div className={classes.screenshotDisplay}>
+						<ScreenshotDisplay desktop={desktopImage} mobile={mobileImage}/>
+					</div>
+
+
+
+				</div>
+
+			</div>
 		</div>
 	);
 };

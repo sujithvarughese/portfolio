@@ -1,5 +1,4 @@
 .container {
-    background: aliceblue;
     position: relative;
     width: 278px;
     height: 240px;
@@ -15,5 +14,4 @@
     position: absolute;
     right: -22px;
     top: 80px;
-
 }

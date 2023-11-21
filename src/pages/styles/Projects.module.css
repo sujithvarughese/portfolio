@@ -1,0 +1,22 @@
+
+.title {
+    color: white;
+    font-size: 64px;
+    text-align: center;
+}
+.text {
+    color: white;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+@media (min-width: 600px) {
+    .text {
+        margin: 0 13rem;
+    }
+}

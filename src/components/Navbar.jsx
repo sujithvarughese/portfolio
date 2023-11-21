@@ -1,16 +1,17 @@
-import links from "../links.js";
+import classes from "./styles/Navbar.module.css";
+import links from "../utils/links.js";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
 
 	return (
 
-			<nav className="flex justify-around py-5 font-serif text-white">
+			<nav className={classes.container}>
 					{links.map(link => {
 						return (
-							<div key={link.name}>
+							<div key={link.name} className={classes.link}>
 								<NavLink
-									to={link.url} className="cursor-pointer">{link.name}
+									to={link.url}>{link.name}
 								</NavLink>
 							</div>
 						)

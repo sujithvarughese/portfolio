@@ -1,14 +1,14 @@
 import classes from "./styles/ScreenshotDisplays.module.css";
 import DesktopScreen from "./DesktopScreen.jsx";
 import MobileScreen from "./MobileScreen.jsx";
-const ScreenshotDisplays = ({ image }) => {
+const ScreenshotDisplays = ({ desktop, mobile }) => {
     return (
         <div className={classes.container}>
             <div className={classes.desktop}>
-                <DesktopScreen image={image} />
+                <DesktopScreen image={desktop} />
             </div>
             <div className={classes.mobile}>
-                <MobileScreen image={image} />
+                <MobileScreen image={mobile} />
             </div>
 
         </div>

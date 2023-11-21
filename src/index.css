@@ -2,73 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -webkit-background-size: calc(100vw) calc(100vh);
+    -moz-background-size: calc(100vw) calc(100vh);
+    -o-background-size: calc(100vw) calc(100vh);
+    background-size: calc(100vw) calc(100vh);
+    --COLOR-LIGHTER: #bbe4e9;
+    --COLOR-LIGHT: #79c2d0;
+    --COLOR: #53a8b6;
+    --COLOR-DARK: #5585b5;
+    --BACKGROUND-GRADIENT: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
+}
 body {
-    background-image: url("./assets/images/bg-code.jpeg");
-
-
+    background: var(--BACKGROUND-GRADIENT);
 }
 nav {
-    background-color: #0e1d36;
-}
-
-
-.title {
-    font-size: 64px;
-    text-align: center;
-     /* 48px */
-    margin-bottom: 3rem; /* 48px */
-}
-
-.page {
-    background-color: #0e1d36;
-}
-
-.projects {
-    background-color: #0e1d36;
-}
-
-.contacts-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 36px;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-}
-
-.contact-row {
-    display: flex;
-    gap: 20px;
-}
-
-.icon {
-    max-width: 42px;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.info {
-    width: 300px;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-
-.preview {
-    background: black;
-    border-radius: 2rem;
-    padding: 1rem;
-}
-
-.container {
-    overflow: scroll;
-    scroll-snap-type: y mandatory;
-}
-
-.card {
-    scroll-snap-align: start;
+    background-color: var(--BACKGROUND-GRADIENT);
 }

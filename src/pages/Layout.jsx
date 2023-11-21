@@ -1,11 +1,12 @@
 import { Outlet } from "react-router-dom";
 import { Footer, Navbar } from "../components/index.js";
-import links from '../links.js'
+import links from '../utils/links.js'
+import classes from "./styles/Layout.module.css";
 
 const Layout = () => {
 
 	return (
-		<div className="max-w-5xl mx-auto overflow-hidden">
+		<div className={classes.container}>
 			<Navbar links={links}/>
 			<Outlet />
 			<Footer />
