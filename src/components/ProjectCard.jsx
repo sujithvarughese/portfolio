@@ -1,29 +1,20 @@
 import classes from "./styles/ProjectCard.module.css";
 import ScreenshotDisplay from "./ScreenshotDisplays.jsx"
-import iconX from "../assets/images/x_icon.svg"
 import {useState} from "react";
-import RealtySolutionsPreview from "./RealtySolutionsPreview.jsx";
 import ProjectPreview from "./ProjectPreview.jsx";
+import {FaAnglesDown, FaAnglesUp} from "react-icons/fa6";
+
 const ProjectCard = ({ title, coverImage, desktopImage, mobileImage, caption, details, link, github, previews }) => {
 
-	const [showExtended, setShowExtended] = useState(false)
+	const [showPreviews, setShowPreviews] = useState(false)
 
 	return (
 		<div className={classes.container}>
-			{
-				showExtended && <RealtySolutionsPreview />
-			}
 			<div className={classes.content}>
 
 				<div className={classes.card}>
 					<div className={classes.coverImage}>
 						<img src={coverImage} alt={title}/>
-						{
-							title === "Realty Solutions" &&
-							<div onClick={()=>setShowExtended(!showExtended)}>
-								More Info
-							</div>
-						}
 					</div>
 
 					<div className={classes.info}>
@@ -51,9 +42,29 @@ const ProjectCard = ({ title, coverImage, desktopImage, mobileImage, caption, de
 					</div>
 				</div>
 
-				{ previews?.length > 0 && <ProjectPreview previews={previews} />}
 
+				{ previews?.length > 0 &&
+					<div>
+						{
+							showPreviews ?
+								<div className={classes.previewsToggle}onClick={()=>setShowPreviews(false)}>
+									<FaAnglesUp /><div>Hide</div>
+								</div>
+								:
+								<div className={classes.previewsToggle}onClick={()=>setShowPreviews(true)}>
+									<FaAnglesDown /><div>More Info</div>
+								</div>
+						}
+					</div>
+				}
 			</div>
+
+			{ showPreviews &&
+				<div className={classes.previews}>
+					<ProjectPreview previews={previews} />
+				</div>
+			}
+
 		</div>
 	);
 };

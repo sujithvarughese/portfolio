@@ -19,24 +19,23 @@ import searchIMG from "../assets/images/propertyasssitant/search.png"
 
 const realtySolutionsPreviews = [
 	{
-		caption: "All Your Properties. All in one Place",
+		captions: ["All Your Properties.", "All in one Place"],
 		image: unitsIMG
 	},
 	{
-		caption: "Exchange messages. Flag important conversations."
-		,
+		captions: ["Exchange messages.", "Flag important conversations."],
 		image: messagesIMG
 	},
 	{
-		caption: "Get market rents from anywhere in the US",
+		captions: ["Get market rents from anywhere in the US"],
 		image: fmrIMG
 	},
 	{
-		caption: "Search to easily find and organize properties",
+		captions: ["Search to easily find and organize properties"],
 		image: searchIMG
 	},
 	{
-		caption: "Tenants can report issues anytime",
+		captions: ["Tenants can report issues anytime"],
 		image: serviceIMG
 	}
 ]
