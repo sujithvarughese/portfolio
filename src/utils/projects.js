@@ -1,21 +1,38 @@
-import bookshelf from "../assets/images/bookshelf-cover.jpeg"
-import sketch from "../assets/images/sketch-cover.jpeg"
-import blackjack from "../assets/images/blackjack-cover.jpeg"
-import property from "../assets/images/property-cover.jpeg"
-import rsDesktop from "../assets/images/previews/rs-desktop.png"
-import rsMobile from "../assets/images/previews/rs-mobile.png"
-import otbDesktop from "../assets/images/previews/otb-desktop.png"
-import otbMobile from "../assets/images/previews/otb-mobile.png"
-import bjDesktop from "../assets/images/previews/bj-desktop.png"
-import bjMobile from "../assets/images/previews/bj-mobile.png"
-import sketchDesktop from "../assets/images/previews/sketch-desktop.png"
-import sketchMobile from "../assets/images/previews/sketch-mobile.png"
+import bookshelf
+	from "../assets/images/bookshelf-cover.jpeg"
+import sketch
+	from "../assets/images/sketch-cover.jpeg"
+import blackjack
+	from "../assets/images/blackjack-cover.jpeg"
+import property
+	from "../assets/images/property-cover.jpeg"
+import rsDesktop
+	from "../assets/images/previews/rs-desktop.png"
+import rsMobile
+	from "../assets/images/previews/rs-mobile.png"
+import otbDesktop
+	from "../assets/images/previews/otb-desktop.png"
+import otbMobile
+	from "../assets/images/previews/otb-mobile.png"
+import bjDesktop
+	from "../assets/images/previews/bj-desktop.png"
+import bjMobile
+	from "../assets/images/previews/bj-mobile.png"
+import sketchDesktop
+	from "../assets/images/previews/sketch-desktop.png"
+import sketchMobile
+	from "../assets/images/previews/sketch-mobile.png"
 
-import fmrIMG from "../assets/images/propertyasssitant/fmr.png"
-import messagesIMG from "../assets/images/propertyasssitant/messages.png"
-import serviceIMG from "../assets/images/propertyasssitant/service.png"
-import unitsIMG from "../assets/images/propertyasssitant/units.png"
-import searchIMG from "../assets/images/propertyasssitant/search.png"
+import fmrIMG
+	from "../assets/images/propertyasssitant/fmr.png"
+import messagesIMG
+	from "../assets/images/propertyasssitant/messages.png"
+import serviceIMG
+	from "../assets/images/propertyasssitant/service.png"
+import unitsIMG
+	from "../assets/images/propertyasssitant/units.png"
+import searchIMG
+	from "../assets/images/propertyasssitant/search.png"
 
 const realtySolutionsPreviews = [
 	{
@@ -45,7 +62,7 @@ export const projects = [
 		coverImage: property,
 		desktopImage: rsDesktop,
 		mobileImage: rsMobile,
-		caption: "Real solutions to manage your properties.",
+		caption: "An property management app for small business owners to organize their finances amd communicate with tenants. Owners can manage income/expenses, calculate mortgage payments with different interest rates, view live payoff quotes. Built in messaging functionality and uses HUD.gov API to retrieve rental rates for any location in the US. Written in Javascript using React, NodeJS, Express, and MongoDB.",
 		details: "",
 		link: 'https://realty-solutions.netlify.app',
 		github: 'https://github.com/sujithvarughese/realty-solutions',
