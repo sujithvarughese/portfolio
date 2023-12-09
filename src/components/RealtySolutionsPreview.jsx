@@ -4,8 +4,6 @@ import messagesIMG from "../assets/images/propertyasssitant/messages.png"
 import serviceIMG from "../assets/images/propertyasssitant/service.png"
 import unitsIMG from "../assets/images/propertyasssitant/units.png"
 import searchIMG from "../assets/images/propertyasssitant/search.png"
-import property from "../assets/images/property-cover.jpeg"
-import Modal from "../UI/Modal.jsx";
 
 const link = 'https://prop-management-assistant.netlify.app'
 const github = 'https://github.com/sujithvarughese/property-management-app'
