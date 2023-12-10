@@ -6,7 +6,6 @@ import ProjectPreview from "./ProjectPreview.jsx";
 const PreviewContainer = ({ previews }) => {
     return (
         <div className={classes.container}>
-
             <div className={classes.scroll}>
                 <FaAngleLeft />
             </div>

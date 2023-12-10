@@ -26,15 +26,15 @@ const Project = ({ title, coverImage, desktopImage, mobileImage, captions, detai
                     <ProjectTech tech={tech}/>
                 </div>
 
-            <div className={classes.links}>
-                {previews.length > 0 && <ProjectMoreInfo showPreviews={showPreviews} setShowPreviews={setShowPreviews}/>}
                 <div className={classes.links}>
+                    {previews.length > 0 && <ProjectMoreInfo showPreviews={showPreviews} setShowPreviews={setShowPreviews}/>}
                     <LaunchIcon link={link} size="36px"/>
                     <GithubIcon link={github} size="36px"/>
                 </div>
 
-            </div>
-            {showPreviews && <PreviewContainer previews={previews} />}
+
+                {showPreviews && <PreviewContainer previews={previews} />}
+
             </div>
         </Card>
     );

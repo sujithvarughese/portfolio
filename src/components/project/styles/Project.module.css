@@ -28,9 +28,7 @@
 .links {
     display: flex;
     gap: 2rem;
-    justify-content: space-between;
-
-    bottom: 0;
+    justify-content: start;
 }
 .togglePreview {
     display: flex;
@@ -39,9 +37,12 @@
     gap: 0.1rem;
     align-items: center;
 }
-@media (min-width: 800px) {
+.preview {
+    position: relative;
+}
+@media (min-width: 600px) {
     .container {
-        min-height: 300px;
+        min-height: 265px;
     }
     .coverTitle {
         display: flex;
@@ -64,9 +65,7 @@
     .captions {
         padding-right: 14rem;
     }
-    .links {
-        position: absolute;
-    }
+
     .screenshotsTech {
         flex-direction: column;
         position: absolute;
