@@ -3,8 +3,7 @@ import classes from "./styles/ProjectPreview.module.css";
 const ProjectPreview = ({ preview }) => {
 
     return (
-        <div className={classes.container}>
-
+        <div className={classes.preview}>
             <div className={classes.imageContainer}>
                 <img className={classes.image} src={preview.image} alt={preview.image}/>
             </div>

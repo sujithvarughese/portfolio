@@ -1,6 +1,6 @@
 import classes from "./styles/ScreenshotDisplays.module.css";
-import DesktopScreen from "./project/DesktopScreen.jsx";
-import MobileScreen from "./project/MobileScreen.jsx";
+import DesktopScreen from "./DesktopScreen.jsx";
+import MobileScreen from "./MobileScreen.jsx";
 
 const ScreenshotDisplays = ({ desktop, mobile }) => {
     return (

@@ -1,6 +1,6 @@
 .container {
     background-image: url("../../../assets/images/monitor.png");
-    width: 200px;
+    width: 250px;
     height: 230px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -9,23 +9,9 @@
 
 .image {
     position: absolute;
-    top: 6px;
-    left: 5px;
-    width: 190px;
-    height: 100px;
+    top: 9px;
+    left: 8px;
+    width: 234px;
+    height: 126px;
     border-radius: 3px;
-}
-
-@media (min-width: 600px) {
-    .container {
-        width: 250px;
-        height: 230px;
-    }
-    .image {
-        top: 9px;
-        left: 8px;
-        width: 234px;
-        height: 126px;
-    }
-
 }
