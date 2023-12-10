@@ -1,6 +1,7 @@
 import Project from "./Project.jsx";
 import ProjectCaption from "./ProjectCaption.jsx";
 import ProjectCover from "./ProjectCover.jsx";
-import ProjectLinks from "./ProjectLinks.jsx";
+import ProjectMoreInfo from "./ProjectMoreInfo.jsx";
+import ProjectTitle from "./ProjectTitle.jsx";
 
-export { Project, ProjectCaption, ProjectCover, ProjectLinks }
+export { Project, ProjectCaption, ProjectCover, ProjectMoreInfo, ProjectTitle }

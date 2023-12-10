@@ -59,21 +59,10 @@ export const projects = [
 		desktopImage: otbDesktop,
 		mobileImage: otbMobile,
 		caption:
-			"On the Books is a personal library in which users can add books, create a notebook to take notes, rate, and keep track of their status of each book." +
+			"A personal library designed to take notes, rate, and keep track of their status of each book." +
 			"App uses the OpenLibrary API where users can search by genre, get current editor's picks, and view book previews",
 		link: 'https://on-the-books.netlify.app',
 		github: 'https://github.com/sujithvarughese/on-the-books',
-		previews: []
-	},
-	{
-		title: "Sketch",
-		coverImage: sketch,
-		desktopImage: sketchDesktop,
-		mobileImage: sketchMobile,
-		caption:
-			"A simple etch-a-sketch app where users can create artistic expressions. In full color and with adjustable grid sizes.",
-		link: 'https://sketch-suj.netlify.app',
-		github: 'https://github.com/sujithvarughese/odin-etch-a-sketch/tree/main/react',
 		previews: []
 	},
 	{
@@ -88,5 +77,17 @@ export const projects = [
 		github: 'https://github.com/sujithvarughese/blackjack-js/tree/master/react',
 		previews: []
 	},
+	{
+		title: "Sketch",
+		coverImage: sketch,
+		desktopImage: sketchDesktop,
+		mobileImage: sketchMobile,
+		caption:
+			"A simple etch-a-sketch app where users can create artistic expressions. In full color and with adjustable grid sizes.",
+		link: 'https://sketch-suj.netlify.app',
+		github: 'https://github.com/sujithvarughese/odin-etch-a-sketch/tree/main/react',
+		previews: []
+	},
+
 ]
 

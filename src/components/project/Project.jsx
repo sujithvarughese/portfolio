@@ -1,10 +1,11 @@
 import classes from "./styles/Project.module.css";
-import {ProjectCaption, ProjectCover, ProjectLinks} from "./"
+import {ProjectCaption, ProjectCover, ProjectMoreInfo, ProjectTitle} from "./"
 import ScreenshotDisplay from "./ScreenshotDisplays.jsx";
-import {FaAnglesDown, FaAnglesUp} from "react-icons/fa6";
 import PreviewContainer from "../preview/PreviewContainer.jsx";
 import {useState} from "react";
 import Card from "../../ui/Card.jsx";
+import {GithubIcon, LaunchIcon} from "../../icons/Icons.jsx";
+
 
 const Project = ({ title, coverImage, desktopImage, mobileImage, caption, details, link, github, previews }) => {
 
@@ -13,38 +14,28 @@ const Project = ({ title, coverImage, desktopImage, mobileImage, caption, detail
     return (
         <Card>
             <div className={classes.container}>
+                <div className={classes.coverTitle}>
+                    <ProjectCover coverImage={coverImage} title={title}/>
+                    <ProjectTitle title={title}/>
+                </div>
 
-                <ProjectCover coverImage={coverImage} title={title}/>
+                <ProjectCaption caption={caption} />
 
-                    <div className={classes.title}>
-                        {title}
-                    </div>
-                    <ProjectCaption caption={caption} />
-
+                <div className={classes.screenshotsLinks}>
                     <div className={classes.screenshots}>
                         <ScreenshotDisplay desktop={desktopImage} mobile={mobileImage}/>
-
-                        {
-                            previews.length > 0 &&
-                                <div>
-                                    {
-                                        showPreviews ?
-                                            <div className={classes.previewsToggle} onClick={()=>setShowPreviews(false)}>
-                                                <FaAnglesUp /><div>Hide</div>
-                                            </div>
-                                            :
-                                            <div className={classes.previewsToggle} onClick={()=>setShowPreviews(true)}>
-                                                <FaAnglesDown /><div>More Info</div>
-                                            </div>
-                                    }
-                                </div>
-                        }
+                        {previews.length > 0 && <ProjectMoreInfo showPreviews={showPreviews} setShowPreviews={setShowPreviews}/>}
+                    </div>
+                    <div>
+                        <LaunchIcon link={link}/>
+                        <GithubIcon link={github}/>
                     </div>
 
-                    {showPreviews && <PreviewContainer previews={previews} />}
-
-                    <ProjectLinks link={link} github={github} />
                 </div>
+            </div>
+
+
+            {showPreviews && <PreviewContainer previews={previews} />}
 
         </Card>
     );

@@ -1,0 +1,17 @@
+.container {
+    background-image: url("../../assets/images/smartphone.png");
+    width: 115px;
+    height: 290px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.image {
+    position: absolute;
+    top: 17px;
+    left: 25px;
+    width: 65px;
+    height: 138px;
+    border-radius: 9px;
+}
