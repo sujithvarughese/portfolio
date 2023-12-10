@@ -1,4 +1,4 @@
-import classes from "./styles/PreviewContainer.module.css";
+import classes from "./styles/ProjectPreview.module.css";
 import {CgScrollH} from "react-icons/cg";
 import ProjectPreview from "./ProjectPreview.jsx";
 

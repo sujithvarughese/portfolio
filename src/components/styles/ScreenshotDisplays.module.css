@@ -1,17 +1,15 @@
 .container {
     position: relative;
-    width: 278px;
-    height: 240px;
-    border-radius: 10px;
-    padding: 0.5rem;
-}
-
-.desktop {
-    position: absolute;
-
 }
 .mobile {
     position: absolute;
-    right: -22px;
-    top: 80px;
+    left: 9rem;
+    top: 6rem;
+}
+@media (min-width: 600px) {
+    .mobile {
+        position: absolute;
+        left: 11rem;
+        top: 6rem;
+    }
 }

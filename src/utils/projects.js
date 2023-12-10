@@ -45,7 +45,10 @@ export const projects = [
 		coverImage: property,
 		desktopImage: rsDesktop,
 		mobileImage: rsMobile,
-		caption: "An property management app for small business owners to organize their finances amd communicate with tenants. Owners can manage income/expenses, calculate mortgage payments with different interest rates, view live payoff quotes. Built in messaging functionality and uses HUD.gov API to retrieve rental rates for any location in the US. Written in Javascript using React, NodeJS, Express, and MongoDB.",
+		caption:
+			"A property management app for small business owners to organize their finances amd communicate with tenants. " +
+			"Owners can manage income/expenses, calculate mortgage payments with different interest rates, view live payoff quotes, and more. " +
+			"Built in messaging functionality for landlord-tenant communication, and uses HUD.gov API to retrieve rental rates for any location in the US.",
 		link: 'https://realty-solutions.netlify.app',
 		github: 'https://github.com/sujithvarughese/realty-solutions',
 		previews: realtySolutionsPreviews
@@ -55,7 +58,9 @@ export const projects = [
 		coverImage: bookshelf,
 		desktopImage: otbDesktop,
 		mobileImage: otbMobile,
-		caption: "Bookshelf is a personal reading organizer that uses the OpenLibrary API to connect users to millions of books. Find books based on subject matter, take notes, and organize your favorite books into your own bookshelf!",
+		caption:
+			"On the Books is a personal library in which users can add books, create a notebook to take notes, rate, and keep track of their status of each book." +
+			"App uses the OpenLibrary API where users can search by genre, get current editor's picks, and view book previews",
 		link: 'https://on-the-books.netlify.app',
 		github: 'https://github.com/sujithvarughese/on-the-books',
 		previews: []
@@ -65,7 +70,8 @@ export const projects = [
 		coverImage: sketch,
 		desktopImage: sketchDesktop,
 		mobileImage: sketchMobile,
-		caption: "Etch-a-Sketch like never before. Pick the size and the color scheme.",
+		caption:
+			"A simple etch-a-sketch app where users can create artistic expressions. In full color and with adjustable grid sizes.",
 		link: 'https://sketch-suj.netlify.app',
 		github: 'https://github.com/sujithvarughese/odin-etch-a-sketch/tree/main/react',
 		previews: []
@@ -75,7 +81,9 @@ export const projects = [
 		coverImage: blackjack,
 		desktopImage: bjDesktop,
 		mobileImage: bjMobile,
-		caption: "Play blackjack with live assistance to tell you the exact book move recommended by the pros in any situation! Customize your bankroll and number of decks to give you that real casino feel!",
+		caption:
+			"Play blackjack with live assistance that tells you the correct book play in any situation! " +
+			"Customize your bankroll, number of decks, and other options to find your edge!",
 		link: 'https://blackjack-suj.netlify.app',
 		github: 'https://github.com/sujithvarughese/blackjack-js/tree/master/react',
 		previews: []
