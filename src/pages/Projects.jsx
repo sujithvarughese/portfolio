@@ -1,6 +1,7 @@
 import classes from "./styles/Projects.module.css";
 import {projects} from "../utils/projects.js";
 import {Project} from "../components/project"
+import {projectsText} from "../utils/projectsText.js";
 
 const Projects = () => {
 	return (
@@ -9,10 +10,7 @@ const Projects = () => {
 
 			<div className={classes.text}>
 				<div className={classes.text1}>
-					Being a new graduate, the difficulties of landing the first job can be challenging with no work experience.
-					I created this portfolio with a few personal projects I have created over the past few years while in school and since graduating.
-					I hope potential employers will be able to get a sense of my abilities through viewing my portfolio.
-					Realty Solutions and On the Books are the most recent apps, with a guest mode so the entire site can be previewed without login information.
+					{projectsText.map((text, index) => <p key={index}>{text}</p>)}
 				</div>
 				<div className={classes.text2}>
 					Note: Since I am using Netlify and hosting the back-end elsewhere, cross-site tracking will need to be allowed if using Safari.

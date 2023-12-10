@@ -10,6 +10,7 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: ${props=> props.type === "main" && "red 4px solid"};;
   
   &:hover {
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),

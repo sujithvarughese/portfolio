@@ -7,12 +7,12 @@ import Card from "../../ui/Card.jsx";
 import {GithubIcon, LaunchIcon} from "../../icons/Icons.jsx";
 
 
-const Project = ({ title, coverImage, desktopImage, mobileImage, captions, details, link, github, previews, tech }) => {
+const Project = ({ title, coverImage, desktopImage, mobileImage, captions, details, link, github, previews, tech, type }) => {
 
     const [showPreviews, setShowPreviews] = useState(false)
 
     return (
-        <Card>
+        <Card type={type}>
             <div className={classes.container}>
                 <div className={classes.coverTitle}>
                     <ProjectCover coverImage={coverImage} title={title}/>

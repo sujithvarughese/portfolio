@@ -54,7 +54,8 @@ export const projects = [
 		link: 'https://realty-solutions.netlify.app',
 		github: 'https://github.com/sujithvarughese/realty-solutions',
 		previews: realtySolutionsPreviews,
-		tech: ["javascript", "node", "react", "mongodb"]
+		tech: ["javascript", "node", "react", "mongodb"],
+		type: "main"
 	},
 	{
 		title: "On the Books.",
@@ -68,7 +69,8 @@ export const projects = [
 		link: 'https://on-the-books.netlify.app',
 		github: 'https://github.com/sujithvarughese/on-the-books',
 		previews: [],
-		tech: ["javascript", "node", "react", "mongodb"]
+		tech: ["javascript", "node", "react", "mongodb"],
+		type: "main"
 	},
 	{
 		title: "Beat Blackjack",
@@ -82,7 +84,8 @@ export const projects = [
 		link: 'https://blackjack-suj.netlify.app',
 		github: 'https://github.com/sujithvarughese/blackjack-js/tree/master/react',
 		previews: [],
-		tech: ["javascript", "react"]
+		tech: ["javascript", "react"],
+		type: ""
 	},
 	{
 		title: "Sketch",
@@ -95,7 +98,8 @@ export const projects = [
 		link: 'https://sketch-suj.netlify.app',
 		github: 'https://github.com/sujithvarughese/odin-etch-a-sketch/tree/main/react',
 		previews: [],
-		tech: ["javascript", "react"]
+		tech: ["javascript", "react"],
+		type: ""
 	},
 
 ]

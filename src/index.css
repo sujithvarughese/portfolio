@@ -19,8 +19,29 @@
     --COLOR-ALT: orange;
     --BACKGROUND-GRADIENT: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
 }
+*, :after, :before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+    scroll-padding: 120px 0 0;
+    transition: color 0.3s, background-color 0.3s;
+    min-height: 100vh;
     background: var(--BACKGROUND-GRADIENT);
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    text-align: justify;
+    hyphens: auto;
+
+
 }
 nav {
     background-color: var(--BACKGROUND-GRADIENT);
