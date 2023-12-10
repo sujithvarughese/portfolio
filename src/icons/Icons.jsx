@@ -3,8 +3,8 @@ import classes from "./Icons.module.css";
 import {IoLogoGithub, IoLogoJavascript, IoLogoReact, IoRocketSharp} from "react-icons/io5";
 import {FaNode} from "react-icons/fa";
 
-const LaunchIcon = ({ link, size, color }) => <div className={classes.icon}><a href={link} style={{fontSize: size, color: color, zIndex: "10"}} target="_blank" rel="noreferrer"><IoRocketSharp /></a>Launch</div>;
-const GithubIcon = ({ link, size, color }) => <div className={classes.icon}><a href={link} className={classes.icon} style={{fontSize: size, color: color, zIndex: "10"}} target="_blank" rel="noreferrer"><IoLogoGithub /></a>Github</div>;
+const LaunchIcon = ({ link, size, color }) => <a href={link} className={classes.icon} style={{fontSize: size, color: color, zIndex: "10"}} target="_blank" rel="noreferrer"><IoRocketSharp /><div className={classes.text}>Launch</div></a>;
+const GithubIcon = ({ link, size, color }) => <a href={link} className={classes.icon} style={{fontSize: size, color: color, zIndex: "10"}} target="_blank" rel="noreferrer"><IoLogoGithub /><div className={classes.text}>Github</div></a>;
 
 const JavascriptIcon = styled(IoLogoJavascript)`
   width: ${props=> props.width || "inherit"};
