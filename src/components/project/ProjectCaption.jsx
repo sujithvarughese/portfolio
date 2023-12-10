@@ -1,10 +1,10 @@
 import classes from "./styles/Project.module.css";
 
-const ProjectCaption = ({ caption }) => {
+const ProjectCaption = ({ captions }) => {
     return (
-        <div className={classes.caption}>
-            {caption}
-        </div>
+        <ul className={classes.captions}>
+            {captions.map((caption, index) => <li key={index}>{caption}</li>)}
+        </ul>
     );
 };
 

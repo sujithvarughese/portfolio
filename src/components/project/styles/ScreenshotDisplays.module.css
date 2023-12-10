@@ -3,8 +3,8 @@
 }
 .mobile {
     position: absolute;
-    left: 9rem;
-    top: 6rem;
+    left: 10rem;
+    top: 4rem;
 }
 @media (min-width: 600px) {
     .mobile {

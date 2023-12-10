@@ -1,0 +1,14 @@
+.icon {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    transition: 0.2s ease-in-out all;
+    display: flex;
+    font-weight: bold;
+    gap: 0.1rem;
+    align-items: center;
+}
+
+.icon:hover {
+    color: var(--COLOR-ALT);
+}

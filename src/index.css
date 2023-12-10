@@ -16,16 +16,17 @@
     --COLOR-LIGHT: #79c2d0;
     --COLOR: #53a8b6;
     --COLOR-DARK: #5585b5;
+    --COLOR-ALT: orange;
     --BACKGROUND-GRADIENT: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
 }
 body {
     background: var(--BACKGROUND-GRADIENT);
-
-
-
 }
 nav {
     background-color: var(--BACKGROUND-GRADIENT);
+}
+ul {
+    list-style: square;
 }
 @media (min-width: 600px) {
 

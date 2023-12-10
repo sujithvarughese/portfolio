@@ -45,48 +45,57 @@ export const projects = [
 		coverImage: property,
 		desktopImage: rsDesktop,
 		mobileImage: rsMobile,
-		caption:
-			"A property management app for small business owners to organize their finances amd communicate with tenants. " +
-			"Owners can manage income/expenses, calculate mortgage payments with different interest rates, view live payoff quotes, and more. " +
-			"Built in messaging functionality for landlord-tenant communication, and uses HUD.gov API to retrieve rental rates for any location in the US.",
+		captions: [
+			"A property management app where small business owners can organize finances amd communicate with tenants.",
+			"Owners can manage income/expenses, calculate mortgage payments with different interest rates, view live payoff quotes, and more.",
+			"Built in messaging functionality for landlord-tenant communication",
+			"Uses HUD.gov API to retrieve rental rates for any location in the US.",
+		],
 		link: 'https://realty-solutions.netlify.app',
 		github: 'https://github.com/sujithvarughese/realty-solutions',
-		previews: realtySolutionsPreviews
+		previews: realtySolutionsPreviews,
+		tech: ["javascript", "node", "react", "mongodb"]
 	},
 	{
 		title: "On the Books.",
 		coverImage: bookshelf,
 		desktopImage: otbDesktop,
 		mobileImage: otbMobile,
-		caption:
-			"A personal library designed to take notes, rate, and keep track of their status of each book." +
-			"App uses the OpenLibrary API where users can search by genre, get current editor's picks, and view book previews",
+		captions: [
+			"A personal library designed to take notes, rate, and keep track of their status of each book.",
+			"App uses the OpenLibrary API where users can search by genre, get current editor's picks, and view book previews"
+		],
 		link: 'https://on-the-books.netlify.app',
 		github: 'https://github.com/sujithvarughese/on-the-books',
-		previews: []
+		previews: [],
+		tech: ["javascript", "node", "react", "mongodb"]
 	},
 	{
 		title: "Beat Blackjack",
 		coverImage: blackjack,
 		desktopImage: bjDesktop,
 		mobileImage: bjMobile,
-		caption:
-			"Play blackjack with live assistance that tells you the correct book play in any situation! " +
-			"Customize your bankroll, number of decks, and other options to find your edge!",
+		captions: [
+			"Play blackjack with live assistance that tells you the correct book play in any situation!",
+			"Customize your bankroll, number of decks, and other options to find your edge!"
+		],
 		link: 'https://blackjack-suj.netlify.app',
 		github: 'https://github.com/sujithvarughese/blackjack-js/tree/master/react',
-		previews: []
+		previews: [],
+		tech: ["javascript", "react"]
 	},
 	{
 		title: "Sketch",
 		coverImage: sketch,
 		desktopImage: sketchDesktop,
 		mobileImage: sketchMobile,
-		caption:
-			"A simple etch-a-sketch app where users can create artistic expressions. In full color and with adjustable grid sizes.",
+		captions:[
+			"A simple etch-a-sketch app where users can create artistic expressions. In full color and with adjustable grid sizes."
+		],
 		link: 'https://sketch-suj.netlify.app',
 		github: 'https://github.com/sujithvarughese/odin-etch-a-sketch/tree/main/react',
-		previews: []
+		previews: [],
+		tech: ["javascript", "react"]
 	},
 
 ]

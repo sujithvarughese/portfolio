@@ -1,5 +1,5 @@
 import classes from "./styles/Project.module.css";
-import {ProjectCaption, ProjectCover, ProjectMoreInfo, ProjectTitle} from "./"
+import {ProjectCaption, ProjectCover, ProjectMoreInfo, ProjectTech, ProjectTitle} from "./"
 import ScreenshotDisplay from "./ScreenshotDisplays.jsx";
 import PreviewContainer from "../preview/PreviewContainer.jsx";
 import {useState} from "react";
@@ -7,7 +7,7 @@ import Card from "../../ui/Card.jsx";
 import {GithubIcon, LaunchIcon} from "../../icons/Icons.jsx";
 
 
-const Project = ({ title, coverImage, desktopImage, mobileImage, caption, details, link, github, previews }) => {
+const Project = ({ title, coverImage, desktopImage, mobileImage, captions, details, link, github, previews, tech }) => {
 
     const [showPreviews, setShowPreviews] = useState(false)
 
@@ -19,24 +19,23 @@ const Project = ({ title, coverImage, desktopImage, mobileImage, caption, detail
                     <ProjectTitle title={title}/>
                 </div>
 
-                <ProjectCaption caption={caption} />
+                <ProjectCaption captions={captions} />
 
-                <div className={classes.screenshotsLinks}>
-                    <div className={classes.screenshots}>
-                        <ScreenshotDisplay desktop={desktopImage} mobile={mobileImage}/>
-                        {previews.length > 0 && <ProjectMoreInfo showPreviews={showPreviews} setShowPreviews={setShowPreviews}/>}
-                    </div>
-                    <div>
-                        <LaunchIcon link={link}/>
-                        <GithubIcon link={github}/>
-                    </div>
-
+                <div className={classes.screenshotsTech}>
+                    <ScreenshotDisplay desktop={desktopImage} mobile={mobileImage}/>
+                    <ProjectTech tech={tech}/>
                 </div>
+
+            <div className={classes.links}>
+                {previews.length > 0 && <ProjectMoreInfo showPreviews={showPreviews} setShowPreviews={setShowPreviews}/>}
+                <div className={classes.links}>
+                    <LaunchIcon link={link} size="36px"/>
+                    <GithubIcon link={github} size="36px"/>
+                </div>
+
             </div>
-
-
             {showPreviews && <PreviewContainer previews={previews} />}
-
+            </div>
         </Card>
     );
 };
