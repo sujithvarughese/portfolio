@@ -2,10 +2,10 @@ import classes from "../styles/Project.module.css";
 import {JavascriptIcon, MongoIcon, NodeIcon, ReactIcon} from "../../../icons/Icons.jsx";
 
 const icons = {
-    "javascript": <JavascriptIcon width="24px"  />,
-    "node": <NodeIcon width="24px"/>,
-    "react": <ReactIcon width="24px"/>,
-    "mongodb": <MongoIcon width="60px"/>
+    "javascript": <JavascriptIcon width="28px"  />,
+    "node": <NodeIcon width="36px"/>,
+    "react": <ReactIcon width="28px"/>,
+    "mongodb": <MongoIcon width="72px"/>
 }
 const ProjectTech = ({ tech }) => {
 

@@ -38,7 +38,6 @@ body {
     scroll-padding: 120px 0 0;
     transition: color 0.3s, background-color 0.3s;
     min-height: 100vh;
-
 }
 a {
     color: inherit;
@@ -48,12 +47,8 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
     text-align: justify;
     hyphens: auto;
-
-
 }
-nav {
-    background: var(--BACKGROUND-GRADIENT);
-}
+
 ul {
     list-style: square;
 }

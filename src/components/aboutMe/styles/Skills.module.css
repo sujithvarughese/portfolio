@@ -1,0 +1,11 @@
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 1rem;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

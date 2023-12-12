@@ -6,7 +6,7 @@ import {projectsText} from "../data/projectsText.js";
 const Projects = () => {
 	return (
 		<div className={classes.container}>
-			<div className={classes.title}>Projects</div>
+			<div className={classes.title}>Portfolio</div>
 
 			<div className={classes.text}>
 				<div className={classes.text1}>

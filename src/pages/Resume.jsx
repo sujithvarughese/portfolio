@@ -1,10 +1,11 @@
+import classes from "./styles/Resume.module.css"
 import resume from "../assets/images/resume.png"
 
 const Resume = () => {
 	return (
-		<>
-			<img src={resume} alt="resume" className="w-full border-2 border-black"/>
-		</>
+		<div className={classes.container}>
+			<img src={resume} alt="resume" className={classes.resume}/>
+		</div>
 	);
 };
 

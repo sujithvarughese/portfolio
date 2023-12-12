@@ -1,11 +1,11 @@
 .container {
-
-}
-
-.content {
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr 5fr;
     border-radius: 10px;
 }
+.content {
+
+}
+

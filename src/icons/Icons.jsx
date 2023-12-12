@@ -4,7 +4,8 @@ import {IoLogoGithub, IoLogoJavascript, IoLogoReact, IoRocketSharp} from "react-
 import {FaNode} from "react-icons/fa";
 import {FaPhone} from "react-icons/fa6";
 import {RiMailSendFill} from "react-icons/ri";
-
+import { SiHtml5, SiCss3 } from "react-icons/si";
+import gitImage from "../assets/images/icons/Git-Logo-2Color.png"
 
 const LaunchIcon = ({ link, size, color }) => <a href={link} className={classes.icon} style={{fontSize: size, color: color, zIndex: "10"}} target="_blank" rel="noreferrer"><IoRocketSharp /><div className={classes.text}>Launch</div></a>;
 const GithubIcon = ({ link, size, color }) => <a href={link} className={classes.icon} style={{fontSize: size, color: color, zIndex: "10"}} target="_blank" rel="noreferrer"><IoLogoGithub /><div className={classes.text}>Github</div></a>;
@@ -13,23 +14,32 @@ const PhoneLink = ({ link, label, size, color}) => <a href={link} className={cla
 const MailLink = ({ link, label, size, color}) => <a href={link} className={classes.icon} style={{fontSize: size, color: color, zIndex: "10"}} target="_blank" rel="noreferrer"><RiMailSendFill /><div className={classes.text}>{label}</div></a>;
 const GithubLink = ({ link, label, size, color}) =>  <a href={link}  className={classes.icon} style={{fontSize: size, color: color, zIndex: "10"}} target="_blank" rel="noreferrer"><IoLogoGithub /><div className={classes.text}>{label}</div></a>
 const JavascriptIcon = styled(IoLogoJavascript)`
-  width: ${props=> props.width || "inherit"};
+  width: ${props=> props.width || "36px"};
   height: ${props=> props.height || "inherit"};
-  color: ${props=> props.color || "inherit"};
+  color: ${props=> props.color || "#e4ba43"};
 `
 const ReactIcon = styled(IoLogoReact)`
-  width: ${props=> props.width || "inherit"};
+  width: ${props=> props.width || "36px"};
   height: ${props=> props.height || "inherit"};
-  color: ${props=> props.color || "inherit"};
+  color: ${props=> props.color || "#60dbfb"};
 `
 const NodeIcon = styled(FaNode)`
-  width: ${props=> props.width || "inherit"};
+  width: ${props=> props.width || "42px"};
   height: ${props=> props.height || "inherit"};
-  color: ${props=> props.color || "inherit"};
+  color: ${props=> props.color || "#52a041"};
+`
+const HtmlIcon = styled(SiHtml5)`
+  width: ${props=> props.width || "42px"};
+  height: ${props=> props.height || "inherit"};
+  color: ${props=> props.color || "#e44d25"};
+`
+const CssIcon = styled(SiCss3)`
+  width: ${props=> props.width || "42px"};
+  height: ${props=> props.height || "inherit"};
+  color: ${props=> props.color || "#0270ba"};
 `
 
-
-const MongoIcon = ({ width, height}) => <svg width={width || "1102"} height={height} viewBox="0 0 1102 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+const MongoIcon = ({ width, height}) => <svg width={width || "112px"} height={height} viewBox="0 0 1102 278" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M82.3229 28.6444C71.5367 15.8469 62.2485 2.84945 60.351 0.149971C60.1512 -0.0499903 59.8515 -0.0499903 59.6518 0.149971C57.7542 2.84945 48.4661 15.8469 37.6798 28.6444C-54.9019 146.721 52.2613 226.406 52.2613 226.406L53.1601 227.006C53.959 239.303 55.9565 257 55.9565 257H59.9514H63.9463C63.9463 257 65.9438 239.403 66.7428 227.006L67.6416 226.306C67.7414 226.406 174.905 146.721 82.3229 28.6444ZM59.9514 224.706C59.9514 224.706 55.1576 220.607 53.8592 218.507V218.308L59.6518 89.7325C59.6518 89.3326 60.2511 89.3326 60.2511 89.7325L66.0436 218.308V218.507C64.7453 220.607 59.9514 224.706 59.9514 224.706Z" fill="#00684A"/>
     <path d="M260.501 197.588L215.845 89.2991L215.745 89H181.001V96.279H186.608C188.31 96.279 189.912 96.9771 191.114 98.1736C192.315 99.3702 192.916 100.966 192.916 102.661L191.915 211.647C191.915 215.037 189.112 217.829 185.707 217.929L180 218.029V225.208H213.843V218.029L210.338 217.929C206.934 217.829 204.13 215.037 204.13 211.647V108.943L252.792 225.208C253.492 226.903 255.094 228 256.897 228C258.699 228 260.301 226.903 261.002 225.208L308.562 111.535L309.263 211.647C309.263 215.137 306.459 217.929 302.955 218.029H299.35V225.208H339V218.029H333.593C330.189 218.029 327.385 215.137 327.285 211.747L326.985 102.76C326.985 99.2704 329.788 96.4785 333.193 96.3788L339 96.279V89H305.157L260.501 197.588Z" fill="#00684A"/>
     <path d="M571.869 216.136C570.764 215.04 570.162 213.546 570.162 211.754V158.369C570.162 148.21 567.151 140.242 561.127 134.565C555.205 128.888 546.973 126 536.734 126C522.378 126 511.035 131.777 503.104 143.131C503.004 143.33 502.703 143.43 502.402 143.43C502.1 143.43 501.9 143.23 501.9 142.932L498.185 128.689H491.961L476 137.753V142.732H480.116C482.023 142.732 483.629 143.23 484.734 144.226C485.838 145.222 486.44 146.716 486.44 148.808V211.654C486.44 213.447 485.838 214.941 484.734 216.036C483.629 217.132 482.124 217.729 480.317 217.729H476.301V225H513.042V217.729H509.027C507.22 217.729 505.714 217.132 504.61 216.036C503.506 214.941 502.903 213.447 502.903 211.654V170.022C502.903 164.743 504.108 159.465 506.317 154.286C508.625 149.206 512.038 144.924 516.556 141.637C521.073 138.35 526.494 136.757 532.718 136.757C539.745 136.757 545.066 138.948 548.378 143.33C551.691 147.712 553.398 153.389 553.398 160.162V211.554C553.398 213.347 552.795 214.841 551.691 215.937C550.587 217.032 549.081 217.63 547.274 217.63H543.259V224.9H580V217.63H575.985C574.479 217.829 573.073 217.231 571.869 216.136Z" fill="#00684A"/>
@@ -41,4 +51,6 @@ const MongoIcon = ({ width, height}) => <svg width={width || "1102"} height={hei
     <path d="M1082.35 224.327C1080.37 223.244 1078.88 221.669 1077.69 219.799C1076.6 217.831 1076 215.764 1076 213.5C1076 211.236 1076.6 209.071 1077.69 207.201C1078.78 205.232 1080.37 203.756 1082.35 202.673C1084.34 201.591 1086.52 201 1089 201C1091.48 201 1093.66 201.591 1095.65 202.673C1097.63 203.756 1099.12 205.331 1100.31 207.201C1101.4 209.169 1102 211.236 1102 213.5C1102 215.764 1101.4 217.929 1100.31 219.799C1099.22 221.768 1097.63 223.244 1095.65 224.327C1093.66 225.409 1091.48 226 1089 226C1086.62 226 1084.34 225.409 1082.35 224.327ZM1094.56 222.85C1096.24 221.965 1097.44 220.587 1098.43 219.012C1099.32 217.339 1099.82 215.468 1099.82 213.402C1099.82 211.335 1099.32 209.465 1098.43 207.791C1097.53 206.118 1096.24 204.839 1094.56 203.953C1092.87 203.067 1091.08 202.575 1089 202.575C1086.92 202.575 1085.13 203.067 1083.44 203.953C1081.76 204.839 1080.56 206.217 1079.57 207.791C1078.68 209.465 1078.18 211.335 1078.18 213.402C1078.18 215.468 1078.68 217.339 1079.57 219.012C1080.47 220.685 1081.76 221.965 1083.44 222.85C1085.13 223.736 1086.92 224.228 1089 224.228C1091.08 224.228 1092.97 223.736 1094.56 222.85ZM1083.64 219.406V218.52L1083.84 218.421H1084.44C1084.63 218.421 1084.83 218.323 1084.93 218.224C1085.13 218.028 1085.13 217.929 1085.13 217.732V208.579C1085.13 208.382 1085.03 208.185 1084.93 208.087C1084.73 207.89 1084.63 207.89 1084.44 207.89H1083.84L1083.64 207.791V206.906L1083.84 206.807H1089C1090.49 206.807 1091.58 207.102 1092.47 207.791C1093.37 208.48 1093.76 209.366 1093.76 210.547C1093.76 211.433 1093.47 212.319 1092.77 212.909C1092.08 213.598 1091.28 213.992 1090.29 214.091L1091.48 214.484L1093.76 218.126C1093.96 218.421 1094.16 218.52 1094.46 218.52H1095.05L1095.15 218.618V219.504L1095.05 219.602H1091.98L1091.78 219.504L1088.6 214.189H1087.81V217.732C1087.81 217.929 1087.91 218.126 1088.01 218.224C1088.21 218.421 1088.31 218.421 1088.5 218.421H1089.1L1089.3 218.52V219.406L1089.1 219.504H1083.84L1083.64 219.406ZM1088.7 213.008C1089.5 213.008 1090.19 212.811 1090.59 212.319C1090.98 211.925 1091.28 211.236 1091.28 210.449C1091.28 209.661 1091.08 209.071 1090.69 208.579C1090.29 208.087 1089.69 207.89 1089 207.89H1088.6C1088.4 207.89 1088.21 207.988 1088.11 208.087C1087.91 208.283 1087.91 208.382 1087.91 208.579V213.008H1088.7Z" fill="#00684A"/>
 </svg>
 
-export { LaunchIcon, GithubIcon, JavascriptIcon, ReactIcon, NodeIcon, MongoIcon, PhoneLink, MailLink, GithubLink };
+const GitIcon = ({ width="64px", height}) => <img src={gitImage} style={{width: width, height: height}} alt="git logo" />
+
+export { LaunchIcon, GithubIcon, GitIcon, JavascriptIcon, ReactIcon, NodeIcon, MongoIcon, PhoneLink, MailLink, GithubLink, HtmlIcon, CssIcon };
