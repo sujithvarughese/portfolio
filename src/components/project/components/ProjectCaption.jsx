@@ -1,4 +1,4 @@
-import classes from "./styles/Project.module.css";
+import classes from "../styles/Project.module.css";
 
 const ProjectCaption = ({ captions }) => {
     return (

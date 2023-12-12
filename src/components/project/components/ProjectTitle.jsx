@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from "./styles/Project.module.css";
+import classes from "../styles/Project.module.css";
 
 const ProjectTitle = ({ title }) => {
     return (

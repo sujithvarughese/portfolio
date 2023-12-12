@@ -1,4 +1,11 @@
 .container {
-    max-width: 1024px;
+
+}
+
+.content {
+    max-width: 1200px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    border-radius: 10px;
 }

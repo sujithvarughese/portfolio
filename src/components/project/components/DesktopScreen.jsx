@@ -1,6 +1,6 @@
-import classes from "./styles/MobileScreen.module.css";
+import classes from "../styles/DesktopScreen.module.css";
 
-const MobileScreen = ({ image }) => {
+const DesktopScreen = ({ image }) => {
     return (
         <div className={classes.container}>
             <img src={image} className={classes.image} alt="image" />
@@ -8,4 +8,4 @@ const MobileScreen = ({ image }) => {
     );
 };
 
-export default MobileScreen;
+export default DesktopScreen;

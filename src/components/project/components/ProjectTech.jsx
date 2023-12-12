@@ -1,5 +1,5 @@
-import classes from "./styles/Project.module.css";
-import {JavascriptIcon, MongoIcon, NodeIcon, ReactIcon} from "../../icons/Icons.jsx";
+import classes from "../styles/Project.module.css";
+import {JavascriptIcon, MongoIcon, NodeIcon, ReactIcon} from "../../../icons/Icons.jsx";
 
 const icons = {
     "javascript": <JavascriptIcon width="24px"  />,

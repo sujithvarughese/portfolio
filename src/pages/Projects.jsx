@@ -1,7 +1,7 @@
 import classes from "./styles/Projects.module.css";
-import {projects} from "../utils/projects.js";
-import {Project} from "../components/project"
-import {projectsText} from "../utils/projectsText.js";
+import {projects} from "../data/projects.js";
+import {Project} from "../components"
+import {projectsText} from "../data/projectsText.js";
 
 const Projects = () => {
 	return (

@@ -1,11 +1,14 @@
-
+import classes from "./styles/AboutMe.module.css";
+import profileIMG from "../assets/images/profile.jpg"
 const AboutMe = () => {
     return (
-        <div>
+        <div className={classes.container}>
             <p>
-                Hello! I'm Sujith. I recently graduated in December 2022 from Florida International University with a Bachelor's in Computer Science.
+                Hello! I'm Sujith. I graduated in December 2022 with a Bachelor's in Computer Science.
 
-                Over the past year since graduating,
+                Since graduating, I have been tuning my full-stack development skills through bootcamps and personal projects.
+
+                Check out my resume and portfolio to view some projects!
             </p>
 
         </div>

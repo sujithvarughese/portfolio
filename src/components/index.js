@@ -1,4 +1,5 @@
-import Navbar from "./Navbar.jsx";
-import Footer from "./Footer.jsx";
+import Navbar from "./navigation/Navbar.jsx";
+import Footer from "./navigation/Footer.jsx";
+import Project from "./project/Project.jsx";
 
-export { Navbar, Footer }
+export { Navbar, Footer, Project }

@@ -1,6 +1,6 @@
-import classes from "./styles/Project.module.css";
+import classes from "../styles/Project.module.css";
 import {FaAnglesDown, FaAnglesUp} from "react-icons/fa6";
-import ButtonIcon from "../../ui/ButtonIcon.jsx";
+import ButtonIcon from "../../../ui/ButtonIcon.jsx";
 
 const ProjectMoreInfo = ({ showPreviews, setShowPreviews }) => {
     return (

@@ -1,0 +1,6 @@
+.container {
+    background-color: #F8F0E3;
+    border-bottom-right-radius: var(--BORDER-RADIUS-PAGE);
+    border-top-right-radius: var(--BORDER-RADIUS-PAGE);
+    padding: var(--PADDING-PAGE);
+}

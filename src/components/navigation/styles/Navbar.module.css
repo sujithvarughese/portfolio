@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: var(--PADDING-NAV);
+    color: white;
+    border-bottom-left-radius: var(--BORDER-RADIUS-PAGE);
+    border-top-left-radius: var(--BORDER-RADIUS-PAGE);
+
+}
+
+.link {
+    cursor: pointer;
+}

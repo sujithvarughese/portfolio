@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes} from "react-router-dom";
-import { Layout, Resume, Projects, Contact } from "./pages";
+import { Layout, AboutMe, Resume, Projects, Contact } from "./pages";
 
 const App = () => {
 
@@ -9,7 +9,7 @@ const App = () => {
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<Layout/>}>
-						<Route index element={<Projects />}/>
+						<Route index element={<AboutMe />}/>
 						<Route path="resume" element={<Resume />} />
 						<Route path="projects" element={<Projects />} />
 						<Route path="contact" element={<Contact />} />

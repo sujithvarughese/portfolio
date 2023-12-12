@@ -1,5 +1,9 @@
 const links = [
 	{
+		name: "About Me",
+		url: "/"
+	},
+	{
 		name: 'Resume',
 		url: '/resume',
 	},

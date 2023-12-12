@@ -1,13 +1,12 @@
 import classes from "./styles/Project.module.css";
-import {ProjectCaption, ProjectCover, ProjectMoreInfo, ProjectTech, ProjectTitle} from "./"
-import ScreenshotDisplay from "./ScreenshotDisplays.jsx";
+import {ProjectCaption, ProjectCover, ProjectMoreInfo, ProjectTech, ProjectTitle, ScreenshotDisplays } from "./components"
 import PreviewContainer from "../preview/PreviewContainer.jsx";
 import {useState} from "react";
 import Card from "../../ui/Card.jsx";
 import {GithubIcon, LaunchIcon} from "../../icons/Icons.jsx";
 
 
-const Project = ({ title, coverImage, desktopImage, mobileImage, captions, details, link, github, previews, tech, type }) => {
+const Project = ({ title, coverImage, desktopImage, mobileImage, captions, link, github, previews, tech, type }) => {
 
     const [showPreviews, setShowPreviews] = useState(false)
 
@@ -22,7 +21,7 @@ const Project = ({ title, coverImage, desktopImage, mobileImage, captions, detai
                 <ProjectCaption captions={captions} />
 
                 <div className={classes.screenshotsTech}>
-                    <ScreenshotDisplay desktop={desktopImage} mobile={mobileImage}/>
+                    <ScreenshotDisplays desktop={desktopImage} mobile={mobileImage}/>
                     <ProjectTech tech={tech}/>
                 </div>
 

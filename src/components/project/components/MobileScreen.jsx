@@ -1,4 +1,4 @@
-import classes from "./styles/MobileScreen.module.css";
+import classes from "../styles/MobileScreen.module.css";
 
 const MobileScreen = ({ image }) => {
     return (

@@ -1,6 +1,5 @@
 import classes from "./styles/ProjectPreview.module.css";
 import {FaAngleLeft, FaAngleRight} from "react-icons/fa6";
-
 import ProjectPreview from "./ProjectPreview.jsx";
 
 const PreviewContainer = ({ previews }) => {
