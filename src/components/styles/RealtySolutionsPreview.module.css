@@ -1,0 +1,20 @@
+.container {
+}
+
+.content {
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+    width: 400px;
+}
+
+.section {
+
+
+}
+
+.image {
+    background: black;
+    border-radius: 10px;
+    padding: 0.2rem;
+}

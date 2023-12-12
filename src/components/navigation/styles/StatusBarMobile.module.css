@@ -1,0 +1,17 @@
+.container {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+}
+.button {
+    font-size: 52px;
+    color: var(--COLOR-LIGHTER)
+}
+@media (min-width: 500px) {
+    .container {
+        display: none;
+    }
+}

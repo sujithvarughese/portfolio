@@ -1,0 +1,11 @@
+.container {
+    border-bottom-right-radius: var(--BORDER-RADIUS-PAGE);
+    border-top-right-radius: var(--BORDER-RADIUS-PAGE);
+    padding: var(--PADDING-PAGE);
+    min-height: 100vh;
+}
+
+.resume {
+    border: black 3px solid;
+    border-radius: 5px;
+}

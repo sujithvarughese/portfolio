@@ -1,0 +1,15 @@
+.container {
+    position: relative;
+}
+.mobile {
+    position: absolute;
+    left: 10rem;
+    top: 4rem;
+}
+@media (min-width: 600px) {
+    .mobile {
+        position: absolute;
+        left: 11rem;
+        top: 6rem;
+    }
+}
