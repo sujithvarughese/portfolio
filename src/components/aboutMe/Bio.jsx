@@ -25,7 +25,7 @@ const Bio = () => {
             </div>
 
             <div className={classes.buttons}>
-                <Button onClick={()=>navigate("/projects")}><FaProjectDiagram />View Portfolio</Button>
+                <Button onClick={()=>navigate("/portfolio")}><FaProjectDiagram />View Portfolio</Button>
                 <Button onClick={()=>navigate("/resume")}><GrDocumentUser />View Resume</Button>
             </div>
         </div>

@@ -1,4 +1,4 @@
-import classes from "./styles/Skill.module.css";
+import classes from "./styles/Skills.module.css";
 import {ButtonIcon} from "../../ui/index.js";
 import {JavascriptIcon, ReactIcon, NodeIcon, GitIcon, MongoIcon, HtmlIcon, CssIcon} from "../../icons/Icons.jsx";
 
@@ -35,16 +35,44 @@ const icons = [
 ]
 
 const Skill = ({ name, description }) => {
+
     return (
-        <div>
-            <div className={classes.icon}>
-                {icons.find(icon => icon.name === name).icon}
+        <div className={classes.skill}>
+
+            {   // if skill item is an array of more than 1 skill
+                typeof name === 'object' ?
+            <div className={classes.content}>
+                <div className={classes.icons}>
+                    {name.map(element =>
+                        <div key={element}>
+                            {icons.find(icon => icon.name === element).icon}
+                        </div>)
+                    }
+                </div>
+                <div className={classes.name}>
+                    {   // & sign after all elements except the last one
+                        name.map(element => {
+                        if (name[name.length - 1] !== element) {
+                            return `${element} & `
+                        } else {
+                            return element
+                        }
+                    })}
+                </div>
+
             </div>
-            <div className={classes.name}>
-                {name}
+            :
+            <div className={classes.content}>
+                <div className={classes.icon}>
+                    {icons.find(icon => icon.name === name).icon}
+                </div>
+                <div className={classes.name}>
+                    {name}
+                </div>
             </div>
+            }
             <div className={classes.description}>
-                {description}
+                {description.map((element, index) => <div key={index}>{element}</div>)}
             </div>
         </div>
     );

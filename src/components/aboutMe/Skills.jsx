@@ -17,31 +17,27 @@ const Skills = () => {
 const skills = [
     {
         name: "javascript",
-        description: "javascript professional"
+        description: ["Data Structures", "async/await", "Callback functions", "Event Loops"]
     },
     {
         name: "node",
-        description: "node professional"
+        description: ["Express", "Interacting with APIs", "HTTP signed cookies", "JWT"]
     },
     {
         name: "react",
-        description: "react professional"
+        description: ["State Management", "Router", "Context", "Reducer"]
     },
     {
         name: "mongoDB",
-        description: "Amazing at mongos"
+        description: ["Mongoose models", "CRUD operations", "Pagination"]
     },
     {
-        name: "HTML",
-        description: "Amazing at htmls"
-    },
-    {
-        name: "CSS",
-        description: "Amazing at all cssess"
+        name: ["HTML", "CSS"],
+        description: ["Web/Mobile Design", "Dynamic Layouts", "Grid/Flexbox"]
     },
     {
         name: "git",
-        description: "git champ is here"
+        description: ["All basic git functionality"]
     }
 
 
