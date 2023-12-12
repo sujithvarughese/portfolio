@@ -2,10 +2,16 @@ import styled from "styled-components";
 import classes from "./Icons.module.css";
 import {IoLogoGithub, IoLogoJavascript, IoLogoReact, IoRocketSharp} from "react-icons/io5";
 import {FaNode} from "react-icons/fa";
+import {FaPhone} from "react-icons/fa6";
+import {RiMailSendFill} from "react-icons/ri";
+
 
 const LaunchIcon = ({ link, size, color }) => <a href={link} className={classes.icon} style={{fontSize: size, color: color, zIndex: "10"}} target="_blank" rel="noreferrer"><IoRocketSharp /><div className={classes.text}>Launch</div></a>;
 const GithubIcon = ({ link, size, color }) => <a href={link} className={classes.icon} style={{fontSize: size, color: color, zIndex: "10"}} target="_blank" rel="noreferrer"><IoLogoGithub /><div className={classes.text}>Github</div></a>;
 
+const PhoneLink = ({ link, label, size, color}) => <a href={link} className={classes.icon} style={{fontSize: size, color: color, zIndex: "10"}} target="_blank" rel="noreferrer"><FaPhone /><div className={classes.text}>{label}</div></a>;
+const MailLink = ({ link, label, size, color}) => <a href={link} className={classes.icon} style={{fontSize: size, color: color, zIndex: "10"}} target="_blank" rel="noreferrer"><RiMailSendFill /><div className={classes.text}>{label}</div></a>;
+const GithubLink = ({ link, label, size, color}) =>  <a href={link}  className={classes.icon} style={{fontSize: size, color: color, zIndex: "10"}} target="_blank" rel="noreferrer"><IoLogoGithub /><div className={classes.text}>{label}</div></a>
 const JavascriptIcon = styled(IoLogoJavascript)`
   width: ${props=> props.width || "inherit"};
   height: ${props=> props.height || "inherit"};
@@ -35,4 +41,4 @@ const MongoIcon = ({ width, height}) => <svg width={width || "1102"} height={hei
     <path d="M1082.35 224.327C1080.37 223.244 1078.88 221.669 1077.69 219.799C1076.6 217.831 1076 215.764 1076 213.5C1076 211.236 1076.6 209.071 1077.69 207.201C1078.78 205.232 1080.37 203.756 1082.35 202.673C1084.34 201.591 1086.52 201 1089 201C1091.48 201 1093.66 201.591 1095.65 202.673C1097.63 203.756 1099.12 205.331 1100.31 207.201C1101.4 209.169 1102 211.236 1102 213.5C1102 215.764 1101.4 217.929 1100.31 219.799C1099.22 221.768 1097.63 223.244 1095.65 224.327C1093.66 225.409 1091.48 226 1089 226C1086.62 226 1084.34 225.409 1082.35 224.327ZM1094.56 222.85C1096.24 221.965 1097.44 220.587 1098.43 219.012C1099.32 217.339 1099.82 215.468 1099.82 213.402C1099.82 211.335 1099.32 209.465 1098.43 207.791C1097.53 206.118 1096.24 204.839 1094.56 203.953C1092.87 203.067 1091.08 202.575 1089 202.575C1086.92 202.575 1085.13 203.067 1083.44 203.953C1081.76 204.839 1080.56 206.217 1079.57 207.791C1078.68 209.465 1078.18 211.335 1078.18 213.402C1078.18 215.468 1078.68 217.339 1079.57 219.012C1080.47 220.685 1081.76 221.965 1083.44 222.85C1085.13 223.736 1086.92 224.228 1089 224.228C1091.08 224.228 1092.97 223.736 1094.56 222.85ZM1083.64 219.406V218.52L1083.84 218.421H1084.44C1084.63 218.421 1084.83 218.323 1084.93 218.224C1085.13 218.028 1085.13 217.929 1085.13 217.732V208.579C1085.13 208.382 1085.03 208.185 1084.93 208.087C1084.73 207.89 1084.63 207.89 1084.44 207.89H1083.84L1083.64 207.791V206.906L1083.84 206.807H1089C1090.49 206.807 1091.58 207.102 1092.47 207.791C1093.37 208.48 1093.76 209.366 1093.76 210.547C1093.76 211.433 1093.47 212.319 1092.77 212.909C1092.08 213.598 1091.28 213.992 1090.29 214.091L1091.48 214.484L1093.76 218.126C1093.96 218.421 1094.16 218.52 1094.46 218.52H1095.05L1095.15 218.618V219.504L1095.05 219.602H1091.98L1091.78 219.504L1088.6 214.189H1087.81V217.732C1087.81 217.929 1087.91 218.126 1088.01 218.224C1088.21 218.421 1088.31 218.421 1088.5 218.421H1089.1L1089.3 218.52V219.406L1089.1 219.504H1083.84L1083.64 219.406ZM1088.7 213.008C1089.5 213.008 1090.19 212.811 1090.59 212.319C1090.98 211.925 1091.28 211.236 1091.28 210.449C1091.28 209.661 1091.08 209.071 1090.69 208.579C1090.29 208.087 1089.69 207.89 1089 207.89H1088.6C1088.4 207.89 1088.21 207.988 1088.11 208.087C1087.91 208.283 1087.91 208.382 1087.91 208.579V213.008H1088.7Z" fill="#00684A"/>
 </svg>
 
-export { LaunchIcon, GithubIcon, JavascriptIcon, ReactIcon, NodeIcon, MongoIcon };
+export { LaunchIcon, GithubIcon, JavascriptIcon, ReactIcon, NodeIcon, MongoIcon, PhoneLink, MailLink, GithubLink };
