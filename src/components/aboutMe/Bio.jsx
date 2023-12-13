@@ -3,13 +3,16 @@ import {Button} from "../../ui/index.js";
 import { FaProjectDiagram } from "react-icons/fa";
 import { GrDocumentUser } from "react-icons/gr";
 import {useNavigate} from "react-router-dom";
-
+import profileIMG from "../../assets/images/profile.jpg"
 const Bio = () => {
 
     const navigate = useNavigate()
 
     return (
         <div className={classes.container}>
+            <div className={classes.profilePic}>
+                <img src={profileIMG} alt="proifile pic" className={classes.image} />
+            </div>
             <div className={classes.name}>
                 Sujith Varughese
             </div>

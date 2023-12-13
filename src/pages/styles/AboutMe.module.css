@@ -5,6 +5,9 @@
     padding: var(--PADDING-PAGE);
     display: flex;
     flex-direction: column;
-    gap: 5rem;
     min-height: 100vh;
+}
+
+@media (min-width: 500px) {
+    gap: 5rem;
 }

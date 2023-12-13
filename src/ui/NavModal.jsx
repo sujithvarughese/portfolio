@@ -3,16 +3,13 @@ import {createPortal} from "react-dom";
 
 const StyledNavModal = styled.div`
   position: absolute;
-  right: 0;
+  top: 0;
   left: 0;
-  margin: auto;
-  background-color: var(--COLOR-LIGHTER);
-  border: var(--COLOR-LIGHT) 8px solid;
-  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
   z-index: 100;
   padding: 1rem;
-  width: 90vw;
-  height: ${props => props.height || "auto"};
+  width: 80vw;
 `
 const Backdrop = styled.div`
   position: fixed;
@@ -27,7 +24,7 @@ const Backdrop = styled.div`
   overflow-y: auto;
   z-index: 100;
 `
-const NavModal = ({ closeFn, children}) => {
+const NavModal = ({ closeFn, children }) => {
     return createPortal(
         <Backdrop onClick={closeFn}>
             <StyledNavModal onClick={(e) => e.stopPropagation()}>

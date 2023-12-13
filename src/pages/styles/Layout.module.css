@@ -1,18 +1,20 @@
 .container {
-    max-width: 1600px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
     border-radius: 10px;
     position: relative;
+    max-width: 1600px;
 }
 .content {
     background-color: var(--COLOR-BACKGROUND);
-    padding-top: 4rem;
+
 }
 
 
 @media (min-width: 500px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+    }
     .content {
         padding-top: 0;
     }

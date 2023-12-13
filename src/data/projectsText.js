@@ -1,5 +1,6 @@
 export const projectsText = [
-    "Here are a few recent projects I've been working on!",
-    "The first two are the most recent, and I incorporated a Preview mode to take a tour without registering",
-    "Github links provided to view source code"
+    "Welcome to my portfolio!",
+    "Here are a few projects I have been working while in school and over the past year since graduating.",
+    "Apps with logins have a preview mode with sample data that can be viewed.",
+    "Note: Cross-site tracking will need to be disabled if using Safari"
 ]

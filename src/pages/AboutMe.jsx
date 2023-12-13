@@ -1,12 +1,12 @@
 import classes from "./styles/AboutMe.module.css";
 import profileIMG from "../assets/images/profile.jpg"
-import { Bio, Skills } from "../components"
+import { Bio, MySkills } from "../components"
 const AboutMe = () => {
     return (
         <div className={classes.container}>
 
             <Bio />
-            <Skills />
+            <MySkills />
 
         </div>
     );

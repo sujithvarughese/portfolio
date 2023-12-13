@@ -34,7 +34,7 @@ const icons = [
 
 ]
 
-const Skill = ({ name, description }) => {
+const Skill = ({ name, description, showName}) => {
 
     return (
         <div className={classes.skill}>
@@ -50,14 +50,16 @@ const Skill = ({ name, description }) => {
                     }
                 </div>
                 <div className={classes.name}>
-                    {   // & sign after all elements except the last one
+                    {showName &&
+                        // & sign after all elements except the last one
                         name.map(element => {
                         if (name[name.length - 1] !== element) {
                             return `${element} & `
                         } else {
                             return element
-                        }
-                    })}
+                        }})
+
+                    }
                 </div>
 
             </div>
@@ -67,13 +69,13 @@ const Skill = ({ name, description }) => {
                     {icons.find(icon => icon.name === name).icon}
                 </div>
                 <div className={classes.name}>
-                    {name}
+                    {showName && <>{name}</>}
                 </div>
             </div>
             }
-            <div className={classes.description}>
-                {description.map((element, index) => <div key={index}>{element}</div>)}
-            </div>
+            <ul className={classes.description}>
+                {description.map((element, index) => <li key={index}>{element}</li>)}
+            </ul>
         </div>
     );
 };

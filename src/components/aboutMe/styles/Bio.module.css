@@ -3,14 +3,34 @@
     flex-direction: column;
     gap: 1rem;
 }
+
+.image {
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 50%;
+}
 .name {
     font-weight: 700;
     font-size: 36px;
+    text-align: center;
 }
 .title {
     font-size: 24px;
+    text-align: center;
 }
 .buttons {
     display: flex;
     gap: 1rem;
+}
+
+@media (min-width: 600px) {
+    .profilePic {
+        display: none;
+    }
+    .name {
+        text-align: unset;
+    }
+    .title {
+        text-align: unset;
+    }
 }

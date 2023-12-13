@@ -1,9 +1,9 @@
-import classes from "./styles/Projects.module.css";
+import classes from "./styles/Portfolio.module.css";
 import {projects} from "../data/projects.js";
 import {Project} from "../components"
 import {projectsText} from "../data/projectsText.js";
 
-const Projects = () => {
+const Portfolio = () => {
 	return (
 		<div className={classes.container}>
 			<div className={classes.title}>Portfolio</div>
@@ -11,9 +11,6 @@ const Projects = () => {
 			<div className={classes.text}>
 				<div className={classes.text1}>
 					{projectsText.map((text, index) => <p key={index}>{text}</p>)}
-				</div>
-				<div className={classes.text2}>
-					Note: Since I am using Netlify and hosting the back-end elsewhere, cross-site tracking will need to be allowed if using Safari.
 				</div>
 			</div>
 
@@ -29,4 +26,4 @@ const Projects = () => {
 	);
 };
 
-export default Projects;
+export default Portfolio;
