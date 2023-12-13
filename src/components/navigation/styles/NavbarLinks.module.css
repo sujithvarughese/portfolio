@@ -13,10 +13,11 @@
     z-index: 10000;
 }
 .link:hover {
-    color: var(--COLOR-LIGHT)
+    color: var(--COLOR-ALT)
 }
 .active {
-    color: var(--COLOR-ALT)
+    color: var(--COLOR-LIGHT);
+    font-weight: 800;
 }
 .name {
     display: none;

@@ -12,11 +12,11 @@
     -moz-background-size: calc(100vw) calc(100vh);
     -o-background-size: calc(100vw) calc(100vh);
     background-size: calc(100vw) calc(100vh);
-    --COLOR-LIGHTER: #bbe4e9;
-    --COLOR-LIGHT: #79c2d0;
-    --COLOR: #53a8b6;
-    --COLOR-DARK: #5585b5;
-    --COLOR-ALT: orange;
+    --COLOR-LIGHTER: #DFF6FF;
+    --COLOR-LIGHT: #47B5FF;
+    --COLOR: #256D85;
+    --COLOR-DARK: #06283D;
+    --COLOR-ALT: #DF2E38;
     --COLOR-BACKGROUND: #F8F0E3;
     --BACKGROUND-GRADIENT: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
     --PADDING-PAGE: 1rem;
@@ -39,6 +39,7 @@ body {
     scroll-padding: 120px 0 0;
     transition: color 0.3s, background-color 0.3s;
     min-height: 100vh;
+    color: var(--COLOR-DARK);
 }
 a {
     color: inherit;

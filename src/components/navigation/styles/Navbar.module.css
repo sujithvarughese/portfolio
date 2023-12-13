@@ -8,7 +8,7 @@
     width: 100%;
     height: 80px;
     padding: var(--PADDING-NAV);
-    background: var(--BACKGROUND-GRADIENT);
+    background-color: var(--COLOR);
     z-index: 100;
 }
 .name {
@@ -25,12 +25,7 @@
     margin: 1rem;
     transition: 0.2s ease-in-out all;
 }
-.link:hover {
-    color: var(--COLOR-LIGHT)
-}
-.active {
-    color: var(--COLOR-ALT)
-}
+
 .profilePic {
     display: none;
 }
