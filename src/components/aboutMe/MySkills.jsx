@@ -5,7 +5,7 @@ const MySkills = () => {
     return (
         <div className={classes.container}>
             <div className={classes.title}>
-                My Skills
+                Skills
             </div>
             <div className={classes.skills}>
                 {skills.map((skill, index) => <Skill key={index} name={skill.name} description={skill.description} showName={skill.showName}/>)}
@@ -28,7 +28,7 @@ const skills = [
     {
         name: "react",
         description: ["State Management", "Router", "Context", "Reducer"],
-        showName: true
+        showName: false
     },
     {
         name: "mongoDB",
@@ -36,9 +36,9 @@ const skills = [
         showName: false
     },
     {
-        name: ["HTML", "CSS"],
+        name: "htmlCss",
         description: ["Web/Mobile Design", "Dynamic Layouts", "Grid/Flexbox"],
-        showName: true
+        showName: false
     },
     {
         name: "git",

@@ -3,20 +3,22 @@
     border-radius: 10px;
     position: relative;
     max-width: 1600px;
+    padding-bottom: 5rem;
 }
 .content {
     background-color: var(--COLOR-BACKGROUND);
-
 }
 
-
-@media (min-width: 500px) {
+@media (min-width: 640px) {
     .container {
         display: grid;
-        grid-template-columns: 1fr 5fr;
+        grid-template-columns: 1fr 10fr;
+        padding-bottom: 0;
     }
-    .content {
-        padding-top: 0;
+}
+@media (min-width: 768px) {
+    .container {
+
     }
 }
 

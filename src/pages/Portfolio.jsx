@@ -9,9 +9,7 @@ const Portfolio = () => {
 			<div className={classes.title}>Portfolio</div>
 
 			<div className={classes.text}>
-				<div className={classes.text1}>
-					{projectsText.map((text, index) => <p key={index}>{text}</p>)}
-				</div>
+				{projectsText.map((text, index) => <p key={index}>{text}</p>)}
 			</div>
 
 			<div className={classes.projects}>

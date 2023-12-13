@@ -1,11 +1,11 @@
 import classes from "./styles/Skills.module.css";
 import {ButtonIcon} from "../../ui/index.js";
-import {JavascriptIcon, ReactIcon, NodeIcon, GitIcon, MongoIcon, HtmlIcon, CssIcon} from "../../icons/Icons.jsx";
+import {JavascriptIcon, HtmlCssIcon, ReactIcon_, NodeIcon, GitIcon, MongoIcon, HtmlIcon, CssIcon} from "../../icons/Icons.jsx";
 
 const icons = [
     {
         name: "javascript",
-        icon: <JavascriptIcon/>
+        icon: <JavascriptIcon />
     },
     {
         name: "node",
@@ -13,25 +13,20 @@ const icons = [
     },
     {
         name: "react",
-        icon: <ReactIcon/>
+        icon: <ReactIcon_ />
     },
     {
         name: "mongoDB",
         icon: <MongoIcon />
     },
     {
-        name: "HTML",
-        icon: <HtmlIcon />
-    },
-    {
-        name: "CSS",
-        icon: <CssIcon />
+        name: "htmlCss",
+        icon: <HtmlCssIcon />
     },
     {
         name: "git",
         icon: <GitIcon />
     }
-
 ]
 
 const Skill = ({ name, description, showName}) => {

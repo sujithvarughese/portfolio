@@ -45,8 +45,8 @@ export const projects = [
 		coverImage: property,
 		desktopImage: rsDesktop,
 		mobileImage: rsMobile,
+		heading: "A property management app for small business owners to organize finances and communicate with tenants.",
 		captions: [
-			"A property management app where small business owners can organize finances amd communicate with tenants.",
 			"Owners can manage income/expenses, calculate mortgage payments with different interest rates, view live payoff quotes, and more.",
 			"Built in messaging functionality for landlord-tenant communication",
 			"Uses HUD.gov API to retrieve rental rates for any location in the US.",
@@ -62,8 +62,8 @@ export const projects = [
 		coverImage: bookshelf,
 		desktopImage: otbDesktop,
 		mobileImage: otbMobile,
+		heading: "A personal library designed to take notes, rate, and keep track of their status of each book.",
 		captions: [
-			"A personal library designed to take notes, rate, and keep track of their status of each book.",
 			"App uses the OpenLibrary API where users can search by genre, get current editor's picks, and view book previews"
 		],
 		link: 'https://on-the-books.netlify.app',
@@ -77,8 +77,8 @@ export const projects = [
 		coverImage: blackjack,
 		desktopImage: bjDesktop,
 		mobileImage: bjMobile,
+		heading: "Play blackjack with live assistance that tells you the right move in any situation!",
 		captions: [
-			"Play blackjack with live assistance that tells you the correct book play in any situation!",
 			"Customize your bankroll, number of decks, and other options to find your edge!"
 		],
 		link: 'https://blackjack-suj.netlify.app',
@@ -92,8 +92,9 @@ export const projects = [
 		coverImage: sketch,
 		desktopImage: sketchDesktop,
 		mobileImage: sketchMobile,
+		heading: "A simple etch-a-sketch app where users can create artistic expressions. In full color and with adjustable grid sizes.",
 		captions:[
-			"A simple etch-a-sketch app where users can create artistic expressions. In full color and with adjustable grid sizes."
+
 		],
 		link: 'https://sketch-suj.netlify.app',
 		github: 'https://github.com/sujithvarughese/odin-etch-a-sketch/tree/main/react',

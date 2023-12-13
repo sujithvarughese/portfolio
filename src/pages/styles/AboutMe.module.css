@@ -8,6 +8,6 @@
     min-height: 100vh;
 }
 
-@media (min-width: 500px) {
-    gap: 5rem;
+@media (min-width: 640px) {
+
 }

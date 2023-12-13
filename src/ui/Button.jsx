@@ -29,7 +29,7 @@ const Button = styled.button`
     outline-offset: -1px;
   }
   
-  @media(min-width: 600px) {
+  @media(min-width: 640px) {
     padding: 11px;
     width: 200px;
   }

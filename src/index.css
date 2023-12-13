@@ -19,13 +19,13 @@
     --COLOR-ALT: orange;
     --COLOR-BACKGROUND: #F8F0E3;
     --BACKGROUND-GRADIENT: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
-    --PADDING-PAGE: 1.5rem;
-    --PADDING-NAV: 1.5rem;
+    --PADDING-PAGE: 1rem;
+    --PADDING-NAV: 1rem;
     --BORDER-RADIUS-PAGE: 8px;
     
-    @media (min-width: 768px) {
-    --PADDING-PAGE: 4rem;
-    --PADDING-NAV: 2rem;
+    @media (min-width: 640px) {
+    --PADDING-PAGE: 2rem;
+    --PADDING-NAV: 2rem 1rem;
     }
 }
 *, :after, :before {
@@ -51,7 +51,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 ul {
-    list-style: square;
+    list-style: disc;
 }
 @media (min-width: 600px) {
 

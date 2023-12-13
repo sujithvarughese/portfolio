@@ -6,14 +6,12 @@
     align-items: center;
     justify-content: space-between;
 }
-
 .link {
     color: var(--COLOR-LIGHTER);
     transition: 0.2s ease-in-out all;
     text-align: center;
     z-index: 10000;
 }
-
 .link:hover {
     color: var(--COLOR-LIGHT)
 }
@@ -23,15 +21,15 @@
 .name {
     display: none;
 }
-@media (min-width: 500px) {
+@media (min-width: 640px) {
     .links {
         color: unset;
         width: unset;
         display: unset;
-        font-size: 22px;
+        font-size: 18px;
     }
     .link {
-        margin: 1rem;
+        margin: 1rem 0;
         padding-top: unset;
         padding-bottom: unset;
         border-top: none;
@@ -42,5 +40,17 @@
     }
     .name {
         display: unset;
+    }
+}
+
+@media (min-width: 768px) {
+    .link {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .link {
+        font-size: 24px;
     }
 }

@@ -34,27 +34,51 @@
 .profilePic {
     display: none;
 }
-@media (min-width: 500px) {
+@media (min-width: 640px) {
     .container {
+        width: 145px;
         position: unset;
         flex-direction: column;
-        width: 280px;
         height: unset;
         border-bottom-left-radius: var(--BORDER-RADIUS-PAGE);
         border-top-left-radius: var(--BORDER-RADIUS-PAGE);
     }
     .name {
         display: unset;
-        font-size: 24px;
+        text-align: center;
+        font-size: 22px;
         font-weight: 600;
     }
     .profilePic {
-        display: unset;
+        display: flex;
     }
     .image {
         display: unset;
         border-radius: 50%;
-        min-width: 160px;
+        margin: 0 auto;
     }
+}
 
+@media (min-width: 768px) {
+    .container {
+        width: 160px;
+    }
+    .name {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 200px;
+    }
+    .name {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        width: 260px;
+    }
 }
