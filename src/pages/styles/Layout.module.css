@@ -6,7 +6,7 @@
     padding-bottom: 5rem;
 }
 .content {
-    background-color: var(--COLOR-LIGHTER);
+    background-color: var(--COLOR-BACKGROUND);
 }
 
 @media (min-width: 640px) {

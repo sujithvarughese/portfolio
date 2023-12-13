@@ -17,8 +17,8 @@ const MySkills = () => {
 const skills = [
     {
         name: "javascript",
-        description: ["Data Structures", "async/await", "Callback functions", "Event Loops"],
-        showName: true
+        description: ["Data Structures", "Async/await", "Callback functions", "Event Loops"],
+        showName: false
     },
     {
         name: "node",
