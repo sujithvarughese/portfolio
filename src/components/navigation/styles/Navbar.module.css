@@ -4,76 +4,22 @@
     bottom: 0;
     gap: 2rem;
     align-items: center;
-    color: var(--COLOR-LIGHTER);
     width: 100%;
     height: 80px;
     padding: var(--PADDING-NAV);
-    background-color: var(--COLOR);
+    background-color: var(--COLOR-DARK);
     z-index: 100;
 }
-.name {
-    display: none;
-}
-.image {
-    display: none;
-}
-.links {
-    list-style: none;
-    font-size: 22px;
-}
-.link {
-    margin: 1rem;
-    transition: 0.2s ease-in-out all;
-}
 
-.profilePic {
-    display: none;
-}
+
+
+
 @media (min-width: 640px) {
     .container {
-        width: 145px;
-        position: unset;
-        flex-direction: column;
-        height: unset;
-        border-bottom-left-radius: var(--BORDER-RADIUS-PAGE);
+        top: 0;
+        height: 20px;
+        border-top-right-radius: var(--BORDER-RADIUS-PAGE);
         border-top-left-radius: var(--BORDER-RADIUS-PAGE);
     }
-    .name {
-        display: unset;
-        text-align: center;
-        font-size: 22px;
-        font-weight: 600;
-    }
-    .profilePic {
-        display: flex;
-    }
-    .image {
-        display: unset;
-        border-radius: 50%;
-        margin: 0 auto;
-    }
-}
 
-@media (min-width: 768px) {
-    .container {
-        width: 160px;
-    }
-    .name {
-        font-size: 24px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .container {
-        width: 200px;
-    }
-    .name {
-        font-size: 28px;
-    }
-}
-
-@media (min-width: 1280px) {
-    .container {
-        width: 260px;
-    }
 }

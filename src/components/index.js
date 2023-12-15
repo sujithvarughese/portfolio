@@ -1,4 +1,5 @@
 import Navbar from "./navigation/Navbar.jsx";
+import Header from "./aboutMe/Header.jsx";
 import Footer from "./navigation/Footer.jsx";
 import Project from "./project/Project.jsx";
 import Bio from "./aboutMe/Bio.jsx"

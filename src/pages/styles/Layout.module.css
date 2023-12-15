@@ -11,9 +11,10 @@
 
 @media (min-width: 640px) {
     .container {
-        display: grid;
-        grid-template-columns: 1fr 10fr;
         padding-bottom: 0;
+    }
+    .content {
+        padding-top: 4rem;
     }
 }
 @media (min-width: 768px) {

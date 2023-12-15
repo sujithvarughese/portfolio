@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+.greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: var(--COLOR);
+    font-weight: 600;
+    animation: slideInLeft 200ms ease-out;
+}
+
+.pic {
+    animation: slideInRight 200ms ease-out;
+}
+.hello {
+
+}
+.name {
+    font-size: 36px;
+    font-weight: 800;
+}
+.title {
+
+}
+@keyframes slideInRight {
+    0% {
+        transform: translate3d(50%, -50%, 0px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+@keyframes slideInLeft {
+    0% {
+        transform: translate3d(-50%, -50%, 0px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}

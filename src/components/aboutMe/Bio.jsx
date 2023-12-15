@@ -4,6 +4,7 @@ import { FaProjectDiagram } from "react-icons/fa";
 import { GrDocumentUser } from "react-icons/gr";
 import {useNavigate} from "react-router-dom";
 import profileIMG from "../../assets/images/profile.jpg"
+import ProfilePic from "./ProfilePic.jsx";
 import bg from "../../assets/images/background.jpeg"
 const Bio = () => {
 
@@ -12,17 +13,8 @@ const Bio = () => {
     return (
         <div className={classes.container}>
 
-            <div className={classes.profilePic}>
-                <img src={profileIMG} alt="proifile pic" className={classes.image} />
-            </div>
-            <div className={classes.name}>
-                Sujith Varughese
-            </div>
-            <div className={classes.title}>
-                Software Developer
-            </div>
             <div className={classes.bio}>
-
+                <h3 className={classes.heading}>About Me</h3>
                 <p>Hello! My name is Sujith. I am a full-stack web developer, recently graduated with a Bachelors in Computer Science.</p>
 
                 <p>My goal in designing software is to solve problems by creating intuitive software that is both adaptable and scalable.</p>
