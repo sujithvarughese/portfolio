@@ -10,14 +10,14 @@
     color: var(--COLOR-LIGHTER);
     transition: 0.2s ease-in-out all;
     text-align: center;
-    z-index: 10000;
+    font-weight: 600;
 }
 .link:hover {
-    color: var(--COLOR-ALT)
+    color: var(--COLOR-ALT);
 }
 .active {
     color: var(--COLOR-LIGHT);
-    font-weight: 800;
+
 }
 .name {
     display: none;

@@ -20,11 +20,21 @@ const Bio = () => {
                 Software Developer
             </div>
             <div className={classes.bio}>
-                <p>
-                    Hello! I'm Sujith. I graduated in December 2022 with a Bachelor's in Computer Science.
-                    Since graduating, I have been tuning my full-stack development skills through bootcamps and personal projects.
-                    Check out my resume and portfolio to view some projects!
-                </p>
+
+                <p>Hello! My name is Sujith. I am a full-stack web developer, recently graduated with a Bachelors in Computer Science.</p>
+
+                <p>My goal in designing software is to solve problems by creating intuitive software that is both adaptable and scalable.</p>
+
+                <p>I am most experienced in HTML, CSS, and developing in Javascript using React, Node with Express, and Mongo Database (MERN Stack).
+
+                    I also have experience Java, C++, and Python and SQL Databases.</p>
+
+                <p>Please check out my resume and portfolio to view my most recent applications.</p>
+
+                <p>Applications with required logins have a Preview Mode where the entire application can be accessed.</p>
+
+                <p>Please note since I am using netlify to host the apps, cross-site tracking will need to be disabled (if using Safari) in order to retrieve data from the back-end.</p>
+
             </div>
 
             <div className={classes.buttons}>
