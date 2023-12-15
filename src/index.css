@@ -17,7 +17,7 @@
     --COLOR: #256D85;
     --COLOR-DARK: #06283D;
     --COLOR-ALT: #DF2E38;
-    --COLOR-BACKGROUND: #F8F0E3;
+    --COLOR-BACKGROUND: #FDFDFD;
     --BACKGROUND-GRADIENT: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
     --PADDING-PAGE: 1rem;
     --PADDING-NAV: 1rem;
@@ -34,7 +34,8 @@
     margin: 0;
 }
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Mukta", sans-serif;
+    font-size: 18px;
     line-height: 1.5;
     scroll-padding: 120px 0 0;
     transition: color 0.3s, background-color 0.3s;

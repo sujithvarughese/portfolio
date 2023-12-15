@@ -1,23 +1,14 @@
 
-
-.container::before {
-    content: "";
-    filter: none
-}
 .container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    background: url("../../../assets/images/background.jpeg");
     background-size: cover;
-    filter: blur(4px);
     transition: filter 2s ease-in-out;
-
 }
 
-.container:after {
-    filter: blur(4px);
-    -webkit-filter: blur(6px);
+@keyframes __bounceInRight {
+
 }
 .image {
     margin: 0 auto;
@@ -37,7 +28,9 @@
     display: flex;
     gap: 1rem;
 }
+.bio {
 
+}
 @media (min-width: 640px) {
     .profilePic {
 

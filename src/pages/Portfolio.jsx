@@ -8,8 +8,14 @@ const Portfolio = () => {
 		<div className={classes.container}>
 			<div className={classes.title}>Portfolio</div>
 
+
+
 			<div className={classes.text}>
-				{projectsText.map((text, index) => <p key={index}>{text}</p>)}
+				<p>Welcome to my portfolio.</p>
+
+				<p>Applications with required logins have a Preview Mode where the entire application can be accessed.</p>
+
+				<p>Please note since I am using netlify to host the apps, cross-site tracking will need to be disabled (if using Safari) in order to retrieve data from the back-end.</p>
 			</div>
 
 			<div className={classes.projects}>

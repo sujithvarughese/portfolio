@@ -52,9 +52,34 @@
 .links {
     z-index: 100;
 }
+@keyframes __slideInUp {
+    0% {
+        transform: translateY(-35%);
+        z-index: -10;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes __slideInDown {
+    0% {
+        transform: translateY(0);
+        z-index: 10;
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+.closePreview {
+    animation: __slideInDown 300ms ease-in-out;
+}
+.openPreview {
+    animation: __slideInUp 300ms ease-in-out;
+}
 @media (min-width: 1024px) {
     .container {
         min-height: 360px;
+        position: relative;
     }
     .head {
         display: grid;
@@ -82,7 +107,10 @@
 
     }
     .screenshots {
-        position: relative;
+        position: absolute;
+        bottom: 16rem;
+
+
     }
 }
 @media (min-width: 1280px) {

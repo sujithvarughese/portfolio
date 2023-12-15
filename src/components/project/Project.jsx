@@ -34,6 +34,9 @@ const Project = ({ title, coverImage, desktopImage, mobileImage, heading, captio
                         <GithubIcon link={github} size="36px"/>
                     </div>
                 </div>
+            </div>
+
+            <div className={showPreviews ? classes.openPreview : classes.closePreview}>
                 {showPreviews && <PreviewContainer previews={previews} />}
             </div>
         </Card>
