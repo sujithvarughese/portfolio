@@ -87,7 +87,7 @@ export const projects = [
 		tech: ["javascript", "react"],
 		type: ""
 	},
-	{
+/*	{
 		title: "Sketch",
 		coverImage: sketch,
 		desktopImage: sketchDesktop,
@@ -101,7 +101,7 @@ export const projects = [
 		previews: [],
 		tech: ["javascript", "react"],
 		type: ""
-	},
+	},*/
 
 ]
 
