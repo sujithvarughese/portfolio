@@ -18,12 +18,6 @@
     flex-direction: column;
 }
 
-.icons {
-    display: flex;
-}
-.icons, .icon {
-    height: 40px;
-}
 .name {
     font-weight: 600;
     text-transform: capitalize;
@@ -53,7 +47,6 @@
     }
 
     .description {
-
         list-style: none;
     }
 }

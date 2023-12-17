@@ -1,9 +1,16 @@
-.container {
 
+@media (min-width: 940px) {
+    .container {
+        font-size: 24px;
+        padding: 4rem 0;
+        display: flex;
+        justify-content: space-around;
+
+    }
 }
-.links {
-    font-size: 48px;
-    padding: 4rem 0;
-    display: flex;
-    gap: 2rem;
+
+@media (min-width: 1024px) {
+    .container {
+        font-size: 28px;
+    }
 }

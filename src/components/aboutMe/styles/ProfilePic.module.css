@@ -1,9 +1,6 @@
-.container {
-    width: 300px;
-    position: relative;
-}
+
 .image {
     margin: 0 auto;
     border-radius: 10px;
-    width: 80%;
+    width: 300px;
 }

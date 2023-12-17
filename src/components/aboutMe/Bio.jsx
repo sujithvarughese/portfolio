@@ -3,9 +3,8 @@ import {Button} from "../../ui/index.js";
 import { FaProjectDiagram } from "react-icons/fa";
 import { GrDocumentUser } from "react-icons/gr";
 import {useNavigate} from "react-router-dom";
-import profileIMG from "../../assets/images/profile.jpg"
-import ProfilePic from "./ProfilePic.jsx";
-import bg from "../../assets/images/background.jpeg"
+import { motion } from "framer-motion"
+
 const Bio = () => {
 
     const navigate = useNavigate()
@@ -14,7 +13,12 @@ const Bio = () => {
         <div className={classes.container}>
 
             <div className={classes.bio}>
-                <h3 className={classes.heading}>About Me</h3>
+                <motion.h3 className={classes.heading}
+                    whileHover={{ scale: 1.05 }}
+                    transition={{type: "spring"}}
+                >
+                    About Me
+                </motion.h3>
 
                 <p>Hello! My name is Sujith. I am a full-stack web developer, recently graduated with a Bachelors in Computer Science.</p>
 

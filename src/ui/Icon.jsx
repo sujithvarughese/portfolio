@@ -1,19 +1,11 @@
 import styled from "styled-components";
-import classes from "./Icons.module.css";
-import {IoLogoGithub, IoLogoJavascript, IoLogoReact, IoRocketSharp} from "react-icons/io5";
+import {IoLogoJavascript, IoLogoReact} from "react-icons/io5";
 import {FaNode} from "react-icons/fa";
-import {FaPhone} from "react-icons/fa6";
-import {RiMailSendFill} from "react-icons/ri";
 import { SiHtml5, SiCss3 } from "react-icons/si";
-import gitImage from "../assets/images/icons/Git-Logo-2Color.png"
-import reactIcon from "../assets/images/icons/react-js.png"
-import htmlCssIcon from "../assets/images/icons/html-css-icon.png"
-const LaunchIcon = ({ link, size, color }) => <a href={link} className={classes.icon} style={{fontSize: size, color: color, zIndex: "10"}} target="_blank" rel="noreferrer"><IoRocketSharp /><div className={classes.text}>Launch</div></a>;
-const GithubIcon = ({ link, size, color }) => <a href={link} className={classes.icon} style={{fontSize: size, color: color, zIndex: "10"}} target="_blank" rel="noreferrer"><IoLogoGithub /><div className={classes.text}>Github</div></a>;
+import reactIcon from "../assets/images/icons/react-js.png";
+import htmlCssIcon from "../assets/images/icons/html-css-icon.png";
+import gitImage from "../assets/images/icons/Git-Logo-2Color.png";
 
-const PhoneLink = ({ link, label, size, color}) => <a href={link} className={classes.icon} style={{fontSize: size, color: color, zIndex: "10"}} target="_blank" rel="noreferrer"><FaPhone /><div className={classes.text}>{label}</div></a>;
-const MailLink = ({ link, label, size, color}) => <a href={link} className={classes.icon} style={{fontSize: size, color: color, zIndex: "10"}} target="_blank" rel="noreferrer"><RiMailSendFill /><div className={classes.text}>{label}</div></a>;
-const GithubLink = ({ link, label, size, color}) =>  <a href={link}  className={classes.icon} style={{fontSize: size, color: color, zIndex: "10"}} target="_blank" rel="noreferrer"><IoLogoGithub /><div className={classes.text}>{label}</div></a>
 const JavascriptIcon = styled(IoLogoJavascript)`
   width: ${props=> props.width || "42px"};
   height: ${props=> props.height || "inherit"};
@@ -39,14 +31,9 @@ const CssIcon = styled(SiCss3)`
   height: ${props=> props.height || "inherit"};
   color: ${props=> props.color || "#0270ba"};
 `
-const ReactIcon_ = () =>
-    <div style={{width: "72px"}}>
-        <img src={reactIcon} alt="react-icon" />
-    </div>
-const HtmlCssIcon = () =>
-    <div style={{width: "72px"}}>
-        <img src={htmlCssIcon} alt="html-css-icon" />
-    </div>
+const ReactIcon_ = () => <img src={reactIcon} alt="react-icon" style={{width: "72px"}}/>
+
+const HtmlCssIcon = () => <img src={htmlCssIcon} alt="html-css-icon" style={{width: "72px"}}/>
 
 const MongoIcon = ({ width, height}) => <svg width={width || "112px"} height={height} viewBox="0 0 1102 278" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M82.3229 28.6444C71.5367 15.8469 62.2485 2.84945 60.351 0.149971C60.1512 -0.0499903 59.8515 -0.0499903 59.6518 0.149971C57.7542 2.84945 48.4661 15.8469 37.6798 28.6444C-54.9019 146.721 52.2613 226.406 52.2613 226.406L53.1601 227.006C53.959 239.303 55.9565 257 55.9565 257H59.9514H63.9463C63.9463 257 65.9438 239.403 66.7428 227.006L67.6416 226.306C67.7414 226.406 174.905 146.721 82.3229 28.6444ZM59.9514 224.706C59.9514 224.706 55.1576 220.607 53.8592 218.507V218.308L59.6518 89.7325C59.6518 89.3326 60.2511 89.3326 60.2511 89.7325L66.0436 218.308V218.507C64.7453 220.607 59.9514 224.706 59.9514 224.706Z" fill="#00684A"/>
@@ -62,34 +49,4 @@ const MongoIcon = ({ width, height}) => <svg width={width || "112px"} height={he
 
 const GitIcon = ({ width="64px", height}) => <img src={gitImage} style={{width: width, height: height}} alt="git logo" />
 
-const icons = [
-    {
-        name: "javascript",
-        icon: <JavascriptIcon/>
-    },
-    {
-        name: "node",
-        icon: <NodeIcon/>
-    },
-    {
-        name: "react",
-        icon: <ReactIcon/>
-    },
-    {
-        name: "mongoDB",
-        icon: <MongoIcon />
-    },
-    {
-        name: "HTML",
-        icon: <HtmlIcon />
-    },
-    {
-        name: "CSS",
-        icon: <CssIcon />
-    },
-    {
-        name: "git",
-        icon: <GitIcon />
-    }
-]
-export { ReactIcon_, HtmlCssIcon, LaunchIcon, GithubIcon, GitIcon, JavascriptIcon, ReactIcon, NodeIcon, MongoIcon, PhoneLink, MailLink, GithubLink, HtmlIcon, CssIcon };
+export { ReactIcon_, HtmlCssIcon, GitIcon, JavascriptIcon, ReactIcon, NodeIcon, MongoIcon, HtmlIcon, CssIcon };

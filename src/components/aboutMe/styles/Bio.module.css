@@ -13,9 +13,6 @@
     font-weight: 600;
     color: var(--COLOR);
 }
-@keyframes __bounceInRight {
-
-}
 
 .name {
     font-weight: 700;

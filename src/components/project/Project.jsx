@@ -3,7 +3,7 @@ import {ProjectCaption, ProjectCover, ProjectHeading, ProjectMoreInfo, ProjectTe
 import PreviewContainer from "../preview/PreviewContainer.jsx";
 import {useState} from "react";
 import Card from "../../ui/Card.jsx";
-import {GithubIcon, LaunchIcon} from "../../icons/Icons.jsx";
+import { LinkIcon } from "../../ui"
 import {AnimatePresence} from "framer-motion";
 
 
@@ -31,8 +31,8 @@ const Project = ({ title, coverImage, desktopImage, mobileImage, heading, captio
 
                     <div className={classes.links}>
                         {previews.length > 0 && <ProjectMoreInfo showPreviews={showPreviews} setShowPreviews={setShowPreviews}/>}
-                        <LaunchIcon link={link} size="36px"/>
-                        <GithubIcon link={github} size="36px"/>
+                        <LinkIcon icon="launch" link={link} fontSize="36px"/>
+                        <LinkIcon icon="github" link={github} fontSize="36px"/>
                     </div>
                 </div>
             </div>

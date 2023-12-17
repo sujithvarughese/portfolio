@@ -15,16 +15,12 @@
 .pic {
     animation: slideInRight 200ms ease-out;
 }
-.hello {
-    font-size: 20px;
-}
+
 .name {
-    font-size: 48px;
+
     font-weight: 800;
 }
-.title {
-    font-size: 20px;
-}
+
 
 @keyframes slideInRight {
     0% {
@@ -40,5 +36,17 @@
     }
     100% {
         transform: translate(0);
+    }
+}
+@media (min-width: 640px) {
+    .hello {
+        font-size: 20px;
+    }
+    .name {
+        font-size: 48px;
+        font-weight: 800;
+    }
+    .title {
+        font-size: 20px;
     }
 }
