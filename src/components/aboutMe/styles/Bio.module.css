@@ -6,7 +6,13 @@
     background-size: cover;
     transition: filter 2s ease-in-out;
 }
-
+.heading {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--COLOR);
+}
 @keyframes __bounceInRight {
 
 }

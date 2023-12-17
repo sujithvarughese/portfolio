@@ -1,10 +1,47 @@
 .container {
-
+    width: 300px;
+    position: relative;
+    overflow: visible;
 }
-
-
 .image {
     margin: 0 auto;
     border-radius: 10px;
-    width: 300px;
+    width: 80%;
+}
+
+@keyframes flipIn {
+    0% {
+        transform: skewX(30deg);
+    }
+    100% {
+        transform: skewX(-30deg);
+    }
+}
+@keyframes flipOut {
+    0% {
+        transform: skewX(-30deg);
+    }
+    100% {
+        transform: skewX(30deg);
+    }
+}
+.box1 {
+    position: absolute;
+    top: 0;
+    border: 3px solid var(--COLOR);
+    width: 100%;
+    height: 100%;
+    animation: flipOut 1s ease-in-out infinite;
+}
+.box1:hover {
+    animation: flipIn 1s ease-in-out;
+}
+.box2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 3px solid var(--COLOR);
+    width: 100%;
+    height: 100%;
+    animation: flipIn 1s ease-in-out infinite;
 }

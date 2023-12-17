@@ -15,6 +15,7 @@ const Bio = () => {
 
             <div className={classes.bio}>
                 <h3 className={classes.heading}>About Me</h3>
+
                 <p>Hello! My name is Sujith. I am a full-stack web developer, recently graduated with a Bachelors in Computer Science.</p>
 
                 <p>My goal in designing software is to solve problems by creating intuitive software that is both adaptable and scalable.</p>

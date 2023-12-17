@@ -1,0 +1,9 @@
+.container {
+
+}
+.links {
+    font-size: 48px;
+    padding: 4rem 0;
+    display: flex;
+    gap: 2rem;
+}

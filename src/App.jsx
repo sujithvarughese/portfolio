@@ -1,24 +1,23 @@
 import { BrowserRouter, Route, Routes} from "react-router-dom";
-import { Layout, AboutMe, Resume, Portfolio, Contact } from "./pages";
+import { Layout, AboutMe, Resume, Portfolio } from "./pages";
 
 const App = () => {
 
-	return (
-		<div>
+  return (
+      <div>
 
-			<BrowserRouter>
-				<Routes>
-					<Route path="/" element={<Layout/>}>
-						<Route index element={<AboutMe />}/>
-						<Route path="resume" element={<Resume />} />
-						<Route path="portfolio" element={<Portfolio />} />
-						<Route path="contact" element={<Contact />} />
-					</Route>
-				</Routes>
-			</BrowserRouter>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Layout/>}>
+              <Route index element={<AboutMe />}/>
+              <Route path="resume" element={<Resume />} />
+              <Route path="portfolio" element={<Portfolio />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
 
-		</div>
-	);
+      </div>
+  );
 }
 
 export default App;

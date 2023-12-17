@@ -1,14 +1,9 @@
 import classes from "./styles/Contact.module.css"
-import {GithubLink, MailLink, PhoneLink} from "../icons/Icons.jsx";
+import {GithubLink, MailLink, PhoneLink} from "../../icons/Icons.jsx";
 
 const Contact = () => {
 	return (
 		<div className={classes.container}>
-
-			<div className={classes.text}>
-				Feel free to contact me with any questions or inquiries! Thanks for viewing!
-			</div>
-
 			<div className={classes.links}>
 				<MailLink link="mailto:sujith.varug@gmail.com" label="sujith.varug@gmail.com"/>
 				<PhoneLink link="tel:+13058591695" label="305-859-1695" />

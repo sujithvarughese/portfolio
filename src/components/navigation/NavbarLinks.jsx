@@ -42,10 +42,5 @@ const links = [
         url: '/portfolio',
         icon: <FaProjectDiagram />
     },
-    {
-        name: 'Contact',
-        url: '/contact',
-        icon: <MdPermPhoneMsg />
-    }
 ]
 export default NavbarLinks;
