@@ -13,7 +13,11 @@
     font-weight: 600;
     color: var(--COLOR);
 }
-
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 .name {
     font-weight: 700;
     font-size: 36px;

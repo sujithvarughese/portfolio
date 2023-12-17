@@ -1,5 +1,16 @@
-import classes from "./styles/ProfilePic.module.css";
+import classes from "./styles/Header.module.css";
 import profileIMG from "../../assets/images/profile.jpg"
-const ProfilePic = () => <img src={profileIMG} className={classes.image} alt="proile-pic"/>;
+import diamondBg from "../../assets/images/graphic-diamond.png"
+const ProfilePic = () =>
+    <div className={classes.imageContainer}>
+
+            <img src={diamondBg} className={classes.bg} alt="bg"/>
+
+
+            <img src={profileIMG} className={classes.image} alt="proile-pic"/>
+
+
+    </div>
+
 
 export default ProfilePic;

@@ -6,10 +6,9 @@ const AboutMe = () => {
     return (
         <div className={classes.container}>
             <Header />
-            <Contact />
             <Bio />
             <MySkills />
-
+            <Contact />
         </div>
     );
 };

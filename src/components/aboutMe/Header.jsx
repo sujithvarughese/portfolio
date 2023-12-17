@@ -10,12 +10,12 @@ const Header = () => {
                 whileHover={{ scale: 1.05 }}
                 transition={{type: "spring"}}
             >
-                <p className={classes.hello}>
-                    Hello, I'm
-                </p>
-                <p className={classes.name}>
-                    Sujith Varughese
-                </p>
+                <div className={classes.line1}>
+                    <p className={classes.hello}>Hello! </p>
+                    <p className={classes.im}>I'm</p>
+                </div>
+
+                <p className={classes.name}>Sujith Varughese</p>
                 <p className={classes.title}>
                     Software Developer
                 </p>
@@ -27,7 +27,7 @@ const Header = () => {
                 whileHover={{ scale: 1.05 }}
                 transition={{type: "spring"}}
             >
-                <ProfilePic />
+            <ProfilePic />
             </motion.div>
         </div>
     );

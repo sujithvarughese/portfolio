@@ -20,15 +20,18 @@ const Bio = () => {
                     About Me
                 </motion.h3>
 
-                <p>Hello! My name is Sujith. I am a full-stack web developer based in Miami, FL. I recently graduated with a Bachelors in Computer Science.</p>
+                <div className={classes.text}>
+                    <p>Hello! My name is Sujith. I am a full-stack web developer based in Miami, FL. I recently graduated with a Bachelors in Computer Science.</p>
 
-                <p>My goal in designing software is to solve problems by creating intuitive software that is both adaptable and scalable.</p>
+                    <p>My goal in designing software is to solve problems by creating intuitive software that is both adaptable and scalable.</p>
 
-                <p>I am most experienced in HTML, CSS, and developing in Javascript using React, Node with Express, and Mongo Database (MERN Stack).
+                    <p>I am most experienced in HTML, CSS, and developing in Javascript using React, Node with Express, and Mongo Database (MERN Stack).
 
-                    I also have experience Java, C++, and Python and SQL Databases.</p>
+                        I also have experience Java, C++, and Python and SQL Databases.</p>
 
-                <p>Please check out my resume and portfolio to view my most recent applications.</p>
+                    <p>Please check out my resume and portfolio to view my most recent applications.</p>
+                </div>
+
 
             </div>
 

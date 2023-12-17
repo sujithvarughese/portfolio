@@ -2,9 +2,9 @@
     position: fixed;
     display: flex;
     bottom: 0;
-    gap: 2rem;
     align-items: center;
-    width: 100%;
+    justify-content: space-between;
+    width: 100vw;
     height: 80px;
     padding: var(--PADDING-NAV);
     background-color: var(--COLOR-DARK);
