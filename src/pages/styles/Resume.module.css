@@ -5,7 +5,64 @@
     min-height: 100vh;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.header, .heading {
+    color: var(--COLOR);
+}
+.header {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    place-items: center;
+}
+.name {
+    font-size: 32px;
+}
+.title {
+    font-size: 20px;
+}
+.image {
+    width: 150px;
+}
+.projectsContent, .workContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.projectFeatures {
+    padding: 1rem;
+}
+.skillList {
+    padding: 0 1rem;
+}
+.jobRoles {
+    padding: 1rem;
+}
 .resume {
     border: black 3px solid;
     border-radius: 5px;
+}
+
+@media (min-width: 640px) {
+    .name {
+        font-size: 40px;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .image {
+        width: 200px;
+    }
+}
+@media (min-width: 1024px) {
+    .name {
+        font-size: 72px;
+    }
+    .title {
+        font-size: 36px;
+    }
+
 }
