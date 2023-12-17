@@ -33,14 +33,15 @@ const links = [
         icon: <IoIosContact />
     },
     {
-        name: 'Resume',
-        url: '/resume',
-        icon: <GrDocumentUser />
-    },
-    {
         name: 'Portfolio',
         url: '/portfolio',
         icon: <FaProjectDiagram />
     },
+    {
+        name: 'Resume',
+        url: '/resume',
+        icon: <GrDocumentUser />
+    },
+
 ]
 export default NavbarLinks;

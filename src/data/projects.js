@@ -47,9 +47,11 @@ export const projects = [
 		mobileImage: rsMobile,
 		heading: "A property management app for small business owners to organize finances and communicate with tenants.",
 		captions: [
-			"Owners can manage income/expenses, calculate mortgage payments with different interest rates, view live payoff quotes, and more.",
-			"Built in messaging functionality for landlord-tenant communication",
-			"Uses HUD.gov API to retrieve rental rates for any location in the US.",
+			"Calculate mortgage payments, compare payments with different interest rates, view live payoff quotes, view both monthly and yearly profits and losses",
+			"Separate user roles for system admin, account admin (property manager) and users (tenants)",
+			"Tokens attached to signed HTTP cookies for verification",
+			"Messaging functionality for landlord-tenant communication",
+			"HUD.gov API to retrieve rental rates for any location in the US.",
 		],
 		link: 'https://realty-solutions.netlify.app',
 		github: 'https://github.com/sujithvarughese/realty-solutions',
@@ -64,7 +66,9 @@ export const projects = [
 		mobileImage: otbMobile,
 		heading: "A personal library designed to take notes, rate, and keep track of their status of each book.",
 		captions: [
-			"App uses the OpenLibrary API where users can search by genre, get current editor's picks, and view book previews"
+			"OpenLibrary API where users can search for books, get recommendations, and view book previews",
+			"Save books to library and create an organized notebook for easy to use note-taking",
+			"React context/reducer/router"
 		],
 		link: 'https://on-the-books.netlify.app',
 		github: 'https://github.com/sujithvarughese/on-the-books',
@@ -77,9 +81,10 @@ export const projects = [
 		coverImage: blackjack,
 		desktopImage: bjDesktop,
 		mobileImage: bjMobile,
-		heading: "Play blackjack with live assistance that tells you the right move in any situation!",
+		heading: "Play blackjack with live assistance!",
 		captions: [
-			"Customize your bankroll, number of decks, and other options to find your edge!"
+			"Get the correct play by the book in any situation as you play",
+			"Customize your bankroll, change number of decks used"
 		],
 		link: 'https://blackjack-suj.netlify.app',
 		github: 'https://github.com/sujithvarughese/blackjack-js/tree/master/react',
