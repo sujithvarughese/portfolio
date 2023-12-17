@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion"
 
-const ButtonIcon = styled.button`
+const StyledButtonIcon = styled(motion.button)`
 	cursor: pointer;
 	border: none;
     background-color: ${props=> props.backgroundColor || "inherit"};
@@ -14,5 +15,12 @@ const ButtonIcon = styled.button`
 	}
 `
 
+const ButtonIcon = (props) =>
+    <StyledButtonIcon
+        { ...props }
+        whileHover={{ scale: 1.1 }}
+    >
+        {props.children}
+    </StyledButtonIcon>
 
 export default ButtonIcon;

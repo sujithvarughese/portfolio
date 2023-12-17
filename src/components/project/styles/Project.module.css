@@ -52,31 +52,13 @@
 .links {
     z-index: 100;
 }
-@keyframes slideInUp {
-    0% {
-        transform: translateY(-35%);
-        z-index: -10;
-    }
-    100% {
-        transform: translateY(0);
-    }
+.arrow {
+    display: flex;
+    align-items: center;
 }
-@keyframes slideInDown {
-    0% {
-        transform: translateY(0);
-        z-index: 10;
-    }
-    100% {
-        transform: translateY(-100%);
-    }
+.arrow:hover {
+    color: var(--COLOR-ALT);
 }
-.openPreview {
-    animation: slideInUp 300ms ease-in-out;
-}
-.closePreview {
-    animation: slideInDown 300ms ease-in-out;
-}
-
 @media (min-width: 1024px) {
     .container {
         min-height: 360px;

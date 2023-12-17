@@ -1,9 +1,15 @@
 import classes from "./styles/Header.module.css";
 import ProfilePic from "./ProfilePic.jsx";
+import { motion } from "framer-motion"
 const Header = () => {
     return (
         <div className={classes.container}>
-            <div className={classes.greeting}>
+            <motion.div className={classes.greeting}
+                initial={{ scale: 0.6 }}
+                animate={{ scale: 1 }}
+                whileHover={{ scale: 1.05 }}
+                transition={{type: "spring"}}
+            >
                 <p className={classes.hello}>
                     Hello, I'm
                 </p>
@@ -13,10 +19,16 @@ const Header = () => {
                 <p className={classes.title}>
                     Software Developer
                 </p>
-            </div>
-            <div className={classes.pic}>
+            </motion.div>
+            <motion.div
+                className={classes.pic}
+                initial={{ scale: 0.6 }}
+                animate={{ scale: 1 }}
+                whileHover={{ scale: 1.05 }}
+                transition={{type: "spring"}}
+            >
                 <ProfilePic />
-            </div>
+            </motion.div>
         </div>
     );
 };

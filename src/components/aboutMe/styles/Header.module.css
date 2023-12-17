@@ -16,15 +16,16 @@
     animation: slideInRight 200ms ease-out;
 }
 .hello {
-
+    font-size: 20px;
 }
 .name {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 800;
 }
 .title {
-
+    font-size: 20px;
 }
+
 @keyframes slideInRight {
     0% {
         transform: translate3d(50%, -50%, 0px);

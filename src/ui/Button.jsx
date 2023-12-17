@@ -1,15 +1,18 @@
 import styled from "styled-components";
+import { motion } from "framer-motion"
 
-const Button = styled.button`
+const StyledButton = styled(motion.button)`
+  background-color: ${props=> props.backgroundColor || "var(--COLOR)"};
+  color: ${props => props.color || "#fefefe"};
+  font-size: ${props => props.fontSize || "inherit"};
+  width: ${props => props.width || "100%"};;
+  gap: ${props => props.gap || "0.5rem"};
   cursor: pointer;
-  color: #fefefe;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  width: 100%;
   font-weight: 600;
-  background: var(--COLOR);
+
   border: none;
   border-radius: 6px;
   padding: 17px 11px;
@@ -33,5 +36,13 @@ const Button = styled.button`
     width: 200px;
   }
 `
+
+const Button = (props) =>
+    <StyledButton
+        { ...props }
+        whileHover={{ scale: 1.1 }}
+    >
+        {props.children}
+    </StyledButton>
 
 export default Button

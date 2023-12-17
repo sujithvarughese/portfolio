@@ -1,20 +1,23 @@
 import classes from "../styles/Project.module.css";
 import {FaAnglesDown, FaAnglesUp} from "react-icons/fa6";
 import ButtonIcon from "../../../ui/ButtonIcon.jsx";
+import {ButtonPlain} from "../../../ui/index.js";
 
 const ProjectMoreInfo = ({ showPreviews, setShowPreviews }) => {
     return (
-        <div>
-            {showPreviews ?
-                <ButtonIcon className={classes.togglePreview} onClick={()=>setShowPreviews(false)}>
-                    <FaAnglesUp style={{fontSize: "32px"}}/>Hide
-                </ButtonIcon>
-                :
-                <ButtonIcon className={classes.togglePreview} onClick={()=>setShowPreviews(true)}>
-                    <FaAnglesDown style={{fontSize: "32px"}}/>More
-                </ButtonIcon>
-            }
+        <div className={classes.arrow}>
+            <ButtonIcon className={classes.togglePreview} onClick={()=>setShowPreviews(!showPreviews)}
+                        animate={{ rotate: showPreviews ? 180 : 0 }}
+            >
+                <FaAnglesUp style={{fontSize: "32px"}}/>
+            </ButtonIcon>
+            <ButtonPlain onClick={()=>setShowPreviews(!showPreviews)}>
+                {showPreviews ? "Hide" : "More Info"}
+            </ButtonPlain>
         </div>
+
+
+
     );
 };
 

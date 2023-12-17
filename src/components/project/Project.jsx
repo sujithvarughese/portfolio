@@ -4,6 +4,7 @@ import PreviewContainer from "../preview/PreviewContainer.jsx";
 import {useState} from "react";
 import Card from "../../ui/Card.jsx";
 import {GithubIcon, LaunchIcon} from "../../icons/Icons.jsx";
+import {AnimatePresence} from "framer-motion";
 
 
 const Project = ({ title, coverImage, desktopImage, mobileImage, heading, captions, link, github, previews, tech, type }) => {
@@ -36,9 +37,9 @@ const Project = ({ title, coverImage, desktopImage, mobileImage, heading, captio
                 </div>
             </div>
 
-            <div className={showPreviews ? classes.openPreview : classes.closePreview}>
+            <AnimatePresence>
                 {showPreviews && <PreviewContainer previews={previews} />}
-            </div>
+            </AnimatePresence>
         </Card>
     );
 };
