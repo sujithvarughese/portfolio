@@ -1,6 +1,7 @@
 import classes from "./styles/Header.module.css";
 import ProfilePic from "./ProfilePic.jsx";
 import { motion } from "framer-motion"
+import graphicCenter from "../../assets/images/graphic-center.png"
 const Header = () => {
     return (
         <div className={classes.container}>
@@ -19,6 +20,7 @@ const Header = () => {
                 <p className={classes.title}>
                     Software Developer
                 </p>
+                <img src={graphicCenter} alt="gaphic-center" className={classes.graphicCenter}/>
             </motion.div>
             <motion.div
                 className={classes.pic}
@@ -29,6 +31,7 @@ const Header = () => {
             >
             <ProfilePic />
             </motion.div>
+
         </div>
     );
 };

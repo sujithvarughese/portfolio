@@ -27,7 +27,7 @@ const skills = [
     },
     {
         name: "react",
-        description: ["State Management", "Router", "Context", "Reducer"],
+        description: ["State Management", "Router", "Context/Reducer", "Dynamic DOM manipulation"],
         showName: false
     },
     {

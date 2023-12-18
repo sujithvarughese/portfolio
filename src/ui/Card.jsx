@@ -8,7 +8,7 @@ const Card = styled.div`
   transition: 0.3s ease-in-out all;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
 
   
   &:hover {

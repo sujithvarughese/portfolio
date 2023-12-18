@@ -4,6 +4,8 @@ import { FaProjectDiagram } from "react-icons/fa";
 import { GrDocumentUser } from "react-icons/gr";
 import {useNavigate} from "react-router-dom";
 import { motion } from "framer-motion"
+import graphicSpotlightImage from "../../assets/images/graphic-spotlight.png"
+import graphicSideImage from "../../assets/images/graphic-sides.png"
 
 const Bio = () => {
 
@@ -23,19 +25,20 @@ const Bio = () => {
                 <div className={classes.text}>
                     <p>Hello! My name is Sujith. I am a full-stack software developer based in Miami, FL. I recently graduated with a Bachelor's of Computer Science from Florida International University.</p>
 
-                    <p>Since starting in software, I have genuinely become fascinated by being able to identify a problem, then as a developer, having the ability to directly plan and create a solution. My goal in designing software is to solve problems by creating intuitive software that is both adaptable and scalable.</p>
+                    <p>Since starting in software, I have genuinely become fascinated by being able to identify a problem and as a developer, having the ability to directly plan and create a solution. My goal in designing software is to solve problems by creating intuitive software that is both adaptable and scalable.</p>
 
                     <p>I am most experienced in JavaScript, HTML, CSS, React, Node with Express, and Mongo Database (MERN Stack).
 
-                        I also have experience Java, C++, Python, and SQL. However, I am a tech junkie and I love learning new technologies.</p>
+                        I also have experience Java, C++, Python, and SQL. However, I am quite the tech junkie and I love learning new technologies.</p>
 
-                    <p>Please check out my resume and portfolio to view my most recent applications.</p>
+                    <p>Please check out my resume and portfolio to view some applications I have created.</p>
                 </div>
 
 
             </div>
 
             <div className={classes.buttons}>
+                <img src={graphicSpotlightImage} alt="spotlight-graphic" className={classes.spotlightGraphic}/>
                 <Button onClick={()=>navigate("/portfolio")}><FaProjectDiagram />View Portfolio</Button>
                 <Button onClick={()=>navigate("/resume")}><GrDocumentUser />View Resume</Button>
             </div>

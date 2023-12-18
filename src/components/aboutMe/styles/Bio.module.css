@@ -12,7 +12,10 @@
     font-size: 28px;
     font-weight: 600;
     color: var(--COLOR);
+    position: relative;
+    z-index: 1;
 }
+
 .text {
     display: flex;
     flex-direction: column;
@@ -28,8 +31,20 @@
     text-align: center;
 }
 .buttons {
+    position: relative;
     display: flex;
     gap: 1rem;
+    z-index: 1;
+
+}
+.spotlightGraphic {
+    position: absolute;
+    width: 550px;
+    height: 1200px;
+    top: -39rem;
+    left: -6rem;
+    z-index: -1;
+    overflow: clip;
 }
 .bio {
 
@@ -44,4 +59,9 @@
     .title {
         text-align: unset;
     }
+    .spotlightGraphic {
+        width: 650px;
+        left: -7rem;
+    }
+
 }

@@ -14,3 +14,19 @@
     height: 138px;
     border-radius: 5px;
 }
+
+@media (min-width: 1024px) {
+    .container {
+        width: 230px;
+        height: 580px;
+    }
+    .image {
+        width: 130px;
+        height: 275px;
+        top: 35px;
+        left: 50px;
+        border-radius: 15px;
+    }
+
+}
+

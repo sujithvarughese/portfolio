@@ -2,14 +2,17 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+    position: relative;
 }
 .greeting {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: var(--COLOR);
     font-weight: 600;
     animation: slideInLeft 200ms ease-out;
+    z-index: 1;
 }
 .hello {
     font-size: 20px;
@@ -25,7 +28,9 @@
 }
 .title {
     font-size: 18px;
+    position: relative;
 }
+
 .pic {
     animation: slideInRight 200ms ease-out;
 }
@@ -49,8 +54,20 @@
     width: 140px;
 }
 
-
-
+.graphic {
+    position: absolute;
+    width: 700px;
+    left: -10rem;
+    overflow: clip;
+}
+.graphicCenter {
+    position: absolute;
+    width: 130%;
+    top: -3rem;
+    left: -2rem;
+    overflow: clip;
+    opacity: 15%;
+}
 
 @keyframes slideInRight {
     0% {
@@ -78,5 +95,9 @@
     }
     .title {
         font-size: 20px;
+    }
+    .graphicCenter {
+        left: -4rem;
+        top: -6rem;
     }
 }
