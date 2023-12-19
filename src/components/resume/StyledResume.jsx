@@ -138,17 +138,6 @@ const StyledResume = () => {
                     </div>
                 </div>
             </div>
-
-
-
-            <div className={classes.porfolioLink}>
-                <LinkIcon
-                    icon="github"
-                    link="https://sujith-varughese-portfolio.netlify.app"
-                    label="https://sujith-varughese-portfolio.netlify.app"
-                />
-            </div>
-
         </div>
     );
 };
