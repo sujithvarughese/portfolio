@@ -2,8 +2,14 @@ import classes from "./styles/Portfolio.module.css";
 import {projects} from "../data/projects.js";
 import {Project} from "../components"
 import {projectsText} from "../data/projectsText.js";
+import {useEffect} from "react";
 
 const Portfolio = () => {
+	// scroll to top on load
+	useEffect(() => {
+		window.scrollTo(0, 0)
+	}, []);
+
 	return (
 		<div className={classes.container}>
 			<div className={classes.title}>Portfolio</div>

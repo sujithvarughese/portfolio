@@ -42,6 +42,11 @@ const links = [
         url: '/resume',
         icon: <GrDocumentUser />
     },
+    {
+        name: 'Contact',
+        url: '/contact',
+        icon: <MdPermPhoneMsg />
+    },
 
 ]
 export default NavbarLinks;

@@ -25,6 +25,7 @@
 .name {
     font-size: 28px;
     font-weight: 800;
+    overflow-wrap: normal;
 }
 .title {
     font-size: 18px;

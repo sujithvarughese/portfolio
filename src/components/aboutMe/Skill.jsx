@@ -29,7 +29,7 @@ const icons = [
     }
 ]
 
-const Skill = ({ name, description, showName}) => {
+const Skill = ({ name, description }) => {
 
     return (
         <div className={classes.skill}>

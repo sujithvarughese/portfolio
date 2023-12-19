@@ -1,7 +1,6 @@
 .links {
     width: 100%;
     display: flex;
-    font-size: 48px;
     z-index: 10000;
     align-items: center;
     justify-content: space-between;
@@ -9,47 +8,66 @@
 .link {
     color: var(--COLOR-LIGHTER);
     transition: 0.2s ease-in-out all;
-    text-align: center;
+    align-items: center;
     font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 .link:hover {
     color: var(--COLOR-LIGHT);
 }
 .active {
     color: var(--COLOR);
-
+}
+.icon {
+    font-size: 32px;
 }
 .name {
-    display: none;
+    position: absolute;
+    font-size: 12px;
+    left: -11px;
+    display: grid;
+    place-items: center;
+    bottom: -3px;
+    width: 60px;
 }
 @media (min-width: 640px) {
     .links {
-        color: unset;
-        font-size: 18px;
+        justify-content: space-around;
     }
     .link {
         margin: 1rem 0;
+        color: var(--COLOR-DARK);
         padding-top: unset;
         padding-bottom: unset;
         border-top: none;
         text-align: unset;
-        display: flex;
+        flex-direction: row;
         align-items: center;
         gap: 0.8rem;
     }
+    .icon {
+        font-size: 18px;
+    }
     .name {
-        display: unset;
+        position: unset;
+        width: unset;
+        font-size: 20px;
+    }
+    .active {
+        color: var(--COLOR);
     }
 }
 
 @media (min-width: 768px) {
-    .link {
-        font-size: 20px;
+    .links {
+        justify-self: flex-end;
     }
 }
 
 @media (min-width: 1024px) {
-    .link {
-        font-size: 24px;
+    .links {
+        width: 50%;
     }
 }

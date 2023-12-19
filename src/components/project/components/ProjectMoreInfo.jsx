@@ -8,8 +8,9 @@ const ProjectMoreInfo = ({ showPreviews, setShowPreviews }) => {
         <div className={classes.arrow}>
             <ButtonIcon className={classes.togglePreview} onClick={()=>setShowPreviews(!showPreviews)}
                         animate={{ rotate: showPreviews ? 180 : 0 }}
+                        transition={{ duration: 0.01 }}
             >
-                <FaAnglesUp style={{fontSize: "32px"}}/>
+                <FaAnglesDown style={{fontSize: "32px"}}/>
             </ButtonIcon>
             <ButtonPlain onClick={()=>setShowPreviews(!showPreviews)}>
                 {showPreviews ? "Hide" : "More Info"}

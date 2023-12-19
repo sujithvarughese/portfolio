@@ -1,5 +1,5 @@
 import classes from "./styles/Header.module.css";
-import profileIMG from "../../assets/images/profile.jpg"
+import profileIMG from "../../assets/images/profile.png"
 import diamondBg from "../../assets/images/graphic-diamond.png"
 const ProfilePic = () =>
     <div className={classes.imageContainer}>

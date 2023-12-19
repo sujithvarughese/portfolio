@@ -5,9 +5,6 @@ const Navbar = () => {
 
 	return (
 		<nav className={classes.container}>
-			<div className={classes.name}>
-
-			</div>
 			<NavbarLinks />
 		</nav>
 

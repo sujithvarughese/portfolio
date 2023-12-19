@@ -36,5 +36,6 @@
 }
 .scroll {
     margin: 0 auto;
+    z-index: 1000;
     font-size: 48px;
 }

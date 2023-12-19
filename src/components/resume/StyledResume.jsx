@@ -1,6 +1,6 @@
 import classes from "../../pages/styles/Resume.module.css";
-import pic from "../../assets/images/profile.jpg";
 import {LinkIcon} from "../../ui/index.js";
+import ProfilePic from "../aboutMe/ProfilePic.jsx";
 
 const StyledResume = () => {
     return (
@@ -10,10 +10,6 @@ const StyledResume = () => {
                     <h1 className={classes.name}>Sujith Varughese</h1>
                     <h2 className={classes.title}>Full Stack Software Developer</h2>
                 </div>
-
-                <img src={pic} alt="profile-pic" className={classes.image}/>
-
-
             </div>
 
             <div className={classes.profile}>

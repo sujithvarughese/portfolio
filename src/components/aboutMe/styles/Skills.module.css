@@ -32,11 +32,8 @@
         flex-direction: row;
         justify-content: space-between;
     }
-    .name {
-        padding-bottom: 1rem;
-    }
     .content {
-        display: unset;
+        height: 50px;
     }
     .skill {
         display: flex;

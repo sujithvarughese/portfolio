@@ -13,20 +13,14 @@
 .header, .heading {
     color: var(--COLOR);
 }
-.header {
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    place-items: center;
-}
+
 .name {
     font-size: 32px;
 }
 .title {
     font-size: 20px;
 }
-.image {
-    width: 150px;
-}
+
 .projectsContent, .workContent {
     display: flex;
     flex-direction: column;
@@ -53,9 +47,6 @@
     .title {
         font-size: 24px;
     }
-    .image {
-        width: 200px;
-    }
 }
 @media (min-width: 1024px) {
     .name {
@@ -64,5 +55,4 @@
     .title {
         font-size: 36px;
     }
-
 }

@@ -15,7 +15,6 @@
     position: relative;
     z-index: 1;
 }
-
 .text {
     display: flex;
     flex-direction: column;
@@ -35,7 +34,6 @@
     display: flex;
     gap: 1rem;
     z-index: 1;
-
 }
 .spotlightGraphic {
     position: absolute;
@@ -46,13 +44,8 @@
     z-index: -1;
     overflow: clip;
 }
-.bio {
 
-}
 @media (min-width: 640px) {
-    .profilePic {
-
-    }
     .name {
         text-align: unset;
     }
@@ -63,5 +56,4 @@
         width: 650px;
         left: -7rem;
     }
-
 }
