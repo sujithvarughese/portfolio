@@ -25,7 +25,7 @@ const Bio = () => {
                 <div className={classes.text}>
                     <p>Hello! My name is Sujith. I am a full-stack software developer based in Miami, FL. I recently graduated with a Bachelor's of Computer Science from Florida International University.</p>
 
-                    <p>Since starting in software, I have genuinely become fascinated by being able to identify a problem and as a developer, having the ability to directly plan and create a solution. My goal in designing software is to solve problems by creating intuitive software that is both adaptable and scalable.</p>
+                    <p>As a developer, I have been enthralled by being able to identify a problem and having the ability to directly plan and create a solution. My goal in designing software is to solve problems by creating intuitive software that is both adaptable and scalable.</p>
 
                     <p>I am most experienced in JavaScript, HTML, CSS, React, Node with Express, and Mongo Database (MERN Stack).
 

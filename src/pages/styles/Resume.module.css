@@ -38,6 +38,7 @@
 .resume {
     border: black 3px solid;
     border-radius: 5px;
+    width: 100%;
 }
 
 @media (min-width: 640px) {
