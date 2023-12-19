@@ -8,8 +8,8 @@
 }
 
 @media (min-width: 1024px) {
-    .container {
-
-
+    .mobile {
+        left: -6rem;
+        top: 7rem;
     };
 }
