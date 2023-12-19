@@ -42,12 +42,13 @@
     place-items: center;
     width: 150px;
     height: 190px;
+    overflow: clip;
 }
 
 .bg {
     position: absolute;
     width: 250px;
-    overflow: clip;
+
 }
 .image {
     position: absolute;

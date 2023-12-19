@@ -3,10 +3,8 @@
     border-top-right-radius: var(--BORDER-RADIUS-PAGE);
     padding: var(--PADDING-PAGE);
     display: flex;
-    gap: 3rem;
     flex-direction: column;
-    min-height: 100vh;
-
+    gap: 3rem;
 }
 
 @media (min-width: 640px) {

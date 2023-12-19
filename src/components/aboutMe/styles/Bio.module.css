@@ -30,21 +30,12 @@
     text-align: center;
 }
 .buttons {
-    position: relative;
     display: flex;
     gap: 1rem;
+    justify-content: space-around;
     z-index: 1;
 }
-.spotlightGraphic {
-    position: absolute;
-    width: 650px;
-    height: 1200px;
-    top: -39rem;
-    left: -6rem;
-    z-index: -1;
-    overflow: clip;
-    opacity: 80%;
-}
+
 
 @media (min-width: 640px) {
     .name {
@@ -56,9 +47,5 @@
     }
     .title {
         text-align: unset;
-    }
-    .spotlightGraphic {
-        left: -7rem;
-        top: -40rem;
     }
 }

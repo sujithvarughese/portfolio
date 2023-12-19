@@ -33,7 +33,6 @@
 .links {
     display: flex;
     padding-top: 1rem;
-    gap: 2rem;
     justify-content: space-around;
     z-index: 100;
 }
