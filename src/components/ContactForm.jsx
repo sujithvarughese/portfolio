@@ -28,7 +28,6 @@ const ContactForm = () => {
 
     return (
         <div className={classes.container}>
-            <h3>Contact Me</h3>
             <form ref={formRef} onSubmit={sendEmail} className={classes.form}>
                 <Input name='from_name' type="email" placeholder='Email' required />
                 <Textarea name='message' placeholder='Write message...' required ></Textarea>

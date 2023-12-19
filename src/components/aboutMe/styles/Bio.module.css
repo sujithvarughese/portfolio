@@ -49,6 +49,10 @@
     .name {
         text-align: unset;
     }
+    .heading {
+        justify-content: flex-start;
+        font-size: 32px;
+    }
     .title {
         text-align: unset;
     }

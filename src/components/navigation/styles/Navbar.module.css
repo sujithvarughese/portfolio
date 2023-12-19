@@ -9,10 +9,8 @@
     padding: var(--PADDING-NAV);
     background-color: var(--COLOR-DARK);
     z-index: 100;
+    max-width: 1440px;
 }
-
-
-
 
 @media (min-width: 640px) {
     .container {

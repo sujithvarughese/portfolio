@@ -4,19 +4,17 @@
     padding: var(--PADDING-PAGE);
 }
 .title {
-    font-size: 64px;
-
+    text-align: center;
+    font-size: 48px;
 }
 .text {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-
 }
 
 .projects {
     display: flex;
-
     flex-direction: column;
     padding-top: 2rem;
     gap: 1rem;

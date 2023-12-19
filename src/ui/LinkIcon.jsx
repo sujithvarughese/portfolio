@@ -13,12 +13,12 @@ const icons = {
 const StyledLinkIcon = styled(motion.div)`
   font-size: ${props=> props.fontSize || "inherit"};
   color: ${props => props.color || "var(--COLOR-DARK)"};
-  z-index: 10
+  z-index: 10;
 `
 
 const LinkIcon = ({ icon, link, label, ...props }) =>
     <StyledLinkIcon { ...props }>
-        <a href={link} target="_blank" rel="noreferrer">{icons[icon]}<span>{label}</span></a>
+        <a href={link} target="_blank" rel="noreferrer">{icons[icon]}<span> {label}</span></a>
     </StyledLinkIcon>
 
 
