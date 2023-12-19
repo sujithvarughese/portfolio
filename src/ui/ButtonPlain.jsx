@@ -4,10 +4,11 @@ const ButtonPlain = styled.button`
     cursor: pointer;
     border: none;
     transition: 0.2s ease-in-out all;
-    color: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    background-color: inherit;
+  background-color: ${props=> props.backgroundColor || "inherit"};
+  color: ${props => props.color || "var(--COLOR)"};
+  font-size: ${props => props.fontSize || "inherit"};
+
+
   
 	&:hover {
 		color: var(--COLOR-ALT);

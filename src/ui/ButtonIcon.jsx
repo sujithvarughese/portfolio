@@ -5,7 +5,7 @@ const StyledButtonIcon = styled(motion.button)`
 	cursor: pointer;
 	border: none;
     background-color: ${props=> props.backgroundColor || "inherit"};
-    color: ${props => props.color || "inherit"};
+    color: ${props => props.color || "var(--COLOR)"};
     font-size: ${props => props.fontSize || "inherit"};
 	border-radius: 6px;
 	transition: 0.2s ease-in-out all;

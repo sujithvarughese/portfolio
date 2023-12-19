@@ -11,14 +11,23 @@ const icons = {
 
 }
 const StyledLinkIcon = styled(motion.div)`
+  cursor: pointer;
+  border: none;
   font-size: ${props=> props.fontSize || "inherit"};
-  color: ${props => props.color || "var(--COLOR-DARK)"};
+  color: ${props => props.color || "var(--COLOR)"};
   z-index: 10;
+  transition: 0.2s ease-in-out all;
+  &:hover {
+    color: var(--COLOR-ALT);
+  }
 `
 
-const LinkIcon = ({ icon, link, label, ...props }) =>
-    <StyledLinkIcon { ...props }>
-        <a href={link} target="_blank" rel="noreferrer">{icons[icon]}<span> {label}</span></a>
+const LinkIcon = ({ icon, link, label, textFont, ...props }) =>
+    <StyledLinkIcon
+        { ...props }
+        whileHover={{ scale: 1.1 }}
+    >
+        <a href={link} style={{display: "flex", alignItems: "center", gap: "0.3rem"}} target="_blank" rel="noreferrer">{icons[icon]}<span style={{fontSize: textFont}}> {label}</span></a>
     </StyledLinkIcon>
 
 

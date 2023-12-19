@@ -21,7 +21,7 @@ const StyledButton = styled(motion.button)`
   transition: 0.2s ease-in-out all;
 
   &:hover {
-    color: var(--COLOR-DARK);
+    color: var(--COLOR-ALT);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.3);
   }

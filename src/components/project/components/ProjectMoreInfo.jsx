@@ -12,7 +12,11 @@ const ProjectMoreInfo = ({ showPreviews, setShowPreviews }) => {
             >
                 <FaAnglesDown style={{fontSize: "32px"}}/>
             </ButtonIcon>
-            <ButtonPlain onClick={()=>setShowPreviews(!showPreviews)}>
+            <ButtonPlain
+                onClick={()=>setShowPreviews(!showPreviews)}
+                fontSize="18px"
+
+            >
                 {showPreviews ? "Hide" : "More Info"}
             </ButtonPlain>
         </div>

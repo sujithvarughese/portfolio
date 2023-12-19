@@ -48,7 +48,7 @@
     display: flex;
     align-items: center;
 }
-.arrow:hover {
+.arrow:hover > * {
     color: var(--COLOR-ALT);
 }
 @media (min-width: 1024px) {
@@ -84,7 +84,6 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: flex-staer;
     }
     .tech {
         flex-direction: row;

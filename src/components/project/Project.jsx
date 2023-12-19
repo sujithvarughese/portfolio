@@ -29,8 +29,8 @@ const Project = ({ title, coverImage, desktopImage, mobileImage, heading, captio
                         <ProjectTech tech={tech}/>
                         <div className={classes.links}>
                             {previews.length > 0 && <ProjectMoreInfo showPreviews={showPreviews} setShowPreviews={setShowPreviews}/>}
-                            <LinkIcon icon="launch" link={link} fontSize="36px"/>
-                            <LinkIcon icon="github" link={github} fontSize="36px"/>
+                            <LinkIcon icon="launch" link={link} label="Launch" fontSize="36px" textFont="18px"/>
+                            <LinkIcon icon="github" link={github} label="GitHub" fontSize="36px" textFont="18px"/>
                         </div>
                     </div>
 

@@ -11,7 +11,7 @@ const Textarea = styled.textarea`
   0 10px 10px -5px rgba(0, 0, 0, 0.04);
   resize: none;
   overflow:auto;
-  background-color: var(--COLOR-LIGHTER);
+  background-color: var(--COLOR-BACKGROUND);
   
   &:focus {
     outline: 4px auto -webkit-focus-ring-color;
