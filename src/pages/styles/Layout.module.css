@@ -5,9 +5,9 @@
     padding-bottom: 5rem;
     padding-top: 3rem;
     max-width: 1440px;
+    background-color: var(--COLOR-BACKGROUND);
 }
 .content {
-    background-color: var(--COLOR-BACKGROUND);
     margin: 0 auto;
     font-weight: 600;
 }
