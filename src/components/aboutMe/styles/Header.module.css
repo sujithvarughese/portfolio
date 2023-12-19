@@ -1,0 +1,123 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.greeting {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: var(--COLOR);
+    font-weight: 600;
+    animation: slideInLeft 200ms ease-out;
+    z-index: 1;
+}
+.hello {
+    font-size: 20px;
+    font-weight: 700;
+}
+.line1 {
+    display: flex;
+    align-items: flex-end;
+}
+.name {
+    font-size: 28px;
+    font-weight: 800;
+    overflow-wrap: normal;
+}
+.title {
+    font-size: 18px;
+    position: relative;
+}
+
+.pic {
+    animation: slideInRight 200ms ease-out;
+}
+.imageContainer {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 150px;
+    height: 190px;
+}
+
+.bg {
+    position: absolute;
+    width: 250px;
+    overflow: clip;
+}
+.image {
+    position: absolute;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 140px;
+}
+
+.graphic {
+    position: absolute;
+    width: 700px;
+    left: -10rem;
+    overflow: clip;
+}
+.graphicCenter {
+    position: absolute;
+    width: 130%;
+    top: -3rem;
+    left: -2rem;
+    overflow: clip;
+    opacity: 15%;
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translate3d(50%, -50%, 0px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+@keyframes slideInLeft {
+    0% {
+        transform: translate3d(-50%, -50%, 0px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+@media (min-width: 640px) {
+    .hello {
+        font-size: 20px;
+    }
+    .name {
+        font-size: 48px;
+        font-weight: 800;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .imageContainer {
+        height: 250px;
+    }
+    .image {
+        width: 180px;
+    }
+    .graphicCenter {
+        left: -4rem;
+        top: -6rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hello {
+        font-size: 24px;
+    }
+    .im {
+        font-size: 25px;
+    }
+    .name {
+        font-size: 52px;
+    }
+}

@@ -1,0 +1,59 @@
+.container {
+    border-bottom-right-radius: var(--BORDER-RADIUS-PAGE);
+    border-top-right-radius: var(--BORDER-RADIUS-PAGE);
+    padding: var(--PADDING-PAGE);
+    min-height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.header, .heading {
+    color: var(--COLOR);
+}
+
+.name {
+    font-size: 32px;
+}
+.title {
+    font-size: 20px;
+}
+
+.projectsContent, .workContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.projectFeatures {
+    padding: 1rem;
+}
+.skillList {
+    padding: 0 1rem;
+}
+.jobRoles {
+    padding: 1rem;
+}
+.resume {
+    border: black 3px solid;
+    border-radius: 5px;
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .name {
+        font-size: 40px;
+    }
+    .title {
+        font-size: 24px;
+    }
+}
+@media (min-width: 1024px) {
+    .name {
+        font-size: 72px;
+    }
+    .title {
+        font-size: 36px;
+    }
+}

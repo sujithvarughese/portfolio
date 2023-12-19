@@ -1,0 +1,74 @@
+:root {
+  --COLOR-LIGHTER: #CEF6FF;
+  --COLOR-LIGHT: #E99A27;
+  --COLOR: #0092ca;
+  --COLOR-DARK: #222831;
+  --COLOR-ALT: #E99A27;
+  --COLOR-BACKGROUND: #eeeeee;
+
+  --PADDING-PAGE: 1rem;
+  --PADDING-NAV: 1rem;
+  --BORDER-RADIUS-PAGE: 8px;
+
+  @media (min-width: 640px) {
+    --PADDING-PAGE: 2rem;
+    --PADDING-NAV: 2rem 1rem;
+  }
+
+  font-family: "Mukta", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: var(--COLOR-DARK);
+  background-color: var(--COLOR-BACKGROUND);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  width: 100vw;
+}
+a {
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+p {
+  overflow-wrap: break-word;
+  white-space: break-spaces;
+  text-align: justify;
+  hyphens: auto;
+}
+ul {
+  list-style: disc;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

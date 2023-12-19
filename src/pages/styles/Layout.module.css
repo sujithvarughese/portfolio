@@ -1,0 +1,23 @@
+.container {
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
+    max-width: 1440px;
+}
+.content {
+    background-color: var(--COLOR-BACKGROUND);
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+@media (min-width: 640px) {
+    .container {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+}
+
+
