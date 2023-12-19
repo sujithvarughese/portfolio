@@ -13,6 +13,9 @@ const StyledButtonIcon = styled(motion.button)`
 	&:hover {
 		color: ${props=> props.hoverColor || "var(--COLOR-ALT)"};
 	}
+  @media (min-width: 640px) {
+    font-size: 36px;
+  }
 `
 
 const ButtonIcon = (props) =>

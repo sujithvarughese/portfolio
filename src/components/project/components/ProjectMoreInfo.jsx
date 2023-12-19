@@ -10,14 +10,14 @@ const ProjectMoreInfo = ({ showPreviews, setShowPreviews }) => {
                         animate={{ rotate: showPreviews ? 180 : 0 }}
                         transition={{ duration: 0.01 }}
             >
-                <FaAnglesDown style={{fontSize: "32px"}}/>
+                <FaAnglesDown style={{fontSize: "24px"}}/>
             </ButtonIcon>
             <ButtonPlain
                 onClick={()=>setShowPreviews(!showPreviews)}
                 fontSize="18px"
 
             >
-                {showPreviews ? "Hide" : "More Info"}
+                {showPreviews ? "Hide" : "More"}
             </ButtonPlain>
         </div>
 

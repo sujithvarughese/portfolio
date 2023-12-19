@@ -20,6 +20,9 @@ const StyledLinkIcon = styled(motion.div)`
   &:hover {
     color: var(--COLOR-ALT);
   }
+  @media (min-width: 640px) {
+    font-size: 36px;
+  }
 `
 
 const LinkIcon = ({ icon, link, label, textFont, ...props }) =>
