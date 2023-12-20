@@ -17,6 +17,11 @@ import serviceIMG from "../assets/images/propertyasssitant/service.png"
 import unitsIMG from "../assets/images/propertyasssitant/units.png"
 import searchIMG from "../assets/images/propertyasssitant/search.png"
 
+import bookDiscoverIMG from "../assets/images/books/discover.png"
+import notebookIMG from "../assets/images/books/notebook.png"
+import bookPreviewIMG from "../assets/images/books/preview.png"
+import bookSearchIMG from "../assets/images/books/search.png"
+
 const realtySolutionsPreviews = [
 	{
 		captions: ["All Your Properties.", "All in one Place"],
@@ -35,9 +40,28 @@ const realtySolutionsPreviews = [
 		image: searchIMG
 	},
 	{
-		captions: ["Tenants can report issues anytime"],
+		captions: ["Search, create, and send rent receipts"],
 		image: serviceIMG
 	}
+]
+
+const onTheBooksPreviews = [
+	{
+		captions: ["Search millions of books using openLibrary."],
+		image: bookDiscoverIMG
+	},
+	{
+		captions: ["Notebooks for each book make note-taking a breeze."],
+		image: notebookIMG
+	},
+	{
+		captions: ["Search for any book within your library."],
+		image: bookSearchIMG
+	},
+	{
+		captions: ["Get book details and previews."],
+		image: bookPreviewIMG
+	},
 ]
 export const projects = [
 	{
@@ -72,7 +96,7 @@ export const projects = [
 		],
 		link: 'https://on-the-books.netlify.app',
 		github: 'https://github.com/sujithvarughese/on-the-books',
-		previews: [],
+		previews: onTheBooksPreviews,
 		tech: ["javascript", "node", "react", "mongodb"],
 		type: "main"
 	},
