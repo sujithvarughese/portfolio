@@ -2,7 +2,9 @@
     border-bottom-right-radius: var(--BORDER-RADIUS-PAGE);
     border-top-right-radius: var(--BORDER-RADIUS-PAGE);
     padding: var(--PADDING-PAGE);
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .content {
@@ -13,7 +15,10 @@
 .header, .heading {
     color: var(--COLOR);
 }
-
+.viewPrintableText {
+    text-decoration: underline;
+    z-index: 100;
+}
 .name {
     font-size: 32px;
 }

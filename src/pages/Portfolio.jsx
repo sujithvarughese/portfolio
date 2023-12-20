@@ -17,7 +17,11 @@ const Portfolio = () => {
 
 
 			<div className={classes.text}>
-				<p>Here are a few recent applications I have been working on since graduation. The projects were designed and created 100% by me in order to give an accurate representation of my ability and vision.</p>
+				<p>
+					Here are a few recent applications I have been working on since graduation.
+					The projects were designed and created 100% by me in order to give an accurate representation of my ability and vision.
+					All data has been saved so feel free to add/edit/delete the sample data to test all functions.
+				</p>
 
 				<p>Applications with required logins have a Preview Mode where the entire application can be accessed.</p>
 

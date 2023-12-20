@@ -14,7 +14,7 @@ const Resume = () => {
 		<div className={classes.container}>
 
 			<ButtonPlain
-				className={classes.viewPritableText}
+				className={classes.viewPrintableText}
 				onClick={()=>setShowPrintableResume(!showPrintableResume)}
 			>
 				{showPrintableResume ? "Hide Printable Resume" : "Show Printable Resume"}
