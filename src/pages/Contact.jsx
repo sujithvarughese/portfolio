@@ -10,7 +10,7 @@ const Contact = () => {
             </div>
             <p className={classes.text}>
                 Thank you for taking the time to view my portfolio!
-                Feel free to use the contact form below to react out, or contact me by phone or email.
+                Feel free to use the contact form below to reach out, or contact me by phone or email.
                 I would love to hear from you with any questions or feedback.
             </p>
 
