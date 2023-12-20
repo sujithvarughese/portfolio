@@ -6,9 +6,10 @@ const Layout = () => {
 
 	return (
 		<div className={classes.container}>
-			<Navbar />
+
 
 			<div className={classes.content}>
+				<Navbar />
 				<Outlet />
 				<Footer />
 			</div>
