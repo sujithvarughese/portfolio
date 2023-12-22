@@ -14,11 +14,7 @@ const StyledResume = () => {
 
             <div className={classes.profile}>
                 <h3 className={classes.heading}>Profile</h3>
-                <p>I am a recent computer science graduate looking to utilize my experience
-                    in developing full-stack web and mobile apps to solve real-world business
-                    problems. My goal is to contribute to a team that creates intuitive and
-                    efficient software solutions that ultimately lead to the most satisfying
-                    experience for the user.
+                <p>I am a recent computer science graduate looking to utilize my experience in developing full-stack web and mobile apps to solve real-world problems.My goal is to provide valuable contributions to creating intuitive and efficient software solutions that ultimately produce the most possible satisfying experience for the user.
                 </p>
             </div>
 
@@ -34,23 +30,19 @@ const StyledResume = () => {
                     <div className={classes.project}>
                         <h4 className={classes.projectName}>Realty Solutions</h4>
                         <div className={classes.projectDescription}>
-                            <p>MERN stack app for managers of rentals properties to calculate and
-                                optimize profits/losses, staying informed with payments, along with
-                                messaging functionality between managers and tenants.</p>
+                            <p>MERN stack app for managers of rentals properties to evaluate and optimize profits/losses, stay informed with payments, and full-featured messaging functionality between managers and tenants.</p>
                         </div>
                         <div className={classes.projectFeatures}>
                             <h5 className={classes.featuresHeading}>Features</h5>
                             <ul>
-                                <li>Seperate user roles (using signed cookies with JSON web tokens)
-                                    for managers who have access to all information, and tenants
-                                    who have access to only their appropriate unit
+                                <li>
+                                    Calculate mortgage payments, get live payoff quotes, adjust APR and compare payments all managed in React state
                                 </li>
                                 <li>
-                                    Calculate mortgage payments, get live payoff quotes, adjust APR
-                                    and compare payments all managed in React state
+                                    Separate user roles (using signed cookies with JSON web tokens) for managers who have full access, and tenants who have access only to their appropriate unit
                                 </li>
                                 <li>
-                                    In mobile version, call or send messages to tenants from the app
+                                    Call/send messages to tenants straight from the app (in mobile)
                                 </li>
                                 <li>
                                     Thread-like conversation style messaging
@@ -111,29 +103,36 @@ const StyledResume = () => {
             <div className={classes.experience}>
                 <h3 className={classes.heading}>Work Experience</h3>
                 <div className={classes.workContent}>
+
+                    <div className={classes.job}>
+                        <h4 className={classes.jobTitle}>Property Manager</h4>
+                        <h5 className={classes.jobLocation}>SGS Properties, Ft. Lauderdale, FL</h5>
+                        <p className={classes.jobDates}>2020-2023</p>
+                        <ul className={classes.jobRoles}>
+                            <li>Converted business to 100% digital by upgrading old paper lease system to fully digital encrypted leases and scanning all paper documents into digital database
+                            </li>
+                            <li>Created detailed advertisements of vacant units which were listed online and sent to local housing agencies to acquire tenants
+                            </li>
+                            <li>
+                                Prepared quarterly financial statements with income/expenses which helped implement cost-saving mea- sures
+                            </li>
+                        </ul>
+                    </div>
+
                     <div className={classes.job}>
                         <h4 className={classes.jobTitle}>IT Support Specialist</h4>
                         <h5 className={classes.jobLocation}>University of Florida, Gainesville, FL</h5>
                         <p className={classes.jobDates}>2016-2020</p>
                         <ul className={classes.jobRoles}>
-                            <li>Created training presentations
-                                during software upgrade cycles
-                                showcasing changes and new poten-
-                                tial use cases
+                            <li>
+                                Created training presentations during software upgrade cycles showcasing changes and new potential use cases
                             </li>
-                            <li>Worked with IT managers and system
-                                administrators to solve problems
+                            <li>
+                                Worked with managers and administrators to solve system issues during student enrollment
                             </li>
-                            <li>Software testing and maintenance</li>
-                        </ul>
-                    </div>
-                    <div className={classes.job}>
-                        <h4 className={classes.jobTitle}>Help Desk Specialist</h4>
-                        <h5 className={classes.jobLocation}>University of Florida, Gainesville, FL</h5>
-                        <p className={classes.jobDates}>2015-2016</p>
-                        <ul className={classes.jobRoles}>
-                            <li>First point of contact for account-related issues</li>
-                            <li>Led team of students during enrollment periods to manage system registration problems</li>
+                            <li>
+                                Software testing and maintenance
+                            </li>
                         </ul>
                     </div>
                 </div>
