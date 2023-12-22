@@ -5,6 +5,7 @@ const Navbar = () => {
 
 	return (
 		<nav className={classes.container}>
+			<div className={classes.backdrop}></div>
 			<NavbarLinks />
 		</nav>
 
