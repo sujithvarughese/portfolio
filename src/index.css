@@ -1,10 +1,10 @@
 :root {
   --COLOR-LIGHTER: #CEF6FF;
-  --COLOR-LIGHT: #E99A27;
-  --COLOR: #0092ca;
+  --COLOR-LIGHT: #0092ca;
+  --COLOR: #214565;
   --COLOR-DARK: #222831;
   --COLOR-ALT: #E99A27;
-  --COLOR-BACKGROUND: #eeeeee;
+  --COLOR-BACKGROUND: #F8F0E3;
 
   --PADDING-PAGE: 1rem;
   --PADDING-NAV: 1rem;
@@ -59,15 +59,4 @@ p {
 ul {
   list-style: disc;
 }
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+

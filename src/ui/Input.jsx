@@ -5,12 +5,12 @@ const Input = styled.input`
 	padding: 0.5rem;
     line-height: 1;
     font: inherit;
-  color: var(--COLOR-DARK);
+    color: var(--COLOR-DARK);
 	border-radius: 5px;
 	border: 1px solid #bcccdc;
 	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
 	0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    background-color: var(--COLOR-BACKGROUND);
+    background-color: #FFF8EC;
   
 	&:focus {
 	outline: 4px auto -webkit-focus-ring-color;

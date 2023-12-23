@@ -114,7 +114,7 @@ const StyledResume = () => {
                             <li>Created detailed advertisements of vacant units which were listed online and sent to local housing agencies to acquire tenants
                             </li>
                             <li>
-                                Prepared quarterly financial statements with income/expenses which helped implement cost-saving mea- sures
+                                Prepared quarterly financial statements with income/expenses which helped implement cost-saving measures
                             </li>
                         </ul>
                     </div>

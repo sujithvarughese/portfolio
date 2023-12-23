@@ -16,7 +16,7 @@ const Header = () => {
                     <p className={classes.im}>I'm</p>
                 </div>
 
-                <p className={classes.name}>Sujith Varughese</p>
+                <h5 className={classes.name}>Sujith Varughese</h5>
                 <p className={classes.title}>
                     Software Developer
                 </p>

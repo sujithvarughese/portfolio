@@ -16,7 +16,7 @@ const Bio = () => {
 
             <div className={classes.bio}>
                 <motion.h3 className={classes.heading}
-                    whileHover={{ scale: 1.05 }}
+                    whileHover={{ scale: 1.01 }}
                     transition={{type: "spring"}}
                 >
                     About Me

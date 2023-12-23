@@ -10,18 +10,19 @@ const StyledButtonIcon = styled(motion.button)`
 	border-radius: 6px;
 	transition: 0.2s ease-in-out all;
   
-	&:hover {
-		color: ${props=> props.hoverColor || "var(--COLOR-ALT)"};
-	}
+
   @media (min-width: 640px) {
     font-size: 36px;
+    &:hover {
+      color: ${props=> props.hoverColor || "var(--COLOR-ALT)"};
+    }
   }
 `
 
 const ButtonIcon = (props) =>
     <StyledButtonIcon
         { ...props }
-        whileHover={{ scale: 1.1 }}
+        whileHover={{ scale: 1.03 }}
     >
         {props.children}
     </StyledButtonIcon>

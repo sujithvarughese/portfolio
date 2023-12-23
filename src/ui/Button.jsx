@@ -20,20 +20,21 @@ const StyledButton = styled(motion.button)`
   0 2px 4px -1px rgba(0, 0, 0, 0.1);
   transition: 0.2s ease-in-out all;
 
-  &:hover {
-    color: var(--COLOR-ALT);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.3);
-  }
 
-  &:focus {
-    outline: 4px auto -webkit-focus-ring-color;
-    outline-offset: -1px;
-  }
   
   @media(min-width: 640px) {
     padding: 11px;
     width: 200px;
+    &:hover {
+      color: var(--COLOR-ALT);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.3);
+    }
+
+    &:focus {
+      outline: 4px auto -webkit-focus-ring-color;
+      outline-offset: -1px;
+    }
   }
 `
 

@@ -17,18 +17,19 @@ const StyledLinkIcon = styled(motion.div)`
   color: ${props => props.color || "var(--COLOR)"};
   z-index: 10;
   transition: 0.2s ease-in-out all;
-  &:hover {
-    color: var(--COLOR-ALT);
-  }
+
   @media (min-width: 640px) {
-    font-size: 36px;
+    font-size: 24px;
+    &:hover {
+      color: var(--COLOR-ALT);
+    }
   }
 `
 
 const LinkIcon = ({ icon, link, label, textFont, ...props }) =>
     <StyledLinkIcon
         { ...props }
-        whileHover={{ scale: 1.1 }}
+        whileHover={{ scale: 1.01 }}
     >
         <a href={link} style={{display: "flex", alignItems: "center", gap: "0.3rem"}} target="_blank" rel="noreferrer">{icons[icon]}<span style={{fontSize: textFont}}> {label}</span></a>
     </StyledLinkIcon>

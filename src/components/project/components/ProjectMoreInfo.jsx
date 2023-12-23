@@ -8,7 +8,7 @@ const ProjectMoreInfo = ({ showPreviews, setShowPreviews }) => {
     return (
         <motion.div
             className={classes.arrow}
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.05 }}
         >
             <ButtonIcon className={classes.togglePreview} onClick={()=>setShowPreviews(!showPreviews)}
                         animate={{ rotate: showPreviews ? 180 : 0 }}
