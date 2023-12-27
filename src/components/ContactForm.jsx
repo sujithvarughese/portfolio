@@ -2,8 +2,6 @@ import emailjs from "@emailjs/browser";
 import classes from "../components/styles/ContactForm.module.css"
 import {Button, Form, Input, Textarea} from "../ui/index.js";
 import {useRef, useState} from "react";
-import Card from "../ui/Card.jsx";
-import card from "../ui/Card.jsx";
 
 const credentials = {
     serviceID: import.meta.env.VITE_SERVICE_ID,
