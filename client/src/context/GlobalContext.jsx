@@ -6,11 +6,28 @@ const GlobalProvider = ({ children }) => {
 
   const [activeLink, setActiveLink] = useState()
 
+  const [alertState, setAlertState] = useState({
+    isOpen: false,
+    type: "",
+    message: "",
+  })
+
+  const showAlert = (type, message) => {
+    setAlertState({ isOpen: true, type, message })
+  }
+
+  const hideAlert = () => {
+    setAlertState({ isOpen: false, type: "", message: "" })
+  }
+
   return (
     <GlobalContext.Provider
       value={{
         activeLink,
-        setActiveLink
+        setActiveLink,
+        alertState,
+        showAlert,
+        hideAlert
       }}
     >
       {children}

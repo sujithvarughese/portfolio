@@ -1,7 +1,8 @@
 import { forwardRef, useEffect } from 'react'
 import Section from '../ui/Section.jsx'
-import { Heading } from '@chakra-ui/react'
+import { Heading, Image } from '@chakra-ui/react'
 import { useGlobalContext } from '../context/GlobalContext.jsx'
+import resume from "../assets/images/resume.png"
 
 const Resume = forwardRef((props, ref) => {
 
@@ -19,9 +20,10 @@ const Resume = forwardRef((props, ref) => {
 
   return (
     <Section
-      backgroundColor="#512DA8"
+      backgroundColor="#f2ebe8"
     >
       <Heading ref={ref}></Heading>
+      <Image src={resume}></Image>
     </Section>
   )
 })

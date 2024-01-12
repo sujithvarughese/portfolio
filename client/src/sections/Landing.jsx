@@ -6,7 +6,7 @@ import avatarIMG from "../assets/images/profile.png"
 import { useGlobalContext } from '../context/GlobalContext.jsx'
 const greeting = "Hello, I am Sujith!";
 const bio1 = "Software developer";
-const bio2 = "specialised in MERN Stack Applications";
+const bio2 = "Specializing in MERN Stack Applications";
 
 const Landing = forwardRef((props, ref) => {
 
@@ -30,6 +30,7 @@ const Landing = forwardRef((props, ref) => {
       <Section
         justifyContent="center"
         alignItems="center"
+        textAlign="center"
         height="100vh"
       >
         <Avatar src={avatarIMG} size="2xl"></Avatar>

@@ -2,6 +2,7 @@ import { useRef } from 'react'
 import { Header, Footer } from "./components"
 import { Landing, Projects, Resume, ContactMe } from "./sections"
 import { GlobalProvider } from './context/GlobalContext.jsx'
+import Alert from './components/Alert.jsx'
 const App = () => {
 
   // refs are forwarded to appropriate components to ref component in that section
@@ -52,6 +53,7 @@ const App = () => {
         <Projects ref={projectsRef}/>
         <Resume ref={resumeRef}/>
         <ContactMe ref={contactMeRef}/>
+        <Alert />
       </main>
 
       <Footer />
