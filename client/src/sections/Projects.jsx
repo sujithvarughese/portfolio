@@ -3,7 +3,8 @@ import { forwardRef, useEffect } from 'react'
 import { Heading, SimpleGrid, Text } from '@chakra-ui/react'
 import { useGlobalContext } from '../context/GlobalContext.jsx'
 import { projects } from "../data/projects.js";
-import Project from "../components/Project.jsx"
+import ProjectFront from "../components/ProjectFront.jsx"
+import ProjectCard from '../ui/ProjectCard.jsx'
 
 const Projects = forwardRef((props, ref) => {
 
@@ -34,7 +35,7 @@ const Projects = forwardRef((props, ref) => {
       >
         {
           projects.map((project, index) => {
-            return <Project key={index} {...project} />
+            return <ProjectCard key={index} project={project} />
           })
         }
       </SimpleGrid>

@@ -53,7 +53,7 @@ const ContactMe = forwardRef((props, ref) => {
     >
       <VStack w="1024px" p={32} alignItems="flex-start">
         <Heading ref={ref}>Contact Me</Heading>
-        <Box width="100%">
+        <Box width="100%" p="6">
           <form onSubmit={formik.handleSubmit}>
             <VStack spacing={4}>
               <FormControl isInvalid={formik.errors.name && formik.touched.name}>
