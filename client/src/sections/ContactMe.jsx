@@ -4,6 +4,7 @@ import Section from '../ui/Section.jsx'
 import { useGlobalContext } from '../context/GlobalContext.jsx'
 import { useFormik } from "formik";
 import * as Yup from 'yup';
+import useEmail from '../hooks/useEmail.js'
 
 const ContactMe = forwardRef((props, ref) => {
 
@@ -18,8 +19,7 @@ const ContactMe = forwardRef((props, ref) => {
     })
     observer.observe(ref.current)
   }, [])
-
-  const [isLoading, setIsLoading] = useState(false)
+  const { sendEmail, response, isLoading } = useEmail()
 
   const formik = useFormik({
     initialValues: {
@@ -29,14 +29,13 @@ const ContactMe = forwardRef((props, ref) => {
     },
     onSubmit: async (values) => {
       try {
-        setIsLoading(true)
-        console.log('Submitting Form')
+        await sendEmail(values)
         showAlert('success', `Thank you for your submission ${values.name}, we will get back to you if you are deemed worthy`)
       } catch (error) {
         showAlert('error', 'Auto self-destructing in 5 seconds...')
       } finally {
         formik.resetForm()
-        setIsLoading(false)
+
       }
     },
     validationSchema: Yup.object({

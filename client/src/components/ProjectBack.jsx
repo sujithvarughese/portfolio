@@ -3,7 +3,7 @@ import { Card, CardBody, Heading, Text } from '@chakra-ui/react'
 
 const ProjectBack = ({ title, coverImage, desktopImage, mobileImage, heading, captions, link, github, previews, flipCard }) => {
   return (
-    <Card height="500px">
+    <Card height="550px">
       <Heading>Back of Card</Heading>
       <CardBody>
 
