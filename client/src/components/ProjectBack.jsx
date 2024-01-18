@@ -1,14 +1,19 @@
 import React from 'react'
-import { Card, CardBody, Heading, Text } from '@chakra-ui/react'
+import { Card, CardBody, Heading, Icon, Text } from '@chakra-ui/react'
+import { AnimatePresence } from 'framer-motion'
+import ProjectPreview from './ProjectPreview.jsx'
+import { FaCircleArrowLeft } from 'react-icons/fa6'
 
-const ProjectBack = ({ title, coverImage, desktopImage, mobileImage, heading, captions, link, github, previews, flipCard }) => {
+
+const ProjectBack = ({ captions, images, link, github, flipCard }) => {
   return (
-    <Card height="550px">
-      <Heading>Back of Card</Heading>
-      <CardBody>
-
+    <Card height="600px" onClick={flipCard}>
+      <CardBody paddingBottom="0">
+        <AnimatePresence>
+          <ProjectPreview captions={captions} images={images} />
+        </AnimatePresence>
       </CardBody>
-      <Text onClick={flipCard}>Back</Text>
+      <Icon as={FaCircleArrowLeft} fontSize="32px" alignSelf="flex-start" marginBottom="3" marginLeft="3"></Icon>
     </Card>
   )
 }

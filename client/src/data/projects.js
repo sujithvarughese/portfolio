@@ -1,6 +1,26 @@
-import onTheBooksCoverImg from "../assets/images/on-the-books/on-the-books-cover.jpeg"
-import blackjackCoverImg from "../assets/images/blackjack/blackjack-cover.jpeg"
-import realtyCoverImg from "../assets/images/realty-solutions/realty-solutions-cover.jpeg"
+import simplerFitnessCoverIMG from "../assets/images/simpler-fitness/cover.jpeg"
+import fitnessBrowseIMG from "../assets/images/simpler-fitness/browse.png"
+import fitnessSearchIMG from "../assets/images/simpler-fitness/search.png"
+import fitnessInstructionsIMG from "../assets/images/simpler-fitness/instructions.png"
+
+import realtyCoverIMG from "../assets/images/realty-solutions/cover.jpeg"
+import fmrIMG from "../assets/images/realty-solutions/fmr.png"
+import messagesIMG from "../assets/images/realty-solutions/messages.png"
+import receiptsIMG from "../assets/images/realty-solutions/receipts.png"
+import mobileFinancesIMG from "../assets/images/realty-solutions/mobile-finances.png"
+import searchIMG from "../assets/images/realty-solutions/search.png"
+
+import onTheBooksCoverIMG from "../assets/images/on-the-books/cover.jpeg"
+import bookDiscoverIMG from "../assets/images/on-the-books/discover.png"
+import notebookIMG from "../assets/images/on-the-books/notebook.png"
+import bookPreviewIMG from "../assets/images/on-the-books/preview.png"
+import bookSearchIMG from "../assets/images/on-the-books/search.png"
+
+import blackjackCoverIMG from "../assets/images/blackjack/cover.jpeg"
+import blackjackCongratsIMG from "../assets/images/blackjack/congrats-blackjsck.png"
+import blackjackMobileDoubleIMG from "../assets/images/blackjack/mobile-double.png"
+import blackjackPlayerWinIMG from "../assets/images/blackjack/player-win.png"
+
 import rsDesktop from "../assets/images/previews/rs-desktop.png"
 import rsMobile from "../assets/images/previews/rs-mobile.png"
 import otbDesktop from "../assets/images/previews/otb-desktop.png"
@@ -8,84 +28,66 @@ import otbMobile from "../assets/images/previews/otb-mobile.png"
 import bjDesktop from "../assets/images/previews/bj-desktop.png"
 import bjMobile from "../assets/images/previews/bj-mobile.png"
 
-import fmrIMG from "../assets/images/realty-solutions/fmr.png"
-import messagesIMG from "../assets/images/realty-solutions/messages.png"
-import serviceIMG from "../assets/images/realty-solutions/service.png"
-import unitsIMG from "../assets/images/realty-solutions/units.png"
-import searchIMG from "../assets/images/realty-solutions/search.png"
-
-import bookDiscoverIMG from "../assets/images/on-the-books/discover.png"
-import notebookIMG from "../assets/images/on-the-books/notebook.png"
-import bookPreviewIMG from "../assets/images/on-the-books/preview.png"
-import bookSearchIMG from "../assets/images/on-the-books/search.png"
-
-import simplerFitnessCover from "../assets/images/simpler-fitness/simper-fitness-cover.jpeg"
-
-const realtySolutionsPreviews = [
-	{
-		captions: ["All Your Properties.", "All in one Place"],
-		image: unitsIMG
-	},
-	{
-		captions: ["Exchange messages.", "Flag important conversations."],
-		image: messagesIMG
-	},
-	{
-		captions: ["Get market rents from anywhere in the US"],
-		image: fmrIMG
-	},
-	{
-		captions: ["Search to easily find and organize properties"],
-		image: searchIMG
-	},
-	{
-		captions: ["Search, create, and send rent receipts"],
-		image: serviceIMG
-	}
-]
-
-const onTheBooksPreviews = [
-	{
-		captions: ["Search millions of on-the-books using openLibrary."],
-		image: bookDiscoverIMG
-	},
-	{
-		captions: ["Notebooks for each book make note-taking a breeze."],
-		image: notebookIMG
-	},
-	{
-		captions: ["Search for any book within your library."],
-		image: bookSearchIMG
-	},
-	{
-		captions: ["Get book details and previews."],
-		image: bookPreviewIMG
-	},
-]
 export const projects = [
 	{
 		title: "Simpler Fitness",
-		coverImage: simplerFitnessCover,
-		desktopImage: rsDesktop,
-		mobileImage: rsMobile,
+		coverImage: simplerFitnessCoverIMG,
 		heading: "Making getting in shape easier than ever with access to thousands of workouts with detailed instructions and animated images",
+		previews: [
+			{
+				caption: "Browse by target muscles, available equipment, or experience level",
+				image: fitnessBrowseIMG
+			},
+			{
+				caption: "Animated images showing proper technique",
+				image: fitnessInstructionsIMG
+			},
+			{
+				caption: "Create an account to save favorite workouts for quick access",
+				image: fitnessInstructionsIMG
+			},
+			{
+				caption: "Search by name through the database of more than a thousand exercises",
+				image: fitnessSearchIMG
+			},
+		],
 		captions: [
 			"Browse by target muscles, available equipment, or experience level",
 			"Animated images showing proper technique",
-			"Create an account to save favorite workouts for quick re-access",
+			"Create an account to save favorite workouts for quick access",
 			"Search by name through the database of more than a thousand exercises"
 		],
+		images: [fitnessBrowseIMG, fitnessSearchIMG, fitnessInstructionsIMG],
 		link: 'https://simpler-fitness.netlify.app',
 		github: 'https://github.com/sujithvarughese/simple-fitness',
-		previews: realtySolutionsPreviews,
 		tech: ["javascript", "node", "react", "mongodb"],
 	},
 	{
 		title: "Realty Solutions",
-		coverImage: realtyCoverImg,
-		desktopImage: rsDesktop,
-		mobileImage: rsMobile,
+		coverImage: realtyCoverIMG,
 		heading: "A property management app for small business owners to organize finances and communicate with tenants.",
+		previews: [
+			{
+				caption: "Calculate mortgage payments, compare payments with different interest rates, view live payoff quotes, view both monthly and yearly profits and losses",
+				image: mobileFinancesIMG
+			},
+			{
+				caption: "Separate user roles for system admin, account admin (property manager) and users (tenants)",
+				image: searchIMG
+			},
+			{
+				caption: "Tokens attached to signed HTTP cookies for verification",
+				image: receiptsIMG
+			},
+			{
+				caption: "Messaging functionality for landlord-tenant communication",
+				image: messagesIMG
+			},
+			{
+				caption: "HUD.gov API to retrieve rental rates for any location in the US.",
+				image: fmrIMG
+			},
+		],
 		captions: [
 			"Calculate mortgage payments, compare payments with different interest rates, view live payoff quotes, view both monthly and yearly profits and losses",
 			"Separate user roles for system admin, account admin (property manager) and users (tenants)",
@@ -93,40 +95,69 @@ export const projects = [
 			"Messaging functionality for landlord-tenant communication",
 			"HUD.gov API to retrieve rental rates for any location in the US.",
 		],
+		images : [searchIMG, messagesIMG, mobileFinancesIMG, receiptsIMG, fmrIMG],
 		link: 'https://realty-solutions.netlify.app',
 		github: 'https://github.com/sujithvarughese/realty-solutions',
-		previews: realtySolutionsPreviews,
 		tech: ["javascript", "node", "react", "mongodb"],
 	},
 	{
 		title: "On the Books.",
-		coverImage: onTheBooksCoverImg,
-		desktopImage: otbDesktop,
-		mobileImage: otbMobile,
+		coverImage: onTheBooksCoverIMG,
 		heading: "A personal library designed to take notes, rate, and keep track of their status of each book.",
-		captions: [
-			"OpenLibrary API where users can search for on-the-books, get recommendations, and view book previews",
-			"Save on-the-books to library and create an organized notebook for easy to use note-taking",
-			"React context/reducer/router"
+		previews: [
+			{
+				caption: "Uses OpenLibrary API for access to millions of books, recommendations, and previews",
+				image: bookDiscoverIMG
+			},
+			{
+				caption: "Save on-the-books to library and create an organized notebook for easy to use note-taking",
+				image: notebookIMG
+			},
+			{
+				caption: "Search feature to find any book in your library",
+				image: bookSearchIMG
+			},
+			{
+				caption: 	"Search database for book by genre",
+				image: bookPreviewIMG
+			}
 		],
+		captions: [
+			"Uses OpenLibrary API for access to millions of books, recommendations, and previews",
+			"Save on-the-books to library and create an organized notebook for easy to use note-taking",
+			"Search feature to find any book in your library",
+			"Search database for book by genre"
+		],
+		images: [bookDiscoverIMG, notebookIMG, bookSearchIMG, bookPreviewIMG],
 		link: 'https://on-the-books.netlify.app',
 		github: 'https://github.com/sujithvarughese/on-the-books',
-		previews: onTheBooksPreviews,
 		tech: ["javascript", "node", "react", "mongodb"],
 	},
 	{
 		title: "Beat Blackjack",
-		coverImage: blackjackCoverImg,
-		desktopImage: bjDesktop,
-		mobileImage: bjMobile,
+		coverImage: blackjackCoverIMG,
 		heading: "Play blackjack with live assistance!",
+		previews: [
+			{
+				caption: "Get the correct play by the book in any situation as you play",
+				image: blackjackCongratsIMG
+			},
+			{
+				caption: "Customize your bankroll, change number of decks used",
+				image:blackjackMobileDoubleIMG
+			},
+			{
+				caption: "See if you can beat the house",
+				image: blackjackPlayerWinIMG
+			}
+		],
 		captions: [
 			"Get the correct play by the book in any situation as you play",
 			"Customize your bankroll, change number of decks used"
 		],
+		images: [blackjackCongratsIMG, blackjackMobileDoubleIMG, blackjackPlayerWinIMG],
 		link: 'https://blackjack-suj.netlify.app',
 		github: 'https://github.com/sujithvarughese/blackjack-js/tree/master/react',
-		previews: [],
 		tech: ["javascript", "react"],
 	},
 ]

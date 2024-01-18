@@ -1,6 +1,6 @@
 import Section from '../ui/Section.jsx'
 import { forwardRef, useEffect } from 'react'
-import { Heading, SimpleGrid, Text } from '@chakra-ui/react'
+import { Box, Heading, HStack, SimpleGrid, Text } from '@chakra-ui/react'
 import { useGlobalContext } from '../context/GlobalContext.jsx'
 import { projects } from "../data/projects.js";
 import ProjectFront from "../components/ProjectFront.jsx"
@@ -29,16 +29,21 @@ const Projects = forwardRef((props, ref) => {
       spacing="8"
     >
       <Heading ref={ref}>Projects</Heading>
-      <SimpleGrid
-        gridTemplateColumns="repeat(2,minmax(0,1fr))"
-        gridGap="8"
+      <HStack
+        flexWrap="wrap"
+        gap="1rem"
+        justifyContent="space-evenly"
       >
         {
           projects.map((project, index) => {
-            return <ProjectCard key={index} project={project} />
+            return (
+            <Box key={index} width="480px">
+              <ProjectCard project={project} />
+            </Box>
+            )
           })
         }
-      </SimpleGrid>
+      </HStack>
     </Section>
   )
 })
