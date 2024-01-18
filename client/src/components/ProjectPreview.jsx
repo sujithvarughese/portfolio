@@ -22,12 +22,12 @@ const ProjectPreview = ({ captions, images }) => {
                 animate={{ y: 0, opacity: 1 }}
                 exit={{y: -100, opacity: 0 }}
                 style={{
-                  scrollBehavior: "smooth", display: "flex"
+                  scrollBehavior: "smooth", display: "flex", margin: "30px"
     }}
     >
       <VStack margin="auto">
 
-        <HStack ref={elementRef} gap="2rem" overflowX="scroll" alignItems="flex-start" width="430px">
+        <HStack ref={elementRef} gap="2rem" overflowX="scroll" alignItems="flex-start" >
           {images.map((image, index) =>
 
               <Image
@@ -36,7 +36,7 @@ const ProjectPreview = ({ captions, images }) => {
                 border="black solid 8px"
                 src={image}
                 alt="image"
-                height="480px"
+                height="640px"
                 objectFit="cover"
               />
 

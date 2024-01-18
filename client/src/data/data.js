@@ -4,3 +4,5 @@ export const projectsText = [
     "Apps with logins have a preview mode with sample data that can be viewed.",
     "Note: Cross-site tracking will need to be disabled if using Safari"
 ]
+
+const aboutMe = "My name is Sujith Varughese. "
