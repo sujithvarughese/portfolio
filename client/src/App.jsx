@@ -48,7 +48,7 @@ const App = () => {
         scrollToResume={scrollToResume}
         scrollToContactMe={scrollToContactMe}
       />
-      <main>
+      <main style={{ marginTop: "50px" }}>
         <Landing ref={landingRef}/>
         <Projects ref={projectsRef}/>
         <Resume ref={resumeRef}/>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Card, CardBody, Heading, Icon, Modal, ModalContent, ModalOverlay, Text, useDisclosure, keyframes } from '@chakra-ui/react'
 import { AnimatePresence } from 'framer-motion'
 import ProjectPreview from './ProjectPreview.jsx'
@@ -10,40 +10,15 @@ const ProjectBack = ({ captions, images, link, github, flipCard, isFlipped }) =>
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   const spin = keyframes`
-    from {transform: rotateY(180deg); opacity: 0;  }
+    from {transform: rotateY(90deg); opacity: 0; scale: (2%)}
     to {transform: rotateY(0deg); opacity: 1;  }
   `;
-  const spinAnimation = `${spin} 1 .4s ease-in-out`;
+  const spinAnimation = `${spin} 1 1s ease-in-out`;
 
-  const animatedClose = keyframes`
-    0% {
-    transform: rotateY(0);
-    filter: hue-rotate(0);
-    } 
-    80% {
-    transform: rotateY(360deg);
-      filter: hue-rotate(180deg);
-      opacity: 1;
-    } 
-    100% {
-      opacity: 0;
-      display: none;
-    }`
-
-  const [close, setClose] = useState(false)
-
-  const closeModal = () => {
-    setClose(true)
-    setTimeout(() => {
-      flipCard()
-    }, 2000)
-
-  }
-  const setAnimation = close ? animatedClose : spinAnimation
   return (
-    <Modal isOpen={isFlipped} isCentered motionPreset="scale" onClose={closeModal}>
+    <Modal isOpen={isFlipped} isCentered motionPreset="scale" onClose={flipCard}>
       <ModalOverlay>
-        <ModalContent placeItems="center" animation={setAnimation}>
+        <ModalContent placeItems="center" animation={spinAnimation}>
           <Card height="80vh" width="80vw" maxWidth="800px" onClick={flipCard}>
             <CardBody paddingBottom="0">
               <AnimatePresence>

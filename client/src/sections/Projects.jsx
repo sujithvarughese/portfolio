@@ -1,5 +1,5 @@
 import Section from '../ui/Section.jsx'
-import { forwardRef, useEffect } from 'react'
+import { forwardRef, useEffect, useRef } from 'react'
 import { Box, Heading, HStack, SimpleGrid, Text } from '@chakra-ui/react'
 import { useGlobalContext } from '../context/GlobalContext.jsx'
 import { projects } from "../data/projects.js";
@@ -9,6 +9,16 @@ import ProjectCard from '../ui/ProjectCard.jsx'
 const Projects = forwardRef((props, ref) => {
 
   const { setActiveLink } = useGlobalContext()
+/*
+  const projectref = useRef()
+  const getCardPosition = () => {
+    const x = projectref.current?.offsetLeft;
+    const y = projectref.current?.offsetTop;
+    console.log(projectref?.current)
+    console.log({ x, y })
+    return { x, y }
+  }*/
+
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries, observer) => {
@@ -35,9 +45,12 @@ const Projects = forwardRef((props, ref) => {
         justifyContent="space-evenly"
       >
         {
-          projects.map((project, index) => {
+          projects.map((project,index) => {
             return (
-            <Box key={index} width="480px">
+            <Box
+              key={index}
+              width="480px"
+            >
               <ProjectCard project={project} />
             </Box>
             )
