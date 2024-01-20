@@ -8,3 +8,8 @@
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif;
 }
+
+main {
+  color: white;
+  background-image: url("./assets/images/backgrounds/bg-rocks.jpeg");
+}

@@ -47,9 +47,7 @@ const ContactMe = forwardRef((props, ref) => {
 
 
   return (
-    <Section
-      backgroundColor="#512DA8" color="white"
-    >
+    <Section>
       <VStack w="1024px" p={32} alignItems="flex-start">
         <Heading ref={ref}>Contact Me</Heading>
         <Box width="100%" p="6">

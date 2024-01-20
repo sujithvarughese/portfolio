@@ -3,8 +3,9 @@ import { Card, CardBody, Heading, Icon, Modal, ModalContent, ModalOverlay, Text,
 import { AnimatePresence } from 'framer-motion'
 import ProjectPreview from './ProjectPreview.jsx'
 import { FaCircleArrowLeft } from 'react-icons/fa6'
-
-
+import bgSpotlightIMG from "../assets/images/backgrounds/bg-spotlight.jpeg"
+import bgTableIMG from "../assets/images/backgrounds/bg-table.jpeg"
+import bgBlackGoldIMG from "../assets/images/backgrounds/bg-black&gold.jpeg"
 const ProjectBack = ({ captions, images, link, github, flipCard, isFlipped }) => {
 
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -19,7 +20,16 @@ const ProjectBack = ({ captions, images, link, github, flipCard, isFlipped }) =>
     <Modal isOpen={isFlipped} isCentered motionPreset="scale" onClose={flipCard}>
       <ModalOverlay>
         <ModalContent placeItems="center" animation={spinAnimation}>
-          <Card height="80vh" width="80vw" maxWidth="800px" onClick={flipCard}>
+          <Card
+            height="80vh"
+            width="80vw"
+            maxWidth="800px"
+            onClick={flipCard}
+            bgImage={bgBlackGoldIMG}
+            bgSize="cover"
+            bgPosition="center"
+            borderRadius="20px"
+          >
             <CardBody paddingBottom="0">
               <AnimatePresence>
                 <ProjectPreview captions={captions} images={images} />

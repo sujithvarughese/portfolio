@@ -33,8 +33,6 @@ const Projects = forwardRef((props, ref) => {
 
   return (
     <Section
-      backgroundColor="#14532d"
-      color="white"
       p="8"
       spacing="8"
     >

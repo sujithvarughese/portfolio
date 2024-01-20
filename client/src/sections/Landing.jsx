@@ -20,10 +20,7 @@ const Landing = forwardRef((props, ref) => {
     observer.observe(ref.current)
   }, [])
   return (
-    <Section
-      backgroundColor="#2A4365"
-      color="white"
-    >
+    <Section>
         <SimpleGrid>
           <HStack justifyContent="space-between">
             <Heading ref={ref} fontSize="64px">Welcome.</Heading>

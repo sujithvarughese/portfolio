@@ -19,9 +19,7 @@ const Resume = forwardRef((props, ref) => {
   }, [])
 
   return (
-    <Section
-      backgroundColor="#f2ebe8"
-    >
+    <Section>
       <Heading ref={ref}></Heading>
       <Image src={resume}></Image>
     </Section>
