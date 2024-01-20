@@ -1,7 +1,6 @@
 import { useRef } from 'react'
 import { Header, Footer } from "./components"
 import { Landing, Projects, Resume, ContactMe } from "./sections"
-import { GlobalProvider } from './context/GlobalContext.jsx'
 import Alert from './components/Alert.jsx'
 const App = () => {
 
@@ -40,7 +39,7 @@ const App = () => {
   }
 
   return (
-    <GlobalProvider>
+    <>
 
       <Header
         scrollToLanding={scrollToLanding}
@@ -59,7 +58,7 @@ const App = () => {
       <Footer />
 
 
-    </GlobalProvider>
+    </>
   )
 }
 

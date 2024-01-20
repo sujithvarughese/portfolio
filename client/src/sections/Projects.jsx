@@ -5,6 +5,10 @@ import { useGlobalContext } from '../context/GlobalContext.jsx'
 import { projects } from "../data/projects.js";
 import ProjectFront from "../components/ProjectFront.jsx"
 import ProjectCard from '../ui/ProjectCard.jsx'
+import bgGoldIMG from "../assets/images/backgrounds/bg-projects.jpeg"
+import bgScratched from "../assets/images/backgrounds/bg-scratched.jpeg"
+import bgBlur from "../assets/images/backgrounds/bg-blur.jpeg"
+
 
 const Projects = forwardRef((props, ref) => {
 
@@ -33,6 +37,9 @@ const Projects = forwardRef((props, ref) => {
 
   return (
     <Section
+      bgImage={bgBlur}
+      bgSize="cover"
+      bgPosition="left"
       p="8"
       spacing="8"
     >

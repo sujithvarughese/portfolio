@@ -5,6 +5,8 @@ import { Avatar, Heading, HStack, SimpleGrid, Text, VStack } from '@chakra-ui/re
 import avatarIMG from "../assets/images/profile.png"
 import { useGlobalContext } from '../context/GlobalContext.jsx'
 import { intro, aboutMe, skills } from "../data/data.js";
+import bgBlackGoldFrameIMG from "../assets/images/backgrounds/bg-gold&black-frame.png"
+
 
 const Landing = forwardRef((props, ref) => {
 
@@ -20,7 +22,11 @@ const Landing = forwardRef((props, ref) => {
     observer.observe(ref.current)
   }, [])
   return (
-    <Section>
+    <Section
+      bgImage={bgBlackGoldFrameIMG}
+      bgSize="cover"
+      bgPosition={{ base: "left", lg: "center"}}
+    >
         <SimpleGrid>
           <HStack justifyContent="space-between">
             <Heading ref={ref} fontSize="64px">Welcome.</Heading>

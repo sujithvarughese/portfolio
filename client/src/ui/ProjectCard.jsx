@@ -11,10 +11,10 @@ const ProjectCard = ({ project }) => {
 
 
   return (
-    <ReactCardFlip flipDirection="horizontal" isFlipped={isFlipped} boxShadow="dark-lg">
+    <>
       <ProjectFront { ...project } flipCard={flipCard} isFlipped={isFlipped} />
       <ProjectBack { ...project } flipCard={flipCard} isFlipped={isFlipped} />
-    </ReactCardFlip>
+    </>
   )
 }
 

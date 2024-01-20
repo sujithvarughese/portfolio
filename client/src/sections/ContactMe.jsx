@@ -5,6 +5,7 @@ import { useGlobalContext } from '../context/GlobalContext.jsx'
 import { useFormik } from "formik";
 import * as Yup from 'yup';
 import useEmail from '../hooks/useEmail.js'
+import bgAbstract from "../assets/images/backgrounds/bg-abstract.svg"
 
 const ContactMe = forwardRef((props, ref) => {
 
@@ -47,7 +48,9 @@ const ContactMe = forwardRef((props, ref) => {
 
 
   return (
-    <Section>
+    <Section
+      bgImage={bgAbstract}
+    >
       <VStack w="1024px" p={32} alignItems="flex-start">
         <Heading ref={ref}>Contact Me</Heading>
         <Box width="100%" p="6">
