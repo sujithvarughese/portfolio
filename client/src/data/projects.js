@@ -36,24 +36,6 @@ export const projects = [
 		title: "Simpler Fitness",
 		coverImage: simplerFitnessCoverIMG,
 		heading: "Making getting in shape easier than ever with access to thousands of workouts with detailed instructions and animated images",
-		previews: [
-			{
-				caption: "Browse by target muscles, available equipment, or experience level",
-				image: fitnessBrowseIMG
-			},
-			{
-				caption: "Animated images showing proper technique",
-				image: fitnessInstructionsIMG
-			},
-			{
-				caption: "Create an account to save favorite workouts for quick access",
-				image: fitnessInstructionsIMG
-			},
-			{
-				caption: "Search by name through the database of more than a thousand exercises",
-				image: fitnessSearchIMG
-			},
-		],
 		captions: [
 			"Browse by target muscles, available equipment, or experience level",
 			"Animated images showing proper technique",
@@ -65,33 +47,12 @@ export const projects = [
 		link: 'https://simpler-fitness.netlify.app',
 		github: 'https://github.com/sujithvarughese/simple-fitness',
 		tech: ["javascript", "node", "react", "mongodb"],
+		featured: true,
 	},
 	{
 		title: "Realty Solutions",
 		coverImage: realtyCoverIMG,
 		heading: "A property management app for small business owners to organize finances and communicate with tenants.",
-		previews: [
-			{
-				caption: "Calculate mortgage payments, compare payments with different interest rates, view live payoff quotes, view both monthly and yearly profits and losses",
-				image: mobileFinancesIMG
-			},
-			{
-				caption: "Separate user roles for system admin, account admin (property manager) and users (tenants)",
-				image: searchIMG
-			},
-			{
-				caption: "Tokens attached to signed HTTP cookies for verification",
-				image: receiptsIMG
-			},
-			{
-				caption: "Messaging functionality for landlord-tenant communication",
-				image: messagesIMG
-			},
-			{
-				caption: "HUD.gov API to retrieve rental rates for any location in the US.",
-				image: fmrIMG
-			},
-		],
 		captions: [
 			"Calculate mortgage payments, compare payments with different interest rates, view live payoff quotes, view both monthly and yearly profits and losses",
 			"Separate user roles for system admin, account admin (property manager) and users (tenants)",
@@ -106,29 +67,12 @@ export const projects = [
 		link: 'https://realty-solutions.netlify.app',
 		github: 'https://github.com/sujithvarughese/realty-solutions',
 		tech: ["javascript", "node", "react", "mongodb"],
+		featured: true,
 	},
 	{
 		title: "On the Books.",
 		coverImage: onTheBooksCoverIMG,
 		heading: "A personal library designed to take notes, rate, and keep track of their status of each book.",
-		previews: [
-			{
-				caption: "Uses OpenLibrary API for access to millions of books, recommendations, and previews",
-				image: bookDiscoverIMG
-			},
-			{
-				caption: "Save on-the-books to library and create an organized notebook for easy to use note-taking",
-				image: notebookIMG
-			},
-			{
-				caption: "Search feature to find any book in your library",
-				image: bookSearchIMG
-			},
-			{
-				caption: 	"Search database for book by genre",
-				image: bookPreviewIMG
-			}
-		],
 		captions: [
 			"Uses OpenLibrary API for access to millions of books, recommendations, and previews",
 			"Save on-the-books to library and create an organized notebook for easy to use note-taking",
@@ -142,25 +86,12 @@ export const projects = [
 		link: 'https://on-the-books.netlify.app',
 		github: 'https://github.com/sujithvarughese/on-the-books',
 		tech: ["javascript", "node", "react", "mongodb"],
+		featured: false,
 	},
 	{
 		title: "Beat Blackjack",
 		coverImage: blackjackCoverIMG,
 		heading: "Play blackjack with live assistance!",
-		previews: [
-			{
-				caption: "Get the correct play by the book in any situation as you play",
-				image: blackjackCongratsIMG
-			},
-			{
-				caption: "Customize your bankroll, change number of decks used",
-				image:blackjackMobileDoubleIMG
-			},
-			{
-				caption: "See if you can beat the house",
-				image: blackjackPlayerWinIMG
-			}
-		],
 		captions: [
 			"Get the correct play by the book in any situation as you play",
 			"Customize your bankroll, change number of decks used"
@@ -172,6 +103,7 @@ export const projects = [
 		link: 'https://blackjack-suj.netlify.app',
 		github: 'https://github.com/sujithvarughese/blackjack-js/tree/master/react',
 		tech: ["javascript", "react"],
+		featured: false,
 	},
 ]
 

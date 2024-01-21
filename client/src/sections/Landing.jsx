@@ -28,10 +28,7 @@ const Landing = forwardRef((props, ref) => {
       bgImage={bgKnight}
       bgSize="cover"
       bgPosition="center"
-      position="relative"
     >
-
-
         <SimpleGrid>
           <Heading ref={ref} fontSize="64px">Welcome.</Heading>
           <VStack margin="8" gap="8" alignItems="start" maxWidth="520px">

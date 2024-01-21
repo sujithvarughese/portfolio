@@ -14,6 +14,7 @@ const Header = ({ scrollToLanding, scrollToProjects, scrollToResume, scrollToCon
       left={0}
       right={0}
       backgroundColor="#18181b"
+      zIndex="10"
     >
       <Box
         color="white"
