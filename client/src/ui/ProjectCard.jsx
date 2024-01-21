@@ -4,7 +4,7 @@ import ProjectCardFront from '../components/ProjectCardFront.jsx'
 import ProjectCardBack from '../components/ProjectCardBack.jsx'
 import { useEffect, useRef, useState } from 'react'
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, index }) => {
 
   const [isFlipped, setIsFlipped] = useState(false)
   const flipCard = () => setIsFlipped(!isFlipped)
@@ -13,7 +13,7 @@ const ProjectCard = ({ project }) => {
   return (
     <ReactCardFlip isFlipped={isFlipped} >
       <ProjectCardFront { ...project } flipCard={flipCard} isFlipped={isFlipped} />
-      <ProjectCardBack { ...project } flipCard={flipCard} isFlipped={isFlipped} />
+      <ProjectCardBack { ...project } flipCard={flipCard} isFlipped={isFlipped} index={index}/>
     </ReactCardFlip>
   )
 }

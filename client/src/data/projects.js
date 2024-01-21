@@ -24,12 +24,12 @@ import blackjackCongratsIMG from "../assets/images/blackjack/congrats-blackjsck.
 import blackjackMobileDoubleIMG from "../assets/images/blackjack/mobile-double.png"
 import blackjackPlayerWinIMG from "../assets/images/blackjack/player-win.png"
 
-import rsDesktop from "../assets/images/previews/rs-desktop.png"
-import rsMobile from "../assets/images/previews/rs-mobile.png"
-import otbDesktop from "../assets/images/previews/otb-desktop.png"
-import otbMobile from "../assets/images/previews/otb-mobile.png"
-import bjDesktop from "../assets/images/previews/bj-desktop.png"
-import bjMobile from "../assets/images/previews/bj-mobile.png"
+import rsDesktop from "../assets/images/realty-solutions/home-desktop.png"
+import rsMobile from "../assets/images/realty-solutions/home-mobile.png"
+import otbDesktop from "../assets/images/on-the-books/on-the-books-desktop.png"
+import otbMobile from "../assets/images/on-the-books/on-the-books-mobile.png"
+import bjDesktop from "../assets/images/blackjack/blackjack-desktop.png"
+import bjMobile from "../assets/images/blackjack/blackjack-mobile.png"
 
 export const projects = [
 	{
@@ -101,6 +101,8 @@ export const projects = [
 		],
 		images : [searchIMG, messagesIMG, mobileFinancesIMG, receiptsIMG, fmrIMG],
 		image: realtyScreenshots,
+		desktop: rsDesktop,
+		mobile: rsMobile,
 		link: 'https://realty-solutions.netlify.app',
 		github: 'https://github.com/sujithvarughese/realty-solutions',
 		tech: ["javascript", "node", "react", "mongodb"],
@@ -135,6 +137,8 @@ export const projects = [
 		],
 		images: [bookDiscoverIMG, notebookIMG, bookSearchIMG, bookPreviewIMG],
 		image: onTheBooksScreenshots,
+		desktop: otbDesktop,
+		mobile: otbMobile,
 		link: 'https://on-the-books.netlify.app',
 		github: 'https://github.com/sujithvarughese/on-the-books',
 		tech: ["javascript", "node", "react", "mongodb"],
@@ -163,6 +167,8 @@ export const projects = [
 		],
 		images: [blackjackCongratsIMG, blackjackMobileDoubleIMG, blackjackPlayerWinIMG],
 		image: blackjackScreenshots,
+		desktop: bjDesktop,
+		mobile: bjMobile,
 		link: 'https://blackjack-suj.netlify.app',
 		github: 'https://github.com/sujithvarughese/blackjack-js/tree/master/react',
 		tech: ["javascript", "react"],

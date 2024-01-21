@@ -59,7 +59,7 @@ const Projects = forwardRef((props, ref) => {
               key={index}
               width="480px"
             >
-              <ProjectCard project={project} />
+              <ProjectCard project={project} index={index}/>
             </Box>
             )
           })

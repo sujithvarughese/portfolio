@@ -29,7 +29,6 @@ const Landing = forwardRef((props, ref) => {
       bgPosition="left"
     >
         <SimpleGrid>
-          <PhoneImageContainer />
           <HStack justifyContent="space-between">
             <Heading ref={ref} fontSize="64px">Welcome.</Heading>
             <Avatar src={avatarIMG} size="2xl"></Avatar>

@@ -4,7 +4,9 @@ import {IoLogoGithub, IoRocketSharp} from "react-icons/io5";
 import bgBlur from "../assets/images/backgrounds/bg-blur.jpeg"
 import { useState } from 'react'
 import ProjectModal from "./ProjectModal.jsx"
-const Project = ({ title, coverImage, heading, link, github, captions, images, image, index }) => {
+import PhoneImageContainer from '../ui/PhoneImageContainer.jsx'
+import DesktopMobileImageContainer from '../ui/DesktopMobileImageContainer.jsx'
+const Project = ({ title, coverImage, heading, link, github, captions, images, image, desktop, mobile, index }) => {
 
   const { isOpen, onOpen, onClose } = useDisclosure()
 
@@ -13,9 +15,25 @@ const Project = ({ title, coverImage, heading, link, github, captions, images, i
   return (
     <VStack justifyContent="space-around" alignItems="center">
 
-      <Box>
-        <Image src={image} alt="image"></Image>
-      </Box>
+      {
+        index === 0 ?
+
+
+    <Container display="flex" position="relative" height="500px">
+      <PhoneImageContainer image={images[0]}/>
+      <PhoneImageContainer image={images[1]}/>
+      <PhoneImageContainer image={images[2]}/>
+    </Container>
+
+          :
+    <Box>
+      {/*<Image src={image} alt="image"></Image>*/}
+      <DesktopMobileImageContainer desktop={desktop} mobile={mobile} />
+    </Box>
+
+      }
+
+
 
 
       <VStack display="flex" flexDir="column" gap="9px" alignItems="center">
