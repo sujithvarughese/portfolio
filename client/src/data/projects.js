@@ -4,6 +4,7 @@ import fitnessSearchIMG from "../assets/images/simpler-fitness/search.png"
 import fitnessInstructionsIMG from "../assets/images/simpler-fitness/instructions.png"
 
 import realtyCoverIMG from "../assets/images/realty-solutions/cover.jpeg"
+import realtyScreenshots from "../assets/images/realty-solutions/home-combined.png"
 import fmrIMG from "../assets/images/realty-solutions/fmr.png"
 import messagesIMG from "../assets/images/realty-solutions/messages.png"
 import receiptsIMG from "../assets/images/realty-solutions/receipts.png"
@@ -11,11 +12,13 @@ import mobileFinancesIMG from "../assets/images/realty-solutions/mobile-finances
 import searchIMG from "../assets/images/realty-solutions/search.png"
 
 import onTheBooksCoverIMG from "../assets/images/on-the-books/cover.jpeg"
+import onTheBooksScreenshots from "../assets/images/on-the-books/on-the-books-screenshot.png"
 import bookDiscoverIMG from "../assets/images/on-the-books/discover.png"
 import notebookIMG from "../assets/images/on-the-books/notebook.png"
 import bookPreviewIMG from "../assets/images/on-the-books/preview.png"
 import bookSearchIMG from "../assets/images/on-the-books/search.png"
 
+import blackjackScreenshots from "../assets/images/blackjack/blackjack-screenshots.png"
 import blackjackCoverIMG from "../assets/images/blackjack/cover.jpeg"
 import blackjackCongratsIMG from "../assets/images/blackjack/congrats-blackjsck.png"
 import blackjackMobileDoubleIMG from "../assets/images/blackjack/mobile-double.png"
@@ -58,6 +61,7 @@ export const projects = [
 			"Search by name through the database of more than a thousand exercises"
 		],
 		images: [fitnessBrowseIMG, fitnessSearchIMG, fitnessInstructionsIMG],
+		image: realtyScreenshots,
 		link: 'https://simpler-fitness.netlify.app',
 		github: 'https://github.com/sujithvarughese/simple-fitness',
 		tech: ["javascript", "node", "react", "mongodb"],
@@ -96,6 +100,7 @@ export const projects = [
 			"HUD.gov API to retrieve rental rates for any location in the US.",
 		],
 		images : [searchIMG, messagesIMG, mobileFinancesIMG, receiptsIMG, fmrIMG],
+		image: realtyScreenshots,
 		link: 'https://realty-solutions.netlify.app',
 		github: 'https://github.com/sujithvarughese/realty-solutions',
 		tech: ["javascript", "node", "react", "mongodb"],
@@ -129,6 +134,7 @@ export const projects = [
 			"Search database for book by genre"
 		],
 		images: [bookDiscoverIMG, notebookIMG, bookSearchIMG, bookPreviewIMG],
+		image: onTheBooksScreenshots,
 		link: 'https://on-the-books.netlify.app',
 		github: 'https://github.com/sujithvarughese/on-the-books',
 		tech: ["javascript", "node", "react", "mongodb"],
@@ -156,6 +162,7 @@ export const projects = [
 			"Customize your bankroll, change number of decks used"
 		],
 		images: [blackjackCongratsIMG, blackjackMobileDoubleIMG, blackjackPlayerWinIMG],
+		image: blackjackScreenshots,
 		link: 'https://blackjack-suj.netlify.app',
 		github: 'https://github.com/sujithvarughese/blackjack-js/tree/master/react',
 		tech: ["javascript", "react"],

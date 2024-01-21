@@ -1,7 +1,7 @@
 import ReactCardFlip from 'react-card-flip'
 import { Card, CardBody, Heading, Image, Text, VStack } from '@chakra-ui/react'
-import ProjectFront from '../components/ProjectFront.jsx'
-import ProjectBack from '../components/ProjectBack.jsx'
+import ProjectCardFront from '../components/ProjectCardFront.jsx'
+import ProjectCardBack from '../components/ProjectCardBack.jsx'
 import { useEffect, useRef, useState } from 'react'
 
 const ProjectCard = ({ project }) => {
@@ -11,10 +11,10 @@ const ProjectCard = ({ project }) => {
 
 
   return (
-    <>
-      <ProjectFront { ...project } flipCard={flipCard} isFlipped={isFlipped} />
-      <ProjectBack { ...project } flipCard={flipCard} isFlipped={isFlipped} />
-    </>
+    <ReactCardFlip isFlipped={isFlipped} >
+      <ProjectCardFront { ...project } flipCard={flipCard} isFlipped={isFlipped} />
+      <ProjectCardBack { ...project } flipCard={flipCard} isFlipped={isFlipped} />
+    </ReactCardFlip>
   )
 }
 

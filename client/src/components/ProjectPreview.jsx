@@ -36,8 +36,8 @@ const ProjectPreview = ({ captions, images }) => {
                 border="black solid 8px"
                 src={image}
                 alt="image"
-                height="640px"
                 objectFit="cover"
+                height="500px"
               />
 
 

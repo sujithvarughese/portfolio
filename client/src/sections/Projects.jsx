@@ -1,13 +1,14 @@
 import Section from '../ui/Section.jsx'
 import { forwardRef, useEffect, useRef } from 'react'
-import { Box, Heading, HStack, SimpleGrid, Text } from '@chakra-ui/react'
+import { Box, Container, Heading, HStack, SimpleGrid, Stack, Text, VStack } from '@chakra-ui/react'
 import { useGlobalContext } from '../context/GlobalContext.jsx'
 import { projects } from "../data/projects.js";
-import ProjectFront from "../components/ProjectFront.jsx"
+import ProjectCardFront from "../components/ProjectCardFront.jsx"
 import ProjectCard from '../ui/ProjectCard.jsx'
 import bgGoldIMG from "../assets/images/backgrounds/bg-projects.jpeg"
 import bgScratched from "../assets/images/backgrounds/bg-scratched.jpeg"
 import bgBlur from "../assets/images/backgrounds/bg-blur.jpeg"
+import Project from '../components/Project.jsx'
 
 
 const Projects = forwardRef((props, ref) => {
@@ -44,7 +45,9 @@ const Projects = forwardRef((props, ref) => {
       spacing="8"
     >
       <Heading ref={ref}>Projects</Heading>
-      <HStack
+
+      <VStack
+        display={{ base: "flex", md: "none" }}
         flexWrap="wrap"
         gap="1rem"
         justifyContent="space-evenly"
@@ -61,7 +64,27 @@ const Projects = forwardRef((props, ref) => {
             )
           })
         }
-      </HStack>
+      </VStack>
+
+      <VStack
+        display={{ base: "none", md: "grid" }}
+        gap="10rem"
+        marginX="5rem"
+      >
+        {
+          projects.map((project,index) => {
+            return (
+              <Box
+                key={index}
+              >
+                <Project {...project} index={index}/>
+              </Box>
+            )
+          })
+        }
+      </VStack>
+
+
     </Section>
   )
 })

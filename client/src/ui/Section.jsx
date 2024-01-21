@@ -6,7 +6,7 @@ const Section = (props) => {
       backgroundColor={props.backgroundColor}
       color={props.color}
     >
-      <VStack maxWidth="1280px" width="100%" minHeight="100vh" {...props}>
+      <VStack maxWidth="1920px" width="100%" minHeight="100vh" {...props}>
         { props.children }
       </VStack>
     </VStack>
