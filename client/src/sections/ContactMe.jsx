@@ -93,7 +93,7 @@ const ContactMe = forwardRef((props, ref) => {
                 />
                 <FormErrorMessage>{formik.errors.message}</FormErrorMessage>
               </FormControl>
-              <Button type="submit" colorScheme="purple" width="full" isLoading={isLoading}>
+              <Button type="submit" colorScheme="yellow" width="full" isLoading={isLoading}>
                 Submit
               </Button>
             </VStack>

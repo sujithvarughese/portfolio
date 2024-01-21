@@ -1,13 +1,14 @@
 import React, { forwardRef, useEffect } from 'react'
 import Section from '../ui/Section.jsx'
-import { Avatar, Heading, HStack, SimpleGrid, Text, VStack } from '@chakra-ui/react'
+import { Avatar, Box, Container, Heading, HStack, SimpleGrid, Text, VStack } from '@chakra-ui/react'
 
 import avatarIMG from "../assets/images/profile/profile.png"
 import { useGlobalContext } from '../context/GlobalContext.jsx'
 import { intro, aboutMe, skills } from "../data/data.js";
 import bgBlackGoldFrameIMG from "../assets/images/backgrounds/bg-gold&black-frame.png"
 import bgAbstractLines from "../assets/images/backgrounds/abstract-lines.jpeg"
-import PhoneImageContainer from '../ui/PhoneImageContainer.jsx'
+import bgKnight from "../assets/images/backgrounds/bg-knight.jpeg"
+
 
 const Landing = forwardRef((props, ref) => {
 
@@ -24,19 +25,20 @@ const Landing = forwardRef((props, ref) => {
   }, [])
   return (
     <Section
-      bgImage={bgAbstractLines}
+      bgImage={bgKnight}
       bgSize="cover"
-      bgPosition="left"
+      bgPosition="center"
+      position="relative"
     >
+
+
         <SimpleGrid>
-          <HStack justifyContent="space-between">
-            <Heading ref={ref} fontSize="64px">Welcome.</Heading>
-            <Avatar src={avatarIMG} size="2xl"></Avatar>
-          </HStack>
-          <VStack margin="8" gap="8" alignItems="start">
+          <Heading ref={ref} fontSize="64px">Welcome.</Heading>
+          <VStack margin="8" gap="8" alignItems="start" maxWidth="520px">
             <Text>{intro}</Text>
             <Text>{aboutMe}</Text>
-            <Text>{skills}</Text>
+            <Avatar marginY="20rem" src={avatarIMG} size="2xl"></Avatar>
+            <Text fontWeight="600">{skills}</Text>
           </VStack>
         </SimpleGrid>
 

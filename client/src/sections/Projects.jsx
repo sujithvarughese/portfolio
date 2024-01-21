@@ -9,7 +9,7 @@ import bgGoldIMG from "../assets/images/backgrounds/bg-projects.jpeg"
 import bgScratched from "../assets/images/backgrounds/bg-scratched.jpeg"
 import bgBlur from "../assets/images/backgrounds/bg-blur.jpeg"
 import Project from '../components/Project.jsx'
-
+import bgRocksTop from "../assets/images/backgrounds/bg-gold-rocks-top.jpeg"
 
 const Projects = forwardRef((props, ref) => {
 

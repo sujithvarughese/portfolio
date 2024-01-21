@@ -36,20 +36,18 @@ const Project = ({ title, coverImage, heading, link, github, captions, images, i
 
 
 
-      <VStack display="flex" flexDir="column" gap="9px" alignItems="center">
-        <HStack>
-          <Heading fontSize="20px">{title}</Heading>
+      <SimpleGrid gap="6">
+        <HStack justifyContent="space-between">
+          <Heading fontSize="20px" textTransform="uppercase">{title}</Heading>
+          <ButtonGroup fontSize="20px">
+            <Link href={link} target="_blank" rel="noreferrer"><HStack><IoRocketSharp /><Text>Launch Demo</Text></HStack></Link>
+            <Link href={github} target="_blank" rel="noreferrer"><HStack><IoLogoGithub /><Text>Code</Text></HStack></Link>
+          </ButtonGroup>
         </HStack>
-
 
         <Text color="whitesmoke">{heading}</Text>
 
-        <ButtonGroup fontSize="24px">
-          <Link href={link} target="_blank" rel="noreferrer" onClick={e=>e.stopPropagation()}><HStack><IoRocketSharp /><Text>Go Live!</Text></HStack></Link>
-          <Link href={github} target="_blank" rel="noreferrer" onClick={e=>e.stopPropagation()}><HStack><IoLogoGithub /><Text>Github</Text></HStack></Link>
-          <Icon as={FaCircleArrowRight} onClick={onOpen} fontSize="32px" alignSelf="flex-end" marginBottom="3" marginRight="3"></Icon>
-        </ButtonGroup>
-      </VStack>
+      </SimpleGrid>
 
       { isOpen && <ProjectModal isOpen={isOpen} onClose={onClose} captions={captions} images={images} image={image} coverImage={coverImage}/> }
 
