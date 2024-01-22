@@ -4,7 +4,7 @@ const GlobalContext = createContext()
 
 const GlobalProvider = ({ children }) => {
 
-  const [activeLink, setActiveLink] = useState()
+  const [activeLink, setActiveLink] = useState("")
 
   const [alertState, setAlertState] = useState({
     isOpen: false,

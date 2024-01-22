@@ -14,15 +14,6 @@ import bgRocksTop from "../assets/images/backgrounds/bg-gold-rocks-top.jpeg"
 const Projects = forwardRef((props, ref) => {
 
   const { setActiveLink } = useGlobalContext()
-/*
-  const projectref = useRef()
-  const getCardPosition = () => {
-    const x = projectref.current?.offsetLeft;
-    const y = projectref.current?.offsetTop;
-    console.log(projectref?.current)
-    console.log({ x, y })
-    return { x, y }
-  }*/
 
 
   useEffect(() => {
@@ -33,6 +24,7 @@ const Projects = forwardRef((props, ref) => {
       }
     })
     observer.observe(ref.current)
+    return observer.disconnect()
 
   }, [])
 
@@ -44,7 +36,7 @@ const Projects = forwardRef((props, ref) => {
       p="8"
       spacing="8"
     >
-      <Heading ref={ref}>Projects</Heading>
+      <Heading ref={ref} paddingTop="80px">Projects</Heading>
 
       <VStack
         display={{ base: "flex", md: "none" }}

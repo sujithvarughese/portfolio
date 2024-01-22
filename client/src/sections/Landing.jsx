@@ -22,6 +22,7 @@ const Landing = forwardRef((props, ref) => {
       }
     })
     observer.observe(ref.current)
+    return observer.disconnect()
   }, [])
   return (
     <Section
@@ -30,7 +31,7 @@ const Landing = forwardRef((props, ref) => {
       bgPosition="center"
     >
         <SimpleGrid>
-          <Heading ref={ref} fontSize="64px">Welcome.</Heading>
+          <Heading ref={ref} fontSize="64px" paddingTop="80px">Welcome.</Heading>
           <VStack margin="8" gap="8" alignItems="start" maxWidth="520px">
             <Text>{intro}</Text>
             <Text>{aboutMe}</Text>

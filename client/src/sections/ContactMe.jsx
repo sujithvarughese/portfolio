@@ -19,6 +19,7 @@ const ContactMe = forwardRef((props, ref) => {
       }
     })
     observer.observe(ref.current)
+    return observer.disconnect()
   }, [])
   const { sendEmail, response, isLoading } = useEmail()
 
@@ -52,7 +53,7 @@ const ContactMe = forwardRef((props, ref) => {
       bgImage={bgAbstract}
     >
       <VStack w="1024px" p={32} alignItems="flex-start">
-        <Heading ref={ref}>Contact Me</Heading>
+        <Heading ref={ref} paddingTop="80px">Contact Me</Heading>
         <Box width="100%" p="6">
           <form onSubmit={formik.handleSubmit}>
             <VStack spacing={4}>

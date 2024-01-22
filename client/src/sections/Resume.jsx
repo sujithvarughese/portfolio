@@ -16,11 +16,12 @@ const Resume = forwardRef((props, ref) => {
       }
     })
     observer.observe(ref.current)
+    return observer.disconnect()
   }, [])
 
   return (
     <Section>
-      <Heading ref={ref}></Heading>
+      <Heading ref={ref} paddingTop="80px"></Heading>
       <Image src={resume}></Image>
     </Section>
   )

@@ -35,10 +35,9 @@ export const projects = [
 	{
 		title: "Simpler Fitness",
 		coverImage: simplerFitnessCoverIMG,
-		heading: "Making getting in shape easier than ever with access to thousands of workouts with detailed instructions and animated images",
+		heading: "Fitness app makes getting in shape simple with access to thousands of workouts with detailed instructions and animated images",
 		captions: [
-			"Browse by target muscles, available equipment, or experience level",
-			"Animated images showing proper technique",
+			"Browse by target muscles, available equipment, and experience level with paginated results using react query and infinite scroll",
 			"Create an account to save favorite workouts for quick access",
 			"Search by name through the database of more than a thousand exercises"
 		],
@@ -52,11 +51,10 @@ export const projects = [
 	{
 		title: "Realty Solutions",
 		coverImage: realtyCoverIMG,
-		heading: "A property management app for small business owners to organize finances and communicate with tenants.",
+		heading: "A property management app for small business owners to keep up with finances and communicate with tenants.",
 		captions: [
-			"Calculate mortgage payments, compare payments with different interest rates, view live payoff quotes, view both monthly and yearly profits and losses",
-			"Separate user roles for system admin, account admin (property manager) and users (tenants)",
-			"Tokens attached to signed HTTP cookies for verification",
+			"Calculate mortgage payments and live payoff quotes, get monthly and yearly profits, all managed in state",
+			"User roles for tenants and managers, authenticated using JWT and signed HTTP cookies",
 			"Messaging functionality for landlord-tenant communication",
 			"HUD.gov API to retrieve rental rates for any location in the US.",
 		],
@@ -74,10 +72,9 @@ export const projects = [
 		coverImage: onTheBooksCoverIMG,
 		heading: "A personal library designed to take notes, rate, and keep track of their status of each book.",
 		captions: [
-			"Uses OpenLibrary API for access to millions of books, recommendations, and previews",
-			"Save on-the-books to library and create an organized notebook for easy to use note-taking",
+			"OpenLibrary API for access to books, recommendations, and previews",
+			"Global state management with Context API and Reducer",
 			"Search feature to find any book in your library",
-			"Search database for book by genre"
 		],
 		images: [bookDiscoverIMG, notebookIMG, bookSearchIMG, bookPreviewIMG],
 		image: onTheBooksScreenshots,

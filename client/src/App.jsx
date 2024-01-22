@@ -23,6 +23,7 @@ const App = () => {
     projectsRef.current.scrollIntoView({
       behavior: "smooth",
       block: "start",
+      rootMargin: "500px"
     })
   }
   const scrollToResume = () => {
