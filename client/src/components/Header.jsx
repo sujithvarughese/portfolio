@@ -1,9 +1,10 @@
-import { Box, Button, HStack } from '@chakra-ui/react'
+import { Box, Button, HStack, Link } from '@chakra-ui/react'
 import { useGlobalContext } from '../context/GlobalContext.jsx'
-
+import resume from "../assets/images/resume-2024.pdf"
 const Header = ({ scrollToLanding, scrollToProjects, scrollToResume, scrollToContactMe }) => {
 
   const { activeLink } = useGlobalContext()
+  const homeActive = () => activeLink === "home" ? "800" : "500"
   const projectsActive = () => activeLink === "projects" ? "800" : "500"
   const resumeActive = () => activeLink === "resume" ? "800" : "500"
   const contactMeActive = () => activeLink === "contact-me" ? "800" : "500"
@@ -20,18 +21,20 @@ const Header = ({ scrollToLanding, scrollToProjects, scrollToResume, scrollToCon
     >
       <Box
         color="white"
-        px={16}
-        py={4}
-        justifyContent="space-between"
+        px={{ base: "2", md: "16" }}
+        py={{ base: "3", md: "4" }}
+        display="flex"
+        justifyContent="flex-end"
         alignItems="center"
         direction="row"
+
       >
 
           <HStack as="nav">
-            <Button variant="link" onClick={scrollToLanding}>Home</Button>
+            <Button fontWeight={homeActive} variant="link" onClick={scrollToLanding}>Home</Button>
             <Button fontWeight={projectsActive} variant="link" onClick={scrollToProjects}>Projects</Button>
-            <Button  fontWeight={resumeActive} variant="link" onClick={scrollToResume}>Resume</Button>
             <Button  fontWeight={contactMeActive} variant="link" onClick={scrollToContactMe}>Contact Me</Button>
+            <Link sx={{ color: "gray", border: "gray 2px solid", borderRadius: "5px", padding: "5px" }} href={resume} isExternal>Resume</Link>
           </HStack>
 
       </Box>

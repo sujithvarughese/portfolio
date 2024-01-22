@@ -9,7 +9,7 @@ import DesktopMobileImageContainer from '../ui/DesktopMobileImageContainer.jsx'
 
 const ProjectCardBack = ({ captions, images, image, desktop, mobile, link, github, flipCard, index }) => {
   return (
-    <Card height={{base: "600px", sm: "700px"}} onClick={flipCard}>
+    <Card minHeight={{base: "500px", sm: "575px"}} onClick={flipCard}>
       <CardBody paddingBottom="0" >
         {/*<AnimatePresence>
           <ProjectPreview captions={captions} images={images} />

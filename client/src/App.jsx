@@ -51,7 +51,7 @@ const App = () => {
       <main style={{ marginTop: "50px" }}>
         <Landing ref={landingRef}/>
         <Projects ref={projectsRef}/>
-        <Resume ref={resumeRef}/>
+        {/*<Resume ref={resumeRef}/>*/}
         <ContactMe ref={contactMeRef}/>
         <Alert />
       </main>

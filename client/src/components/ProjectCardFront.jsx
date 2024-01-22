@@ -5,7 +5,7 @@ import bgBlur from "../assets/images/backgrounds/bg-blur.jpeg"
 const ProjectCardFront = ({ title, coverImage, heading, link, github, flipCard }) => {
 
   return (
-    <Card height={{base: "600px", sm: "700px"}} borderRadius="11px" boxShadow="dark-lg" onClick={flipCard}>
+    <Card minHeight={{base: "500px", sm: "575px"}} borderRadius="11px" boxShadow="dark-lg" onClick={flipCard}>
       <Image src={coverImage} alt="cover" borderRadius="10px"></Image>
 
       <CardBody display="flex" flexDir="column" gap="5px">
