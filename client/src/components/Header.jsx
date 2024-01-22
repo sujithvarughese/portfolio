@@ -7,6 +7,8 @@ const Header = ({ scrollToLanding, scrollToProjects, scrollToResume, scrollToCon
   const projectsActive = () => activeLink === "projects" ? "800" : "500"
   const resumeActive = () => activeLink === "resume" ? "800" : "500"
   const contactMeActive = () => activeLink === "contact-me" ? "800" : "500"
+
+  console.log(activeLink)
   return (
     <Box
       position="fixed"

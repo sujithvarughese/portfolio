@@ -4,8 +4,8 @@ import fitnessBrowseIMG from "../assets/images/simpler-fitness/browse.png"
 import fitnessSearchIMG from "../assets/images/simpler-fitness/search.png"
 import fitnessInstructionsIMG from "../assets/images/simpler-fitness/instructions.png"
 const PhoneImageContainer = ({ images }) => images?.map((image, index) =>
-  <Container>
-    <SinglePhoneContainer key={index} image={image}/>
+  <Container key={index} >
+    <SinglePhoneContainer image={image}/>
   </Container>
 )
 
