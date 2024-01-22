@@ -17,7 +17,6 @@ const Resume = forwardRef((props, ref) => {
       }
     })
     observer.observe(ref.current)
-    return observer.disconnect()
   }, [])
 
   return (

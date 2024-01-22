@@ -19,7 +19,6 @@ const ContactMe = forwardRef((props, ref) => {
       }
     })
     observer.observe(ref.current)
-    return observer.disconnect()
   }, [])
   const { sendEmail, response, isLoading } = useEmail()
 
