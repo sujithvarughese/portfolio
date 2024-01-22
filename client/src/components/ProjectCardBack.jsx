@@ -9,8 +9,8 @@ import DesktopMobileImageContainer from '../ui/DesktopMobileImageContainer.jsx'
 
 const ProjectCardBack = ({ captions, images, image, desktop, mobile, link, github, flipCard, index }) => {
   return (
-    <Card height="600px" onClick={flipCard}>
-      <CardBody paddingBottom="0">
+    <Card height={{base: "600px", sm: "700px"}} onClick={flipCard}>
+      <CardBody paddingBottom="0" >
         {/*<AnimatePresence>
           <ProjectPreview captions={captions} images={images} />
         </AnimatePresence>*/}
@@ -19,7 +19,7 @@ const ProjectCardBack = ({ captions, images, image, desktop, mobile, link, githu
           index === 0 ?
 
 
-            <Container display="flex" position="relative" height="330px">
+            <Container display="flex" position="relative" height={{ base: "260px", sm: "450px" }}>
               <PhoneImageContainer image={images[0]}/>
               <PhoneImageContainer image={images[1]}/>
               <PhoneImageContainer image={images[2]}/>
@@ -33,7 +33,7 @@ const ProjectCardBack = ({ captions, images, image, desktop, mobile, link, githu
 
         }
 
-        <UnorderedList>
+        <UnorderedList spacing="3" paddingY="5">
           {
             captions.map((caption, index) => <ListItem key={index}>{caption}</ListItem>)
           }

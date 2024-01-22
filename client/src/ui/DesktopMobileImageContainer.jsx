@@ -18,12 +18,14 @@ const DesktopMobileImageContainer = ({ desktop, mobile }) => {
           borderRadius="18px"
         ></Image>
       </Box>
+
       <Box>
         <Image
           src={mobileScreen}
           maxWidth={{ base: "65px", md: "150px"}}
         ></Image>
       </Box>
+
 
       <Image
         src={desktop}
@@ -40,7 +42,7 @@ const DesktopMobileImageContainer = ({ desktop, mobile }) => {
         width={{ base: "58px", md: "133px" }}
         height={{ base: "124px", md: "285px" }}
         bottom={{ base: "3px", md: "8px" }}
-        right={{ base: "3px", md: "8px" }}
+        left={{ base: "3px", md: "609px" }}
         borderRadius={{base: "10px", md: "18px"}}
       ></Image>
 

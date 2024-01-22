@@ -55,7 +55,6 @@ export const projects = [
 		captions: [
 			"Calculate mortgage payments and live payoff quotes, get monthly and yearly profits, all managed in state",
 			"User roles for tenants and managers, authenticated using JWT and signed HTTP cookies",
-			"Messaging functionality for landlord-tenant communication",
 			"HUD.gov API to retrieve rental rates for any location in the US.",
 		],
 		images : [searchIMG, messagesIMG, mobileFinancesIMG, receiptsIMG, fmrIMG],

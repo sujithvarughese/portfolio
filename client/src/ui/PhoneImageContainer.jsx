@@ -14,7 +14,7 @@ const PhoneImageContainer = ({ image }) => {
           src={phone}
           position="absolute"
           top="0px"
-          left={{ base: "8px", md: "13px" }}
+          left={{ base: "8px", sm: "10px", md: "13px" }}
           width={{base: "96%", md: "97%" }}
         >
 
@@ -22,12 +22,13 @@ const PhoneImageContainer = ({ image }) => {
         <Image
           src={image}
           alt="fit1"
-          transform={{base: "rotateY(326deg) skewY(0deg)", md: "rotateY(332deg) skewY(.5deg)"}}
-          borderTopRadius={{base: "22", md: "28px"}}
-          borderBottomLeftRadius={{ base: "21px", md: "35px" }}
-          borderBottomRightRadius={{ base: "21px", md: "30px" }}
+          transform={{base: "rotateY(330deg) skewY(-1deg)", md: "rotateY(332deg) skewY(.5deg)"}}
+          borderTopLeftRadius={{base: "20", md: "28px"}}
+          borderTopRightRadius={{base: "12", sm: "44px", md: "28px"}}
+          borderBottomLeftRadius={{ base: "29px", md: "35px" }}
+          borderBottomRightRadius={{ base: "13px", sm: "22px", md: "30px" }}
           position="absolute"
-          top={{ base: "8px", md: "15px"}}
+          top={{ base: "7px", sm: "10px", md: "14px"}}
           left="0"
         />
       </Container>

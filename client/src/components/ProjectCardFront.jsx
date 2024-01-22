@@ -5,23 +5,22 @@ import bgBlur from "../assets/images/backgrounds/bg-blur.jpeg"
 const ProjectCardFront = ({ title, coverImage, heading, link, github, flipCard }) => {
 
   return (
-    <Card height="600px" borderRadius="11px" boxShadow="dark-lg" onClick={flipCard}>
+    <Card height={{base: "600px", sm: "700px"}} borderRadius="11px" boxShadow="dark-lg" onClick={flipCard}>
       <Image src={coverImage} alt="cover" borderRadius="10px"></Image>
 
-      <CardBody display="flex" flexDir="column" gap="9px">
+      <CardBody display="flex" flexDir="column" gap="5px">
         <Heading fontSize="20px">{title}</Heading>
         <Text color="gray.600">{heading}</Text>
+      </CardBody>
 
-
-
-        <ButtonGroup fontSize="24px" margin="auto" gap="24px">
+      <HStack justifyContent="space-between" margin="4">
+        <ButtonGroup fontSize="24px" gap="24px">
           <Link href={link} target="_blank" rel="noreferrer" onClick={e=>e.stopPropagation()}><HStack><IoRocketSharp /><Text>Go Live!</Text></HStack></Link>
           <Link href={github} target="_blank" rel="noreferrer" onClick={e=>e.stopPropagation()}><HStack><IoLogoGithub /><Text>Github</Text></HStack></Link>
         </ButtonGroup>
-      </CardBody>
+        <Icon as={FaCircleArrowRight} fontSize="32px" alignSelf="flex-end"></Icon>
+      </HStack>
 
-
-      <Icon as={FaCircleArrowRight} fontSize="32px" alignSelf="flex-end" marginBottom="3" marginRight="3"></Icon>
     </Card>
 
 
