@@ -18,9 +18,7 @@ const Project = ({ title, coverImage, heading, link, github, captions, images, i
       {
         index === 0 ?
       <Container display="flex" position="relative" height="500px">
-        <PhoneImageContainer image={images[0]}/>
-        <PhoneImageContainer image={images[1]}/>
-        <PhoneImageContainer image={images[2]}/>
+        <PhoneImageContainer images={images}/>
       </Container>
 
             :

@@ -3,35 +3,36 @@ import { Box, Container, Image } from '@chakra-ui/react'
 import fitnessBrowseIMG from "../assets/images/simpler-fitness/browse.png"
 import fitnessSearchIMG from "../assets/images/simpler-fitness/search.png"
 import fitnessInstructionsIMG from "../assets/images/simpler-fitness/instructions.png"
-const PhoneImageContainer = ({ image }) => {
+const PhoneImageContainer = ({ images }) => images?.map((image, index) =>
+  <Container>
+    <SinglePhoneContainer key={index} image={image}/>
+  </Container>
+)
+
+const SinglePhoneContainer = ({ image }) => {
   return (
+    <Box         position="relative">
+      <Box
+        sx={{ perspective: "100em" }}
 
-      <Container
-        sx={{ perspective: "100em"}}
-        position="relative"
       >
-        <Image
-          src={phone}
-          position="absolute"
-          top="0px"
-          left={{ base: "8px", sm: "10px", md: "13px" }}
-          width={{base: "96%", md: "97%" }}
-        >
+        <Image src={phone} alt="phone"></Image>
 
-        </Image>
         <Image
           src={image}
-          alt="fit1"
-          transform={{base: "rotateY(330deg) skewY(-1deg)", md: "rotateY(332deg) skewY(.5deg)"}}
-          borderTopLeftRadius={{base: "20", md: "28px"}}
-          borderTopRightRadius={{base: "12", sm: "44px", md: "28px"}}
-          borderBottomLeftRadius={{ base: "29px", md: "35px" }}
-          borderBottomRightRadius={{ base: "13px", sm: "22px", md: "30px" }}
+          alt="mobile-screenshot"
+          height="95%"
+          transform={{base: "rotateY(330deg) skewY(-1deg)", sm: "rotateY(330deg) skewY(0deg)", md: "rotateY(332deg) skewY(.5deg)"}}
+          borderTopLeftRadius={{base: "11px", sm:"16px", lg: "26px"}}
+          borderTopRightRadius={{base: "13px", sm:"20px", lg: "26px"}}
+          borderBottomLeftRadius={{ base: "10px", sm:"20px", lg: "26px" }}
+          borderBottomRightRadius={{ base: "6px", sm: "22px", lg: "26px" }}
           position="absolute"
-          top={{ base: "7px", sm: "10px", md: "14px"}}
-          left="0"
+          top={{ base: "5px", sm: "9px", md: "9px"}}
+          left={{base: "-4px", sm: "-7px", md: "-8px"}}
         />
-      </Container>
+      </Box>
+    </Box>
 
 
 

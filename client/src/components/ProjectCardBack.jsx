@@ -19,11 +19,9 @@ const ProjectCardBack = ({ captions, images, image, desktop, mobile, link, githu
           index === 0 ?
 
 
-            <Container display="flex" position="relative" height={{ base: "260px", sm: "450px" }}>
-              <PhoneImageContainer image={images[0]}/>
-              <PhoneImageContainer image={images[1]}/>
-              <PhoneImageContainer image={images[2]}/>
-            </Container>
+            <SimpleGrid display="flex" >
+              <PhoneImageContainer images={images}/>
+            </SimpleGrid>
 
             :
             <SimpleGrid placeItems="center" margin="auto" alignItems="center" justifyItems="center" justifyContent="center">
