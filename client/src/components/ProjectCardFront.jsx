@@ -6,7 +6,7 @@ const ProjectCardFront = ({ title, coverImage, heading, link, github, flipCard }
 
   return (
     <Card height="600px" borderRadius="11px" boxShadow="dark-lg" onClick={flipCard}>
-      <Image src={coverImage} alt="cover" borderRadius="10px" width="100%"></Image>
+      <Image src={coverImage} alt="cover" borderRadius="10px"></Image>
 
       <CardBody display="flex" flexDir="column" gap="9px">
         <Heading fontSize="20px">{title}</Heading>

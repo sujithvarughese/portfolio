@@ -11,7 +11,7 @@ const ProjectCard = ({ project, index }) => {
 
 
   return (
-    <ReactCardFlip isFlipped={isFlipped} >
+    <ReactCardFlip isFlipped={isFlipped}>
       <ProjectCardFront { ...project } flipCard={flipCard} isFlipped={isFlipped} />
       <ProjectCardBack { ...project } flipCard={flipCard} isFlipped={isFlipped} index={index}/>
     </ReactCardFlip>

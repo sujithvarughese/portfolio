@@ -33,7 +33,7 @@ const Projects = forwardRef((props, ref) => {
       bgImage={bgBlur}
       bgSize="cover"
       bgPosition="left"
-      p="8"
+      p={{ base: "3", md: "8" }}
       spacing="8"
     >
       <Heading ref={ref} paddingTop="80px">Projects</Heading>
@@ -49,7 +49,6 @@ const Projects = forwardRef((props, ref) => {
             return (
             <Box
               key={index}
-              width="480px"
             >
               <ProjectCard project={project} index={index}/>
             </Box>

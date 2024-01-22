@@ -51,8 +51,9 @@ const ContactMe = forwardRef((props, ref) => {
   return (
     <Section
       bgImage={bgAbstract}
+      p={{ sm: "24"}} alignItems="flex-start"
     >
-      <VStack w="1024px" p={32} alignItems="flex-start">
+
         <Heading ref={ref} paddingTop="80px">Contact Me</Heading>
         <Box width="100%" p="6">
           <form onSubmit={formik.handleSubmit}>
@@ -101,7 +102,7 @@ const ContactMe = forwardRef((props, ref) => {
           </form>
         </Box>
 
-      </VStack>
+
 
     </Section>
   )
