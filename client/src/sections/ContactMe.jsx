@@ -4,7 +4,7 @@ import Section from '../ui/Section.jsx'
 import { useGlobalContext } from '../context/GlobalContext.jsx'
 import { useFormik } from "formik";
 import * as Yup from 'yup';
-import bgAbstract from "../assets/images/backgrounds/bg-abstract.svg"
+import bgChessKingPawn from "../assets/images/backgrounds/chess-pawn-king1.png"
 import emailjs from "@emailjs/browser";
 const credentials = {
   serviceID: import.meta.env.VITE_SERVICE_ID,
@@ -67,7 +67,7 @@ const ContactMe = forwardRef((props, ref) => {
 
   return (
     <Section
-      bgImage={bgAbstract}
+      bgImage={bgChessKingPawn} bgSize="cover" bgPosition="left"
       p={{ base: "12px"}} marginY="24px" 
     >
       {isLoading && <Progress isIndeterminate />}

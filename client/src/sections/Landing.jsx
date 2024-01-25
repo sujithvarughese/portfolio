@@ -5,8 +5,6 @@ import { Avatar, Box, Container, Heading, HStack, SimpleGrid, Text, VStack } fro
 import avatarIMG from "../assets/images/profile/profile.png"
 import { useGlobalContext } from '../context/GlobalContext.jsx'
 import { intro, aboutMe, skills } from "../data/data.js";
-import bgBlackGoldFrameIMG from "../assets/images/backgrounds/bg-gold&black-frame.png"
-import bgAbstractLines from "../assets/images/backgrounds/abstract-lines.jpeg"
 import bgKnight from "../assets/images/backgrounds/bg-knight.jpeg"
 
 
