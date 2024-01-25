@@ -13,11 +13,15 @@ const Project = ({ title, coverImage, heading, link, github, captions, images, i
   const direction = index % 2 === 0 ? "row" : "row-reverse"
 
   return (
-    <Stack flexDirection={{md: "column", xl: direction }} justifyContent="space-between">
+    <Stack
+      flexDirection={{md: "column", lg: direction }}
+      gap="42px"
+      justifyContent="space-between"
+    >
 
       {
         index === 0 ?
-      <Container display="flex" position="relative" height="500px">
+      <Container display="flex" position="relative">
         <PhoneImageContainer images={images}/>
       </Container>
 
@@ -29,28 +33,38 @@ const Project = ({ title, coverImage, heading, link, github, captions, images, i
 
       }
 
+      <SimpleGrid
+        gap="24px"
+        maxWidth={{lg: "240px", xl: "420px" }}
+      >
 
 
+        <Heading fontSize="28px" textTransform="uppercase">{title}</Heading>
 
-      <SimpleGrid>
-        <HStack justifyContent="space-between">
-          <Heading fontSize="28px" textTransform="uppercase">{title}</Heading>
-          <ButtonGroup fontSize="20px">
-            <Link href={link} target="_blank" rel="noreferrer"><HStack><IoRocketSharp /><Text>Launch Demo</Text></HStack></Link>
-            <Link href={github} target="_blank" rel="noreferrer"><HStack><IoLogoGithub /><Text>Code</Text></HStack></Link>
-          </ButtonGroup>
-        </HStack>
 
         <Text color="whitesmoke" fontSize="18px" fontWeight="600">{heading}</Text>
 
-        <UnorderedList>
+        <UnorderedList spacing="12px">
           {captions.map((caption, index) => <ListItem key={index}>{caption}</ListItem>)}
         </UnorderedList>
 
+        <ButtonGroup fontSize="20px" gap="8px" maxHeight="45px">
+          <Link sx={{ color: "gray", border: "gray 2px solid", borderRadius: "5px", padding: "5px", minWidth: "141px", textAlign: "center" }}
+                href={link} target="_blank" rel="noreferrer">
+            Launch Demo
+          </Link>
+          <Link sx={{ color: "gray", border: "gray 2px solid", borderRadius: "5px", padding: "5px", minWidth: "141px", textAlign: "center" }}
+                href={github} target="_blank" rel="noreferrer">
+            View Code
+          </Link>
+        </ButtonGroup>
 
       </SimpleGrid>
 
-      { isOpen && <ProjectModal isOpen={isOpen} onClose={onClose} captions={captions} images={images} image={image} coverImage={coverImage}/> }
+      {/*
+        // not in use
+        isOpen && <ProjectModal isOpen={isOpen} onClose={onClose} captions={captions} images={images} image={image} coverImage={coverImage}/>
+      */}
 
 
     </Stack>

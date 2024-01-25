@@ -1,16 +1,20 @@
-import { forwardRef, useEffect, useState } from 'react'
-import { Box, Button, FormControl, FormErrorMessage, FormLabel, Heading, Input, Textarea, VStack } from '@chakra-ui/react'
+import { forwardRef, useEffect, useRef, useState } from 'react'
+import { Box, Button, FormControl, FormErrorMessage, FormLabel, Heading, Input, Progress, Textarea, VStack } from '@chakra-ui/react'
 import Section from '../ui/Section.jsx'
 import { useGlobalContext } from '../context/GlobalContext.jsx'
 import { useFormik } from "formik";
 import * as Yup from 'yup';
-import useEmail from '../hooks/useEmail.js'
 import bgAbstract from "../assets/images/backgrounds/bg-abstract.svg"
+import emailjs from "@emailjs/browser";
+const credentials = {
+  serviceID: import.meta.env.VITE_SERVICE_ID,
+  templateID: import.meta.env.VITE_TEMPLATE_ID,
+  publicKey: import.meta.env.VITE_PUBLIC_KEY
+}
 
 const ContactMe = forwardRef((props, ref) => {
 
   const { setActiveLink, showAlert, hideAlert } = useGlobalContext()
-
   useEffect(() => {
     const observer = new IntersectionObserver((entries, observer) => {
       const entry = entries[0]
@@ -20,28 +24,42 @@ const ContactMe = forwardRef((props, ref) => {
     })
     observer.observe(ref.current)
   }, [])
-  const { sendEmail, response, isLoading } = useEmail()
+
+
+  const [isLoading, setIsLoading] = useState(false)
+  const formRef = useRef()
 
   const formik = useFormik({
     initialValues: {
-      name: "",
-      email: "",
+      from_name: "",
+      from_email: "",
       message: ""
     },
     onSubmit: async (values) => {
+      setIsLoading(true)
+      console.log(formRef.current)
       try {
-        await sendEmail(values)
-        showAlert('success', `Thank you for your submission ${values.name}, we will get back to you if you are deemed worthy`)
+        const response = await emailjs.sendForm(credentials.serviceID, credentials.templateID, formRef.current, credentials.publicKey)
+        console.log(response)
+        if (response.status === 200) {
+          showAlert({
+            type: 'success',
+            message: `Thanks for your message ${values.from_name}. I will get back to you shortly.`,
+          })
+        }
       } catch (error) {
-        showAlert('error', 'Auto self-destructing in 5 seconds...')
+        showAlert({
+          type: 'error',
+          message: 'Something went wrong, please try again.',
+        })
       } finally {
+        setIsLoading(false)
         formik.resetForm()
-
       }
     },
     validationSchema: Yup.object({
-      name: Yup.string().required("Required"),
-      email: Yup.string().email("Invalid Email Address").required("Required"),
+      from_name: Yup.string().required("Required"),
+      from_email: Yup.string().email("Invalid Email Address").required("Required"),
       message: Yup.string().required("Required")
     })
   });
@@ -50,36 +68,36 @@ const ContactMe = forwardRef((props, ref) => {
   return (
     <Section
       bgImage={bgAbstract}
-      p={{ sm: "24"}} alignItems="flex-start"
+      p={{ base: "12px"}} marginY="24px" 
     >
-
+      {isLoading && <Progress isIndeterminate />}
         <Heading ref={ref} paddingTop="80px">Contact Me</Heading>
-        <Box width="100%" p="6">
-          <form onSubmit={formik.handleSubmit}>
+        <Box width="100%" p="6" maxWidth="800px">
+          <form ref={formRef} onSubmit={formik.handleSubmit}>
             <VStack spacing={4}>
-              <FormControl isInvalid={formik.errors.name && formik.touched.name}>
-                <FormLabel htmlFor="name">Name</FormLabel>
+              <FormControl isInvalid={formik.errors.from_name && formik.touched.from_name}>
+                <FormLabel htmlFor="from_name">Name</FormLabel>
                 <Input
-                  id="name"
-                  name="name"
+                  id="from_name"
+                  name="from_name"
                   type="text"
                   onBlur={formik.handleBlur}
-                  value={formik.values.name}
+                  value={formik.values.from_name}
                   onChange={formik.handleChange}
                 />
-                <FormErrorMessage>{formik.errors.name}</FormErrorMessage>
+                <FormErrorMessage>{formik.errors.from_name}</FormErrorMessage>
               </FormControl>
-              <FormControl isInvalid={formik.errors.email && formik.touched.email}>
-                <FormLabel htmlFor="email">Email Address</FormLabel>
+              <FormControl isInvalid={formik.errors.from_email && formik.touched.from_email}>
+                <FormLabel htmlFor="from_email">Email Address</FormLabel>
                 <Input
-                  id="email"
-                  name="email"
+                  id="from_email"
+                  name="from_email"
                   type="email"
                   onBlur={formik.handleBlur}
-                  value={formik.values.email}
+                  value={formik.values.from_email}
                   onChange={formik.handleChange}
                 />
-                <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
+                <FormErrorMessage>{formik.errors.from_email}</FormErrorMessage>
               </FormControl>
 
               <FormControl isInvalid={formik.errors.message && formik.touched.message}>

@@ -12,7 +12,7 @@ const GlobalProvider = ({ children }) => {
     message: "",
   })
 
-  const showAlert = (type, message) => {
+  const showAlert = ({ type, message }) => {
     setAlertState({ isOpen: true, type, message })
   }
 

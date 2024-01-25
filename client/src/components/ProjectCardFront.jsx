@@ -11,13 +11,15 @@ const ProjectCardFront = ({ title, coverImage, heading, link, github, flipCard }
       <CardBody display="flex" flexDir="column" gap="5px">
         <Heading fontSize="20px">{title}</Heading>
         <Text color="gray.600">{heading}</Text>
+
+        <ButtonGroup fontSize="24px" justifyContent="space-around" placeItems="center" marginTop="10px" >
+          <Link href={link} target="_blank" rel="noreferrer" onClick={e=>e.stopPropagation()}><HStack><IoRocketSharp /><Text>Demo</Text></HStack></Link>
+          <Link href={github} target="_blank" rel="noreferrer" onClick={e=>e.stopPropagation()}><HStack><IoLogoGithub /><Text>Code</Text></HStack></Link>
+        </ButtonGroup>
       </CardBody>
 
       <HStack justifyContent="space-between" margin="4">
-        <ButtonGroup fontSize="24px" gap="24px">
-          <Link href={link} target="_blank" rel="noreferrer" onClick={e=>e.stopPropagation()}><HStack><IoRocketSharp /><Text>Go Live!</Text></HStack></Link>
-          <Link href={github} target="_blank" rel="noreferrer" onClick={e=>e.stopPropagation()}><HStack><IoLogoGithub /><Text>Github</Text></HStack></Link>
-        </ButtonGroup>
+
         <Icon as={FaCircleArrowRight} fontSize="32px" alignSelf="flex-end"></Icon>
       </HStack>
 

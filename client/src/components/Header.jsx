@@ -1,6 +1,8 @@
 import { Box, Button, HStack, Link } from '@chakra-ui/react'
 import { useGlobalContext } from '../context/GlobalContext.jsx'
 import resume from "../assets/images/resume-2024.pdf"
+import { FiExternalLink } from "react-icons/fi";
+
 const Header = ({ scrollToLanding, scrollToProjects, scrollToResume, scrollToContactMe }) => {
 
   const { activeLink } = useGlobalContext()
@@ -9,7 +11,6 @@ const Header = ({ scrollToLanding, scrollToProjects, scrollToResume, scrollToCon
   const resumeActive = () => activeLink === "resume" ? "800" : "500"
   const contactMeActive = () => activeLink === "contact-me" ? "800" : "500"
 
-  console.log(activeLink)
   return (
     <Box
       position="fixed"
@@ -34,7 +35,10 @@ const Header = ({ scrollToLanding, scrollToProjects, scrollToResume, scrollToCon
             <Button fontWeight={homeActive} variant="link" onClick={scrollToLanding}>Home</Button>
             <Button fontWeight={projectsActive} variant="link" onClick={scrollToProjects}>Projects</Button>
             <Button  fontWeight={contactMeActive} variant="link" onClick={scrollToContactMe}>Contact Me</Button>
-            <Link sx={{ color: "gray", border: "gray 2px solid", borderRadius: "5px", padding: "5px" }} href={resume} isExternal>Resume</Link>
+            <Link sx={{ color: "gray", border: "gray 2px solid", borderRadius: "5px", padding: "5px", display: "flex", alignItems: "center", gap: "8px" }}
+                  href={resume} isExternal
+            >Resume<FiExternalLink />
+            </Link>
           </HStack>
 
       </Box>

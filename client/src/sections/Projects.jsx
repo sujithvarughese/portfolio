@@ -39,7 +39,7 @@ const Projects = forwardRef((props, ref) => {
       <VStack
         display={{ base: "flex", md: "none" }}
         flexWrap="wrap"
-        gap="1rem"
+        gap="24px"
         justifyContent="space-evenly"
       >
         {
