@@ -95,7 +95,7 @@ export const projects = [
 		image: blackjackScreenshots,
 		desktop: bjDesktop,
 		mobile: bjMobile,
-		link: 'https://blackjack-suj.netlify.app',
+		link: 'https://beat-blackjack-suj.netlify.app',
 		github: 'https://github.com/sujithvarughese/blackjack-js/tree/master/react',
 		tech: ["javascript", "react"],
 		featured: false,
