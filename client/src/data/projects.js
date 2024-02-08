@@ -27,8 +27,8 @@ import rsDesktop from "../assets/images/realty-solutions/home-desktop.png"
 import rsMobile from "../assets/images/realty-solutions/home-mobile.png"
 import otbDesktop from "../assets/images/on-the-books/on-the-books-desktop.png"
 import otbMobile from "../assets/images/on-the-books/on-the-books-mobile.png"
-import bjDesktop from "../assets/images/blackjack/blackjack-desktop.png"
-import bjMobile from "../assets/images/blackjack/blackjack-mobile.png"
+import bjDesktop from "../assets/images/blackjack/bj-desktop.png"
+import bjMobile from "../assets/images/blackjack/bj-mobile2.png"
 
 export const projects = [
 	{
@@ -46,6 +46,24 @@ export const projects = [
 		github: 'https://github.com/sujithvarughese/simple-fitness',
 		tech: ["javascript", "node", "react", "mongodb"],
 		featured: true,
+	},
+	{
+		title: "Beat Blackjack",
+		coverImage: blackjackCoverIMG,
+		heading: "Learn perfect strategy and beat the house with live feedback after each move, and an ROI tracker to calculate how profitable you can be.",
+		captions: [
+			"Customizable settings- Choose number of decks, blackjack payouts, your bankroll, number of splits allowed, and more.",
+			"Live stat tracker that automatically updates with the amount won or lost, and your current return on investment percent.",
+			"Stuck on the right move? Ask for help at any time during a hand.",
+		],
+		images: [blackjackMobileDoubleIMG, blackjackPlayerWinIMG],
+		image: blackjackScreenshots,
+		desktop: bjDesktop,
+		mobile: bjMobile,
+		link: 'https://beat-blackjack-suj.netlify.app',
+		github: 'https://github.com/sujithvarughese/blackjack-js/tree/master/react',
+		tech: ["javascript", "react"],
+		featured: false,
 	},
 	{
 		title: "Realty Solutions",
@@ -83,22 +101,6 @@ export const projects = [
 		tech: ["javascript", "node", "react", "mongodb"],
 		featured: false,
 	},
-	{
-		title: "Beat Blackjack",
-		coverImage: blackjackCoverIMG,
-		heading: "Play blackjack with live assistance!",
-		captions: [
-			"Get the correct play by the book in any situation as you play",
-			"Customize your bankroll, change number of decks used"
-		],
-		images: [blackjackMobileDoubleIMG, blackjackPlayerWinIMG],
-		image: blackjackScreenshots,
-		desktop: bjDesktop,
-		mobile: bjMobile,
-		link: 'https://beat-blackjack-suj.netlify.app',
-		github: 'https://github.com/sujithvarughese/blackjack-js/tree/master/react',
-		tech: ["javascript", "react"],
-		featured: false,
-	},
+
 ]
 
