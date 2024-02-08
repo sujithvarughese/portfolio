@@ -6,6 +6,11 @@ import { useFormik } from "formik";
 import * as Yup from 'yup';
 import bgKnight from "../assets/images/backgrounds/bg-knight.jpeg"
 import bgChessKingPawn from "../assets/images/backgrounds/chess-pawn-king1.png"
+import bgAbstract from "../assets/images/backgrounds/black-gold-lines.jpeg"
+import goldDiagonalLines from "../assets/images/backgrounds/gold-diagonal-lines.jpeg"
+import bgTable from "../assets/images/backgrounds/bg-table.jpeg"
+import bgSpotlight from "../assets/images/backgrounds/bg-spotlight.jpeg"
+import bgSpotlightMobile from "../assets/images/backgrounds/bg-spotlight mobile.jpeg"
 import emailjs from "@emailjs/browser";
 const credentials = {
   serviceID: import.meta.env.VITE_SERVICE_ID,
@@ -68,14 +73,14 @@ const ContactMe = forwardRef((props, ref) => {
 
   return (
     <Section
-      bgImage={bgKnight} bgSize="contain" bgPosition="left"
+      bgImage={{ base: bgSpotlightMobile, lg: bgSpotlight }} bgSize="cover" bgPosition="center"
       p={{ base: "12px"}} marginY="24px" 
     >
       {isLoading && <Progress isIndeterminate />}
         <Heading ref={ref} paddingTop="80px">Contact Me</Heading>
-        <Box p="6" maxWidth="600px" fontSize="20px" text-align="justify">
-          <Text>Feel free to contact me with any questions or enquiries.</Text>
-          <Text>Any general feedback is also welcome and appreciated!</Text>
+        <Box paddingX={{ base: "36px", sm: "24px" }} maxWidth="600px" fontSize={{ base: "14px", md: "20px" }}>
+          <Box display="flex">Feel free to contact me with any&nbsp;<Text display={{ base: "none", sm: "revert" }}> questions or&nbsp;</Text>enquiries.</Box>
+          <Text display="flex">Any general feedback is also&nbsp;<Box display={{ base: "none", sm: "revert" }}> welcome and&nbsp;</Box>appreciated!</Text>
         </Box>
         <Box width="100%" p="6" maxWidth="800px">
           <form ref={formRef} onSubmit={formik.handleSubmit}>

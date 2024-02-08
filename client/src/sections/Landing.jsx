@@ -8,6 +8,7 @@ import { useGlobalContext } from '../context/GlobalContext.jsx'
 import { intro, aboutMe, aboutMe2, skills } from "../data/data.js";
 import bgKnight from "../assets/images/backgrounds/bg-knight.jpeg"
 import bgChessKingPawn from "../assets/images/backgrounds/chess-pawn-king1.png"
+import goldExhibit from "../assets/images/backgrounds/black-gold-exhibit.jpeg"
 
 const Landing = forwardRef((props, ref) => {
 
@@ -26,12 +27,14 @@ const Landing = forwardRef((props, ref) => {
     <Section
       bgImage={bgChessKingPawn}
       bgSize="cover"
-      bgPosition="30%"
-      paddingTop="10px"
+      bgPosition="bottom"
+      paddingTop={{ base: "24px", sm: "52px" }}
     >
         <SimpleGrid margin={{ base: "8px", sm: "16px" }}>
 
-          <Heading ref={ref} fontSize={{ base: "28px", sm: "64px" }}>Welcome.</Heading>
+          <Box  ref={ref} position="absolute" top="-56px"></Box>
+
+          <Heading fontSize={{ base: "28px", sm: "64px" }}>Welcome.</Heading>
 
           <VStack alignItems="flex-end" gap={{ base: "0", sm: "8px" }}>
             <HStack alignItems="flex-end">
@@ -48,18 +51,18 @@ const Landing = forwardRef((props, ref) => {
           </VStack>
 
 
-          <VStack margin={{ base: "8px", sm: "8" }} gap="0" alignItems="start" maxWidth="520px">
-            <VStack gap="12px">
+          <VStack marginY={{ base: "36px", sm: "8" }} marginX={{ base: "12px", sm: "8" }} gap="0" alignItems="start" maxWidth="520px">
+            <VStack gap="24px">
               <Text>{intro}</Text>
               <Text>{aboutMe}</Text>
             </VStack>
 
-            <VStack marginTop={{ base: "20px", sm: "120px" }} alignSelf="flex-end" alignItems="flex-start" gap="4px">
+            <VStack marginTop={{ base: "40px", sm: "120px" }} alignSelf="flex-end" alignItems="flex-start" gap="4px">
               <Heading fontSize="20px" >Technical Skills</Heading>
               <UnorderedList
                 gap="2px"
                 display="grid"
-                gridTemplateColumns="1fr 1fr 1fr"
+                gridTemplateColumns="1fr 1fr"
                 alignSelf="stretch"
                 styleType="none"
                 fontSize={{ base: "14px", sm: "16px" }}
