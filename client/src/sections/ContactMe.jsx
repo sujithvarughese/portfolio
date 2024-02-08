@@ -74,7 +74,7 @@ const ContactMe = forwardRef((props, ref) => {
   return (
     <Section
       bgImage={{ base: bgSpotlightMobile, lg: bgSpotlight }} bgSize="cover" bgPosition="center"
-      p={{ base: "12px"}} marginY="24px" 
+      p={{ base: "12px"}} paddingY="24px"
     >
       {isLoading && <Progress isIndeterminate />}
         <Heading ref={ref} paddingTop="80px">Contact Me</Heading>

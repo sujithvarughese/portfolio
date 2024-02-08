@@ -32,7 +32,7 @@ const Landing = forwardRef((props, ref) => {
     >
         <SimpleGrid margin={{ base: "8px", sm: "16px" }}>
 
-          <Box  ref={ref} position="absolute" top="-56px"></Box>
+          <Box ref={ref} position="absolute" top="-46px"></Box>
 
           <Heading fontSize={{ base: "28px", sm: "64px" }}>Welcome.</Heading>
 
