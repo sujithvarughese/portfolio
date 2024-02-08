@@ -1,9 +1,10 @@
 import { forwardRef, useEffect, useRef, useState } from 'react'
-import { Box, Button, FormControl, FormErrorMessage, FormLabel, Heading, Input, Progress, Textarea, VStack } from '@chakra-ui/react'
+import { Box, Button, FormControl, FormErrorMessage, FormLabel, Heading, Input, Progress, Text, Textarea, VStack } from '@chakra-ui/react'
 import Section from '../ui/Section.jsx'
 import { useGlobalContext } from '../context/GlobalContext.jsx'
 import { useFormik } from "formik";
 import * as Yup from 'yup';
+import bgKnight from "../assets/images/backgrounds/bg-knight.jpeg"
 import bgChessKingPawn from "../assets/images/backgrounds/chess-pawn-king1.png"
 import emailjs from "@emailjs/browser";
 const credentials = {
@@ -67,11 +68,15 @@ const ContactMe = forwardRef((props, ref) => {
 
   return (
     <Section
-      bgImage={bgChessKingPawn} bgSize="cover" bgPosition="left"
+      bgImage={bgKnight} bgSize="contain" bgPosition="left"
       p={{ base: "12px"}} marginY="24px" 
     >
       {isLoading && <Progress isIndeterminate />}
         <Heading ref={ref} paddingTop="80px">Contact Me</Heading>
+        <Box p="6" maxWidth="600px" fontSize="20px" text-align="justify">
+          <Text>Feel free to contact me with any questions or enquiries.</Text>
+          <Text>Any general feedback is also welcome and appreciated!</Text>
+        </Box>
         <Box width="100%" p="6" maxWidth="800px">
           <form ref={formRef} onSubmit={formik.handleSubmit}>
             <VStack spacing={4}>
