@@ -5,9 +5,9 @@ export const projectsText = [
     "Note: Cross-site tracking will need to be disabled if using Safari"
 ]
 
-export const intro = "I am a full-stack software developer, graduated is 2022 with a Bachelor's of Computer Science."
+export const intro = "I recently graduated in 2022 with a bachelor degree in computer science."
 
-export const aboutMe = "I've built (and rebuilt) several applications using React, NodeJS with Express, and MongoDB. I have focused on getting a solid grasp on how these technologies work under the hood, which in effect has helped me become very comfortable with them."
+export const aboutMe = "I create web and mobile applications that aim to solve real-world problems. I prioritize building solutions that are efficient and scalable. My recent projects, built using React, Express, and MongoDB, have helped me to not only gain a solid understanding of how these technologies work under the hood, but also of the complete deployment and software life cycle process, including network configurations."
 
 export const aboutMe2 = "My recent work should give an accurate representation of my ability and where my strengths and weaknesses are."
 
