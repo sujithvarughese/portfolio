@@ -11,7 +11,7 @@ import diagonalLines from "../assets/images/backgrounds/gold-diagonal-lines.jpeg
 import bgLightFixture from "../assets/images/backgrounds/bg-light-fixture.png"
 import bgRocky from "..//assets/images/backgrounds/black-rock.jpeg"
 import bgTable from "../assets/images/backgrounds/bg-table.jpeg"
-import blackGoldFrame from "../assets/images/backgrounds/black-gold-frame.jpeg"
+//import blackGoldFrame from "../assets/images/backgrounds/black-gold-frame.jpeg"
 import blackGrunge from "../assets/images/backgrounds/Black-grunge.jpeg"
 
 const Projects = forwardRef((props, ref) => {
